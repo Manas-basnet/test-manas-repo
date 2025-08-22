@@ -1,0 +1,57 @@
+part of 'entities.dart';
+
+@freezed
+abstract class SalesInvoiceEntity with _$SalesInvoiceEntity {
+  const factory SalesInvoiceEntity({
+    @JsonKey(name: "id") int? id,
+    @JsonKey(name: "invoice_id") int? invoiceId,
+    @JsonKey(name: "party_id") int? partyId,
+    @JsonKey(name: "manual_no") dynamic manualNo,
+    @JsonKey(name: "doc_no") dynamic docNo,
+    @JsonKey(name: "owned_by") dynamic ownedBy,
+    @JsonKey(name: "owned") dynamic owned,
+    @JsonKey(name: "invoice_number") String? invoiceNumber,
+    @JsonKey(name: "date") DateTime? date,
+    @JsonKey(name: "created_date") DateTime? createdDate,
+    @JsonKey(name: "party_name") String? partyName,
+    @JsonKey(name: "party_pan") String? partyPan,
+    @JsonKey(name: "due_date") DateTime? dueDate,
+    @JsonKey(name: "address") String? address,
+    @JsonKey(name: "secondary_address") String? secondaryAddress,
+    @JsonKey(name: "location") String? location,
+    @JsonKey(name: "location_id") int? locationId,
+    @JsonKey(name: "memo") String? memo,
+    @JsonKey(name: "department_name") dynamic departmentName,
+    @JsonKey(name: "gross_amount") int? grossAmount,
+    @JsonKey(name: "discount") int? discount,
+    @JsonKey(name: "taxable_amount") int? taxableAmount,
+    @JsonKey(name: "tax_amount") double? taxAmount,
+    @JsonKey(name: "net_amount") double? netAmount,
+    @JsonKey(name: "ref_type") dynamic refType,
+    @JsonKey(name: "ref_no") dynamic refNo,
+    @JsonKey(name: "sales_representative") dynamic salesRepresentative,
+    @JsonKey(name: "sales_rep_id") int? salesRepId,
+    @JsonKey(name: "class_id") int? classId,
+    @JsonKey(name: "term_id") int? termId,
+    @JsonKey(name: "term") dynamic term,
+    @JsonKey(name: "ledger_id") int? ledgerId,
+    @JsonKey(name: "project_id") int? projectId,
+    @JsonKey(name: "currency_id") int? currencyId,
+    @JsonKey(name: "department_id") int? departmentId,
+    @JsonKey(name: "service_type") dynamic serviceType,
+    @JsonKey(name: "order_type") dynamic orderType,
+    @JsonKey(name: "ride_date") dynamic rideDate,
+    @JsonKey(name: "car_details") dynamic carDetails,
+    @JsonKey(name: "payment_mode") String? paymentMode,
+    @JsonKey(name: "in_words") String? inWords,
+    @JsonKey(name: "base_period_id") dynamic basePeriodId,
+    @JsonKey(name: "exchange_rate") int? exchangeRate,
+    @JsonKey(name: "status") int? status,
+    @JsonKey(name: "status_name") String? statusName,
+    @JsonKey(name: "approved_status") int? approvedStatus,
+    @JsonKey(name: "invoice_details") List<dynamic>? invoiceDetails,
+  }) = _SalesInvoiceEntity;
+
+  factory SalesInvoiceEntity.fromJson(Map<String, dynamic> json) =>
+      _$SalesInvoiceEntityFromJson(json);
+}

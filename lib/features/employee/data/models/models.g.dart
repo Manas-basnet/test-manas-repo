@@ -1,0 +1,243 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'models.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_EmployeeByIdResponse _$EmployeeByIdResponseFromJson(
+        Map<String, dynamic> json) =>
+    _EmployeeByIdResponse(
+      employeeId: (json['employee_id'] as num?)?.toInt(),
+      organisationId: (json['organisation_id'] as num?)?.toInt(),
+      organisationIds: json['organisation_ids'],
+      companyId: json['company_id'],
+      code: json['code'],
+      firstName: json['first_name'] as String?,
+      lastName: json['last_name'] as String?,
+      fullName: json['full_name'],
+      personalEmail: json['personal_email'] as String?,
+      permanentAddress: json['permanent_address'],
+      secondaryAddress: json['secondary_address'],
+      primaryContact: json['primary_contact'] as String?,
+      secondaryContact: json['secondary_contact'],
+      isActive: json['is_active'] as bool?,
+      loginEmail: json['login_email'],
+      designationId: json['designation_id'],
+      locationId: json['location_id'],
+      designationIntegrationValue: json['designation_integration_value'],
+      base64String: json['base64_string'],
+      password: json['password'],
+      modifiedBy: (json['modified_by'] as num?)?.toInt(),
+      createdBy: (json['created_by'] as num?)?.toInt(),
+      isInactive: json['is_inactive'] as bool?,
+      isBanned: json['is_banned'] as bool?,
+      supervisorId: json['supervisor_id'],
+      birthDate: json['birth_date'],
+      hireDate: json['hire_date'],
+      terminationDate: json['termination_date'],
+      lastReview: json['last_review'],
+      nextReview: json['next_review'],
+      branchIds: json['branch_ids'] as List<dynamic>?,
+      companyIds: json['company_ids'] as List<dynamic>?,
+      employeeType: (json['employee_type'] as num?)?.toInt(),
+      employeeTypeId: (json['employee_type_id'] as num?)?.toInt(),
+      feminine: json['feminine'],
+      fax: json['fax'],
+      dateCreated: json['date_created'],
+      currencyId: json['currency_id'],
+      officePhone: json['office_phone'],
+      tenantId: json['tenant_id'],
+      userId: (json['user_Id'] as num?)?.toInt(),
+      homePhone: json['home_phone'],
+      departmentId: json['department_id'],
+      subsidiaryId: json['subsidiary_id'],
+      imageId: json['image_id'],
+      account: json['account'],
+      releaseDate: json['release_date'],
+      socialSecurity: json['social_security'],
+      timeApprover: json['time_approver'],
+      notes: json['notes'],
+      expensesLimit: json['expenses_limit'],
+      isSalesRep: json['is_sales_rep'] as bool?,
+      expensesApprover: json['expenses_approver'],
+      isSupportRep: json['is_support_rep'] as bool?,
+      isProjectRep: json['is_project_rep'] as bool?,
+      expensesApprovalLimit: json['expenses_approval_limit'],
+      defaultRoleId: json['default_role_id'],
+      jobTitle: json['job_title'],
+      purchaseLimit: json['purchase_limit'],
+      workCalendar: json['work_calendar'],
+      purchaseApprover: json['purchase_approver'],
+      laborCost: json['labor_cost'],
+      jobDescription: json['job_description'],
+      purchaseApprovalLimit: json['purchase_approval_limit'],
+      isProcurementPerson: json['is_procurement_person'] as bool?,
+      isActiveAccess: json['is_active_access'] as bool?,
+      isNotificationEmail: json['is_notification_email'] as bool?,
+      isChangePassword: json['is_change_password'] as bool?,
+      confirmPassword: json['confirm_password'],
+      status: (json['status'] as num?)?.toInt(),
+      jobTypeStatus: (json['jobTypeStatus'] as num?)?.toInt(),
+      maritalStatus: json['maritalStatus'],
+      religion: json['religion'],
+      gender: json['gender'],
+      approvalDelegate: json['approval_delegate'],
+      userAccountDto: json['user_account_dto'] == null
+          ? null
+          : UserAccountDto.fromJson(
+              json['user_account_dto'] as Map<String, dynamic>),
+      contactDetails: json['contact_details'] as List<dynamic>?,
+      educationDetails: json['education_details'] as List<dynamic>?,
+      corporateCardDetails: json['corporate_card_details'] as List<dynamic>?,
+      primaryId: (json['primary_id'] as num?)?.toInt(),
+      integrationValue: json['integration_value'],
+      isSynced: json['is_synced'] as bool?,
+    );
+
+Map<String, dynamic> _$EmployeeByIdResponseToJson(
+        _EmployeeByIdResponse instance) =>
+    <String, dynamic>{
+      if (instance.employeeId case final value?) 'employee_id': value,
+      if (instance.organisationId case final value?) 'organisation_id': value,
+      if (instance.organisationIds case final value?) 'organisation_ids': value,
+      if (instance.companyId case final value?) 'company_id': value,
+      if (instance.code case final value?) 'code': value,
+      if (instance.firstName case final value?) 'first_name': value,
+      if (instance.lastName case final value?) 'last_name': value,
+      if (instance.fullName case final value?) 'full_name': value,
+      if (instance.personalEmail case final value?) 'personal_email': value,
+      if (instance.permanentAddress case final value?)
+        'permanent_address': value,
+      if (instance.secondaryAddress case final value?)
+        'secondary_address': value,
+      if (instance.primaryContact case final value?) 'primary_contact': value,
+      if (instance.secondaryContact case final value?)
+        'secondary_contact': value,
+      if (instance.isActive case final value?) 'is_active': value,
+      if (instance.loginEmail case final value?) 'login_email': value,
+      if (instance.designationId case final value?) 'designation_id': value,
+      if (instance.locationId case final value?) 'location_id': value,
+      if (instance.designationIntegrationValue case final value?)
+        'designation_integration_value': value,
+      if (instance.base64String case final value?) 'base64_string': value,
+      if (instance.password case final value?) 'password': value,
+      if (instance.modifiedBy case final value?) 'modified_by': value,
+      if (instance.createdBy case final value?) 'created_by': value,
+      if (instance.isInactive case final value?) 'is_inactive': value,
+      if (instance.isBanned case final value?) 'is_banned': value,
+      if (instance.supervisorId case final value?) 'supervisor_id': value,
+      if (instance.birthDate case final value?) 'birth_date': value,
+      if (instance.hireDate case final value?) 'hire_date': value,
+      if (instance.terminationDate case final value?) 'termination_date': value,
+      if (instance.lastReview case final value?) 'last_review': value,
+      if (instance.nextReview case final value?) 'next_review': value,
+      if (instance.branchIds case final value?) 'branch_ids': value,
+      if (instance.companyIds case final value?) 'company_ids': value,
+      if (instance.employeeType case final value?) 'employee_type': value,
+      if (instance.employeeTypeId case final value?) 'employee_type_id': value,
+      if (instance.feminine case final value?) 'feminine': value,
+      if (instance.fax case final value?) 'fax': value,
+      if (instance.dateCreated case final value?) 'date_created': value,
+      if (instance.currencyId case final value?) 'currency_id': value,
+      if (instance.officePhone case final value?) 'office_phone': value,
+      if (instance.tenantId case final value?) 'tenant_id': value,
+      if (instance.userId case final value?) 'user_Id': value,
+      if (instance.homePhone case final value?) 'home_phone': value,
+      if (instance.departmentId case final value?) 'department_id': value,
+      if (instance.subsidiaryId case final value?) 'subsidiary_id': value,
+      if (instance.imageId case final value?) 'image_id': value,
+      if (instance.account case final value?) 'account': value,
+      if (instance.releaseDate case final value?) 'release_date': value,
+      if (instance.socialSecurity case final value?) 'social_security': value,
+      if (instance.timeApprover case final value?) 'time_approver': value,
+      if (instance.notes case final value?) 'notes': value,
+      if (instance.expensesLimit case final value?) 'expenses_limit': value,
+      if (instance.isSalesRep case final value?) 'is_sales_rep': value,
+      if (instance.expensesApprover case final value?)
+        'expenses_approver': value,
+      if (instance.isSupportRep case final value?) 'is_support_rep': value,
+      if (instance.isProjectRep case final value?) 'is_project_rep': value,
+      if (instance.expensesApprovalLimit case final value?)
+        'expenses_approval_limit': value,
+      if (instance.defaultRoleId case final value?) 'default_role_id': value,
+      if (instance.jobTitle case final value?) 'job_title': value,
+      if (instance.purchaseLimit case final value?) 'purchase_limit': value,
+      if (instance.workCalendar case final value?) 'work_calendar': value,
+      if (instance.purchaseApprover case final value?)
+        'purchase_approver': value,
+      if (instance.laborCost case final value?) 'labor_cost': value,
+      if (instance.jobDescription case final value?) 'job_description': value,
+      if (instance.purchaseApprovalLimit case final value?)
+        'purchase_approval_limit': value,
+      if (instance.isProcurementPerson case final value?)
+        'is_procurement_person': value,
+      if (instance.isActiveAccess case final value?) 'is_active_access': value,
+      if (instance.isNotificationEmail case final value?)
+        'is_notification_email': value,
+      if (instance.isChangePassword case final value?)
+        'is_change_password': value,
+      if (instance.confirmPassword case final value?) 'confirm_password': value,
+      if (instance.status case final value?) 'status': value,
+      if (instance.jobTypeStatus case final value?) 'jobTypeStatus': value,
+      if (instance.maritalStatus case final value?) 'maritalStatus': value,
+      if (instance.religion case final value?) 'religion': value,
+      if (instance.gender case final value?) 'gender': value,
+      if (instance.approvalDelegate case final value?)
+        'approval_delegate': value,
+      if (instance.userAccountDto?.toJson() case final value?)
+        'user_account_dto': value,
+      if (instance.contactDetails case final value?) 'contact_details': value,
+      if (instance.educationDetails case final value?)
+        'education_details': value,
+      if (instance.corporateCardDetails case final value?)
+        'corporate_card_details': value,
+      if (instance.primaryId case final value?) 'primary_id': value,
+      if (instance.integrationValue case final value?)
+        'integration_value': value,
+      if (instance.isSynced case final value?) 'is_synced': value,
+    };
+
+_UserAccountDto _$UserAccountDtoFromJson(Map<String, dynamic> json) =>
+    _UserAccountDto(
+      email: json['email'],
+      userName: json['user_name'],
+      password: json['password'],
+      createdBy: (json['created_by'] as num?)?.toInt(),
+      organisationId: (json['organisation_id'] as num?)?.toInt(),
+      companyId: json['company_id'],
+      branchId: json['branch_id'],
+      modifiedBy: json['modified_by'],
+      userId: json['user_id'],
+      employeeId: json['employee_id'],
+      isEmailConfirm: json['is_email_confirm'] as bool?,
+      twoFactorEnabled: json['two_factor_enabled'] as bool?,
+      isResetPassword: json['is_reset_password'] as bool?,
+      isSecurityQuestion: json['is_security_question'] as bool?,
+      isSendEmail: json['is_send_email'] as bool?,
+      roleIds: json['role_ids'],
+    );
+
+Map<String, dynamic> _$UserAccountDtoToJson(_UserAccountDto instance) =>
+    <String, dynamic>{
+      if (instance.email case final value?) 'email': value,
+      if (instance.userName case final value?) 'user_name': value,
+      if (instance.password case final value?) 'password': value,
+      if (instance.createdBy case final value?) 'created_by': value,
+      if (instance.organisationId case final value?) 'organisation_id': value,
+      if (instance.companyId case final value?) 'company_id': value,
+      if (instance.branchId case final value?) 'branch_id': value,
+      if (instance.modifiedBy case final value?) 'modified_by': value,
+      if (instance.userId case final value?) 'user_id': value,
+      if (instance.employeeId case final value?) 'employee_id': value,
+      if (instance.isEmailConfirm case final value?) 'is_email_confirm': value,
+      if (instance.twoFactorEnabled case final value?)
+        'two_factor_enabled': value,
+      if (instance.isResetPassword case final value?)
+        'is_reset_password': value,
+      if (instance.isSecurityQuestion case final value?)
+        'is_security_question': value,
+      if (instance.isSendEmail case final value?) 'is_send_email': value,
+      if (instance.roleIds case final value?) 'role_ids': value,
+    };
