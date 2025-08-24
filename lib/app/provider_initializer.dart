@@ -4,6 +4,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:sfm/core/core.dart';
 import 'package:sfm/features/employee/presentation/provider/provider.dart';
 import 'package:sfm/features/features.dart';
+import 'package:sfm/features/shorebird/presentation/notifier/notifier.dart';
 
 class ProviderInitializer extends HookConsumerWidget {
   final Widget child;
@@ -19,6 +20,7 @@ class ProviderInitializer extends HookConsumerWidget {
       () {
         Future.microtask(() async {
           try {
+            await ref.read(shorebirdUpdateNotifierProvider.notifier).checkForUpdates();
             await ref.read(currentEmployeeProvider.future);
             await ref
                 .read(customerReceiptControllerProvider.notifier)

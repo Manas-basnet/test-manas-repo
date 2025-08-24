@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -160,6 +159,214 @@ class _$AttendanceEntityCopyWithImpl<$Res>
           : time // ignore: cast_nullable_to_non_nullable
               as String,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [AttendanceEntity].
+extension AttendanceEntityPatterns on AttendanceEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_AttendanceEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _AttendanceEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_AttendanceEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _AttendanceEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_AttendanceEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _AttendanceEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "STAFF_ID") int staffId,
+            @JsonKey(name: "NEP_DATE") String nepDate,
+            @JsonKey(name: "DATE_PART") int datePart,
+            @JsonKey(name: "YEAR_PART") int yearPart,
+            @JsonKey(name: "MONTH_PART") int monthPart,
+            @JsonKey(name: "ATTENDANCE_TYPE") String attendanceType,
+            @JsonKey(name: "DATE") DateTime date,
+            @JsonKey(name: "TIME") String time)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _AttendanceEntity() when $default != null:
+        return $default(
+            _that.staffId,
+            _that.nepDate,
+            _that.datePart,
+            _that.yearPart,
+            _that.monthPart,
+            _that.attendanceType,
+            _that.date,
+            _that.time);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "STAFF_ID") int staffId,
+            @JsonKey(name: "NEP_DATE") String nepDate,
+            @JsonKey(name: "DATE_PART") int datePart,
+            @JsonKey(name: "YEAR_PART") int yearPart,
+            @JsonKey(name: "MONTH_PART") int monthPart,
+            @JsonKey(name: "ATTENDANCE_TYPE") String attendanceType,
+            @JsonKey(name: "DATE") DateTime date,
+            @JsonKey(name: "TIME") String time)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _AttendanceEntity():
+        return $default(
+            _that.staffId,
+            _that.nepDate,
+            _that.datePart,
+            _that.yearPart,
+            _that.monthPart,
+            _that.attendanceType,
+            _that.date,
+            _that.time);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "STAFF_ID") int staffId,
+            @JsonKey(name: "NEP_DATE") String nepDate,
+            @JsonKey(name: "DATE_PART") int datePart,
+            @JsonKey(name: "YEAR_PART") int yearPart,
+            @JsonKey(name: "MONTH_PART") int monthPart,
+            @JsonKey(name: "ATTENDANCE_TYPE") String attendanceType,
+            @JsonKey(name: "DATE") DateTime date,
+            @JsonKey(name: "TIME") String time)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _AttendanceEntity() when $default != null:
+        return $default(
+            _that.staffId,
+            _that.nepDate,
+            _that.datePart,
+            _that.yearPart,
+            _that.monthPart,
+            _that.attendanceType,
+            _that.date,
+            _that.time);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -491,6 +698,217 @@ class _$AttendanceParamsCopyWithImpl<$Res>
           : attendanceTypeInteger // ignore: cast_nullable_to_non_nullable
               as int?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [AttendanceParams].
+extension AttendanceParamsPatterns on AttendanceParams {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_AttendanceParams value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _AttendanceParams() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_AttendanceParams value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _AttendanceParams():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_AttendanceParams value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _AttendanceParams() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: 'staff_id') int staffId,
+            @JsonKey(name: 'DATE') String date,
+            @JsonKey(name: 'organisation_id') int? organisationId,
+            @JsonKey(name: 'company_id') int? companyId,
+            @JsonKey(name: 'branch_id') int? branchId,
+            @JsonKey(name: 'ATTENDANCE_TYPE') int? attendanceType,
+            @JsonKey(name: 'created_by') int? createdBy,
+            @JsonKey(name: 'attendance_type_integer')
+            int? attendanceTypeInteger)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _AttendanceParams() when $default != null:
+        return $default(
+            _that.staffId,
+            _that.date,
+            _that.organisationId,
+            _that.companyId,
+            _that.branchId,
+            _that.attendanceType,
+            _that.createdBy,
+            _that.attendanceTypeInteger);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: 'staff_id') int staffId,
+            @JsonKey(name: 'DATE') String date,
+            @JsonKey(name: 'organisation_id') int? organisationId,
+            @JsonKey(name: 'company_id') int? companyId,
+            @JsonKey(name: 'branch_id') int? branchId,
+            @JsonKey(name: 'ATTENDANCE_TYPE') int? attendanceType,
+            @JsonKey(name: 'created_by') int? createdBy,
+            @JsonKey(name: 'attendance_type_integer')
+            int? attendanceTypeInteger)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _AttendanceParams():
+        return $default(
+            _that.staffId,
+            _that.date,
+            _that.organisationId,
+            _that.companyId,
+            _that.branchId,
+            _that.attendanceType,
+            _that.createdBy,
+            _that.attendanceTypeInteger);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: 'staff_id') int staffId,
+            @JsonKey(name: 'DATE') String date,
+            @JsonKey(name: 'organisation_id') int? organisationId,
+            @JsonKey(name: 'company_id') int? companyId,
+            @JsonKey(name: 'branch_id') int? branchId,
+            @JsonKey(name: 'ATTENDANCE_TYPE') int? attendanceType,
+            @JsonKey(name: 'created_by') int? createdBy,
+            @JsonKey(name: 'attendance_type_integer')
+            int? attendanceTypeInteger)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _AttendanceParams() when $default != null:
+        return $default(
+            _that.staffId,
+            _that.date,
+            _that.organisationId,
+            _that.companyId,
+            _that.branchId,
+            _that.attendanceType,
+            _that.createdBy,
+            _that.attendanceTypeInteger);
+      case _:
+        return null;
+    }
   }
 }
 

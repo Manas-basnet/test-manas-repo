@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -752,6 +751,553 @@ class _$CreditMemoDTOCopyWithImpl<$Res>
           : creditMemoDetails // ignore: cast_nullable_to_non_nullable
               as List<dynamic>?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [CreditMemoDTO].
+extension CreditMemoDTOPatterns on CreditMemoDTO {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_CreditMemoDTO value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDTO() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_CreditMemoDTO value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDTO():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_CreditMemoDTO value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDTO() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "id") int? id,
+            @JsonKey(name: "customer_id") int? customerId,
+            @JsonKey(name: "manual_no") dynamic manualNo,
+            @JsonKey(name: "doc_no") dynamic docNo,
+            @JsonKey(name: "credit_memo_no") String? creditMemoNo,
+            @JsonKey(name: "customer") String? customer,
+            @JsonKey(name: "credit_memo_date") DateTime? creditMemoDate,
+            @JsonKey(name: "nep_credit_memo_date") dynamic nepCreditMemoDate,
+            @JsonKey(name: "currency_name") dynamic currencyName,
+            @JsonKey(name: "department_name") dynamic departmentName,
+            @JsonKey(name: "next_approver_name") dynamic nextApproverName,
+            @JsonKey(name: "ref_type") int? refType,
+            @JsonKey(name: "ref_id") dynamic refId,
+            @JsonKey(name: "memo") String? memo,
+            @JsonKey(name: "location_name") String? locationName,
+            @JsonKey(name: "next_approver") dynamic nextApprover,
+            @JsonKey(name: "status") int? status,
+            @JsonKey(name: "approval_status") int? approvalStatus,
+            @JsonKey(name: "status_name") String? statusName,
+            @JsonKey(name: "on_behalf_of_id") dynamic onBehalfOfId,
+            @JsonKey(name: "party_id") int? partyId,
+            @JsonKey(name: "currency_id") dynamic currencyId,
+            @JsonKey(name: "exchange_rate") int? exchangeRate,
+            @JsonKey(name: "pan_no") dynamic panNo,
+            @JsonKey(name: "credit_memo_id") int? creditMemoId,
+            @JsonKey(name: "invoice_reference_no") String? invoiceReferenceNo,
+            @JsonKey(name: "ref_invoice_id") int? refInvoiceId,
+            @JsonKey(name: "location_id") int? locationId,
+            @JsonKey(name: "department_id") dynamic departmentId,
+            @JsonKey(name: "class_id") dynamic classId,
+            @JsonKey(name: "is_cancelled") bool? isCancelled,
+            @JsonKey(name: "project_id") dynamic projectId,
+            @JsonKey(name: "base_period_id") dynamic basePeriodId,
+            @JsonKey(name: "sales_rep_id") int? salesRepId,
+            @JsonKey(name: "ledger_id") int? ledgerId,
+            @JsonKey(name: "job_no") dynamic jobNo,
+            @JsonKey(name: "credit") dynamic credit,
+            @JsonKey(name: "purpose") String? purpose,
+            @JsonKey(name: "customer_po_ref") dynamic customerPoRef,
+            @JsonKey(name: "discount") dynamic discount,
+            @JsonKey(name: "discount_amount") int? discountAmount,
+            @JsonKey(name: "gross_amount") int? grossAmount,
+            @JsonKey(name: "taxable_amount") int? taxableAmount,
+            @JsonKey(name: "tax_amount") double? taxAmount,
+            @JsonKey(name: "net_total") int? netTotal,
+            @JsonKey(name: "net_amount") double? netAmount,
+            @JsonKey(name: "promise_date") dynamic promiseDate,
+            @JsonKey(name: "contract_period") dynamic contractPeriod,
+            @JsonKey(name: "discount_item_id") dynamic discountItemId,
+            @JsonKey(name: "item_name") dynamic itemName,
+            @JsonKey(name: "owned") dynamic owned,
+            @JsonKey(name: "party_name") String? partyName,
+            @JsonKey(name: "item_rate") dynamic itemRate,
+            @JsonKey(name: "unapplied") dynamic unapplied,
+            @JsonKey(name: "applied") dynamic applied,
+            @JsonKey(name: "auto_apply") bool? autoApply,
+            @JsonKey(name: "service_type") dynamic serviceType,
+            @JsonKey(name: "order_type") dynamic orderType,
+            @JsonKey(name: "ride_date") dynamic rideDate,
+            @JsonKey(name: "car_details") dynamic carDetails,
+            @JsonKey(name: "payment_mode") int? paymentMode,
+            @JsonKey(name: "payment_modes") String? paymentModes,
+            @JsonKey(name: "in_words") String? inWords,
+            @JsonKey(name: "credit_memo_details")
+            List<dynamic>? creditMemoDetails)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDTO() when $default != null:
+        return $default(
+            _that.id,
+            _that.customerId,
+            _that.manualNo,
+            _that.docNo,
+            _that.creditMemoNo,
+            _that.customer,
+            _that.creditMemoDate,
+            _that.nepCreditMemoDate,
+            _that.currencyName,
+            _that.departmentName,
+            _that.nextApproverName,
+            _that.refType,
+            _that.refId,
+            _that.memo,
+            _that.locationName,
+            _that.nextApprover,
+            _that.status,
+            _that.approvalStatus,
+            _that.statusName,
+            _that.onBehalfOfId,
+            _that.partyId,
+            _that.currencyId,
+            _that.exchangeRate,
+            _that.panNo,
+            _that.creditMemoId,
+            _that.invoiceReferenceNo,
+            _that.refInvoiceId,
+            _that.locationId,
+            _that.departmentId,
+            _that.classId,
+            _that.isCancelled,
+            _that.projectId,
+            _that.basePeriodId,
+            _that.salesRepId,
+            _that.ledgerId,
+            _that.jobNo,
+            _that.credit,
+            _that.purpose,
+            _that.customerPoRef,
+            _that.discount,
+            _that.discountAmount,
+            _that.grossAmount,
+            _that.taxableAmount,
+            _that.taxAmount,
+            _that.netTotal,
+            _that.netAmount,
+            _that.promiseDate,
+            _that.contractPeriod,
+            _that.discountItemId,
+            _that.itemName,
+            _that.owned,
+            _that.partyName,
+            _that.itemRate,
+            _that.unapplied,
+            _that.applied,
+            _that.autoApply,
+            _that.serviceType,
+            _that.orderType,
+            _that.rideDate,
+            _that.carDetails,
+            _that.paymentMode,
+            _that.paymentModes,
+            _that.inWords,
+            _that.creditMemoDetails);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "id") int? id,
+            @JsonKey(name: "customer_id") int? customerId,
+            @JsonKey(name: "manual_no") dynamic manualNo,
+            @JsonKey(name: "doc_no") dynamic docNo,
+            @JsonKey(name: "credit_memo_no") String? creditMemoNo,
+            @JsonKey(name: "customer") String? customer,
+            @JsonKey(name: "credit_memo_date") DateTime? creditMemoDate,
+            @JsonKey(name: "nep_credit_memo_date") dynamic nepCreditMemoDate,
+            @JsonKey(name: "currency_name") dynamic currencyName,
+            @JsonKey(name: "department_name") dynamic departmentName,
+            @JsonKey(name: "next_approver_name") dynamic nextApproverName,
+            @JsonKey(name: "ref_type") int? refType,
+            @JsonKey(name: "ref_id") dynamic refId,
+            @JsonKey(name: "memo") String? memo,
+            @JsonKey(name: "location_name") String? locationName,
+            @JsonKey(name: "next_approver") dynamic nextApprover,
+            @JsonKey(name: "status") int? status,
+            @JsonKey(name: "approval_status") int? approvalStatus,
+            @JsonKey(name: "status_name") String? statusName,
+            @JsonKey(name: "on_behalf_of_id") dynamic onBehalfOfId,
+            @JsonKey(name: "party_id") int? partyId,
+            @JsonKey(name: "currency_id") dynamic currencyId,
+            @JsonKey(name: "exchange_rate") int? exchangeRate,
+            @JsonKey(name: "pan_no") dynamic panNo,
+            @JsonKey(name: "credit_memo_id") int? creditMemoId,
+            @JsonKey(name: "invoice_reference_no") String? invoiceReferenceNo,
+            @JsonKey(name: "ref_invoice_id") int? refInvoiceId,
+            @JsonKey(name: "location_id") int? locationId,
+            @JsonKey(name: "department_id") dynamic departmentId,
+            @JsonKey(name: "class_id") dynamic classId,
+            @JsonKey(name: "is_cancelled") bool? isCancelled,
+            @JsonKey(name: "project_id") dynamic projectId,
+            @JsonKey(name: "base_period_id") dynamic basePeriodId,
+            @JsonKey(name: "sales_rep_id") int? salesRepId,
+            @JsonKey(name: "ledger_id") int? ledgerId,
+            @JsonKey(name: "job_no") dynamic jobNo,
+            @JsonKey(name: "credit") dynamic credit,
+            @JsonKey(name: "purpose") String? purpose,
+            @JsonKey(name: "customer_po_ref") dynamic customerPoRef,
+            @JsonKey(name: "discount") dynamic discount,
+            @JsonKey(name: "discount_amount") int? discountAmount,
+            @JsonKey(name: "gross_amount") int? grossAmount,
+            @JsonKey(name: "taxable_amount") int? taxableAmount,
+            @JsonKey(name: "tax_amount") double? taxAmount,
+            @JsonKey(name: "net_total") int? netTotal,
+            @JsonKey(name: "net_amount") double? netAmount,
+            @JsonKey(name: "promise_date") dynamic promiseDate,
+            @JsonKey(name: "contract_period") dynamic contractPeriod,
+            @JsonKey(name: "discount_item_id") dynamic discountItemId,
+            @JsonKey(name: "item_name") dynamic itemName,
+            @JsonKey(name: "owned") dynamic owned,
+            @JsonKey(name: "party_name") String? partyName,
+            @JsonKey(name: "item_rate") dynamic itemRate,
+            @JsonKey(name: "unapplied") dynamic unapplied,
+            @JsonKey(name: "applied") dynamic applied,
+            @JsonKey(name: "auto_apply") bool? autoApply,
+            @JsonKey(name: "service_type") dynamic serviceType,
+            @JsonKey(name: "order_type") dynamic orderType,
+            @JsonKey(name: "ride_date") dynamic rideDate,
+            @JsonKey(name: "car_details") dynamic carDetails,
+            @JsonKey(name: "payment_mode") int? paymentMode,
+            @JsonKey(name: "payment_modes") String? paymentModes,
+            @JsonKey(name: "in_words") String? inWords,
+            @JsonKey(name: "credit_memo_details")
+            List<dynamic>? creditMemoDetails)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDTO():
+        return $default(
+            _that.id,
+            _that.customerId,
+            _that.manualNo,
+            _that.docNo,
+            _that.creditMemoNo,
+            _that.customer,
+            _that.creditMemoDate,
+            _that.nepCreditMemoDate,
+            _that.currencyName,
+            _that.departmentName,
+            _that.nextApproverName,
+            _that.refType,
+            _that.refId,
+            _that.memo,
+            _that.locationName,
+            _that.nextApprover,
+            _that.status,
+            _that.approvalStatus,
+            _that.statusName,
+            _that.onBehalfOfId,
+            _that.partyId,
+            _that.currencyId,
+            _that.exchangeRate,
+            _that.panNo,
+            _that.creditMemoId,
+            _that.invoiceReferenceNo,
+            _that.refInvoiceId,
+            _that.locationId,
+            _that.departmentId,
+            _that.classId,
+            _that.isCancelled,
+            _that.projectId,
+            _that.basePeriodId,
+            _that.salesRepId,
+            _that.ledgerId,
+            _that.jobNo,
+            _that.credit,
+            _that.purpose,
+            _that.customerPoRef,
+            _that.discount,
+            _that.discountAmount,
+            _that.grossAmount,
+            _that.taxableAmount,
+            _that.taxAmount,
+            _that.netTotal,
+            _that.netAmount,
+            _that.promiseDate,
+            _that.contractPeriod,
+            _that.discountItemId,
+            _that.itemName,
+            _that.owned,
+            _that.partyName,
+            _that.itemRate,
+            _that.unapplied,
+            _that.applied,
+            _that.autoApply,
+            _that.serviceType,
+            _that.orderType,
+            _that.rideDate,
+            _that.carDetails,
+            _that.paymentMode,
+            _that.paymentModes,
+            _that.inWords,
+            _that.creditMemoDetails);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "id") int? id,
+            @JsonKey(name: "customer_id") int? customerId,
+            @JsonKey(name: "manual_no") dynamic manualNo,
+            @JsonKey(name: "doc_no") dynamic docNo,
+            @JsonKey(name: "credit_memo_no") String? creditMemoNo,
+            @JsonKey(name: "customer") String? customer,
+            @JsonKey(name: "credit_memo_date") DateTime? creditMemoDate,
+            @JsonKey(name: "nep_credit_memo_date") dynamic nepCreditMemoDate,
+            @JsonKey(name: "currency_name") dynamic currencyName,
+            @JsonKey(name: "department_name") dynamic departmentName,
+            @JsonKey(name: "next_approver_name") dynamic nextApproverName,
+            @JsonKey(name: "ref_type") int? refType,
+            @JsonKey(name: "ref_id") dynamic refId,
+            @JsonKey(name: "memo") String? memo,
+            @JsonKey(name: "location_name") String? locationName,
+            @JsonKey(name: "next_approver") dynamic nextApprover,
+            @JsonKey(name: "status") int? status,
+            @JsonKey(name: "approval_status") int? approvalStatus,
+            @JsonKey(name: "status_name") String? statusName,
+            @JsonKey(name: "on_behalf_of_id") dynamic onBehalfOfId,
+            @JsonKey(name: "party_id") int? partyId,
+            @JsonKey(name: "currency_id") dynamic currencyId,
+            @JsonKey(name: "exchange_rate") int? exchangeRate,
+            @JsonKey(name: "pan_no") dynamic panNo,
+            @JsonKey(name: "credit_memo_id") int? creditMemoId,
+            @JsonKey(name: "invoice_reference_no") String? invoiceReferenceNo,
+            @JsonKey(name: "ref_invoice_id") int? refInvoiceId,
+            @JsonKey(name: "location_id") int? locationId,
+            @JsonKey(name: "department_id") dynamic departmentId,
+            @JsonKey(name: "class_id") dynamic classId,
+            @JsonKey(name: "is_cancelled") bool? isCancelled,
+            @JsonKey(name: "project_id") dynamic projectId,
+            @JsonKey(name: "base_period_id") dynamic basePeriodId,
+            @JsonKey(name: "sales_rep_id") int? salesRepId,
+            @JsonKey(name: "ledger_id") int? ledgerId,
+            @JsonKey(name: "job_no") dynamic jobNo,
+            @JsonKey(name: "credit") dynamic credit,
+            @JsonKey(name: "purpose") String? purpose,
+            @JsonKey(name: "customer_po_ref") dynamic customerPoRef,
+            @JsonKey(name: "discount") dynamic discount,
+            @JsonKey(name: "discount_amount") int? discountAmount,
+            @JsonKey(name: "gross_amount") int? grossAmount,
+            @JsonKey(name: "taxable_amount") int? taxableAmount,
+            @JsonKey(name: "tax_amount") double? taxAmount,
+            @JsonKey(name: "net_total") int? netTotal,
+            @JsonKey(name: "net_amount") double? netAmount,
+            @JsonKey(name: "promise_date") dynamic promiseDate,
+            @JsonKey(name: "contract_period") dynamic contractPeriod,
+            @JsonKey(name: "discount_item_id") dynamic discountItemId,
+            @JsonKey(name: "item_name") dynamic itemName,
+            @JsonKey(name: "owned") dynamic owned,
+            @JsonKey(name: "party_name") String? partyName,
+            @JsonKey(name: "item_rate") dynamic itemRate,
+            @JsonKey(name: "unapplied") dynamic unapplied,
+            @JsonKey(name: "applied") dynamic applied,
+            @JsonKey(name: "auto_apply") bool? autoApply,
+            @JsonKey(name: "service_type") dynamic serviceType,
+            @JsonKey(name: "order_type") dynamic orderType,
+            @JsonKey(name: "ride_date") dynamic rideDate,
+            @JsonKey(name: "car_details") dynamic carDetails,
+            @JsonKey(name: "payment_mode") int? paymentMode,
+            @JsonKey(name: "payment_modes") String? paymentModes,
+            @JsonKey(name: "in_words") String? inWords,
+            @JsonKey(name: "credit_memo_details")
+            List<dynamic>? creditMemoDetails)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDTO() when $default != null:
+        return $default(
+            _that.id,
+            _that.customerId,
+            _that.manualNo,
+            _that.docNo,
+            _that.creditMemoNo,
+            _that.customer,
+            _that.creditMemoDate,
+            _that.nepCreditMemoDate,
+            _that.currencyName,
+            _that.departmentName,
+            _that.nextApproverName,
+            _that.refType,
+            _that.refId,
+            _that.memo,
+            _that.locationName,
+            _that.nextApprover,
+            _that.status,
+            _that.approvalStatus,
+            _that.statusName,
+            _that.onBehalfOfId,
+            _that.partyId,
+            _that.currencyId,
+            _that.exchangeRate,
+            _that.panNo,
+            _that.creditMemoId,
+            _that.invoiceReferenceNo,
+            _that.refInvoiceId,
+            _that.locationId,
+            _that.departmentId,
+            _that.classId,
+            _that.isCancelled,
+            _that.projectId,
+            _that.basePeriodId,
+            _that.salesRepId,
+            _that.ledgerId,
+            _that.jobNo,
+            _that.credit,
+            _that.purpose,
+            _that.customerPoRef,
+            _that.discount,
+            _that.discountAmount,
+            _that.grossAmount,
+            _that.taxableAmount,
+            _that.taxAmount,
+            _that.netTotal,
+            _that.netAmount,
+            _that.promiseDate,
+            _that.contractPeriod,
+            _that.discountItemId,
+            _that.itemName,
+            _that.owned,
+            _that.partyName,
+            _that.itemRate,
+            _that.unapplied,
+            _that.applied,
+            _that.autoApply,
+            _that.serviceType,
+            _that.orderType,
+            _that.rideDate,
+            _that.carDetails,
+            _that.paymentMode,
+            _that.paymentModes,
+            _that.inWords,
+            _that.creditMemoDetails);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -2317,6 +2863,517 @@ class _$CreditMemoByIdDtoCopyWithImpl<$Res>
   }
 }
 
+/// Adds pattern-matching-related methods to [CreditMemoByIdDto].
+extension CreditMemoByIdDtoPatterns on CreditMemoByIdDto {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_CreditMemoByIdDto value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoByIdDto() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_CreditMemoByIdDto value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoByIdDto():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_CreditMemoByIdDto value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoByIdDto() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "user_note_details") List<dynamic>? userNoteDetails,
+            @JsonKey(name: "relationship_details")
+            List<dynamic>? relationshipDetails,
+            @JsonKey(name: "message_list") List<dynamic>? messageList,
+            @JsonKey(name: "event_list") List<dynamic>? eventList,
+            @JsonKey(name: "fileList") List<dynamic>? fileList,
+            @JsonKey(name: "task_list") List<dynamic>? taskList,
+            @JsonKey(name: "phone_call_details")
+            List<dynamic>? phoneCallDetails,
+            @JsonKey(name: "CREDIT_MEMO_ID") int? creditMemoId,
+            @JsonKey(name: "ORGANISATION_ID") int? organisationId,
+            @JsonKey(name: "ORGA_NAME") String? orgaName,
+            @JsonKey(name: "INVOICE_REFERENCE_NO") String? invoiceReferenceNo,
+            @JsonKey(name: "INTEGRATION_VALUE") dynamic integrationValue,
+            @JsonKey(name: "CREDIT_MEMO_NO") String? creditMemoNo,
+            @JsonKey(name: "CUSTOMER_ID") int? customerId,
+            @JsonKey(name: "CUSTOMER_NAME") String? customerName,
+            @JsonKey(name: "PARTY_ADDRESS") String? partyAddress,
+            @JsonKey(name: "PAN_NO") String? panNo,
+            @JsonKey(name: "ADDRESS") String? address,
+            @JsonKey(name: "ON_BEHALF_OF_ID") dynamic onBehalfOfId,
+            @JsonKey(name: "CREDIT_MEMO_DATE") DateTime? creditMemoDate,
+            @JsonKey(name: "MEMO") dynamic memo,
+            @JsonKey(name: "CURRENCY_ID") int? currencyId,
+            @JsonKey(name: "CURRENCY_NAME") String? currencyName,
+            @JsonKey(name: "EXCHANGE_RATE") int? exchangeRate,
+            @JsonKey(name: "PROJECT_ID") dynamic projectId,
+            @JsonKey(name: "PROJECT_NAME") dynamic projectName,
+            @JsonKey(name: "LOCATION_ID") dynamic locationId,
+            @JsonKey(name: "LOCATION_NAME") dynamic locationName,
+            @JsonKey(name: "DEPARTMENT_ID") dynamic departmentId,
+            @JsonKey(name: "DEPARTMENT_NAME") dynamic departmentName,
+            @JsonKey(name: "NEXT_APPROVER") dynamic nextApprover,
+            @JsonKey(name: "NEXT_APPROVER_NAME") dynamic nextApproverName,
+            @JsonKey(name: "SALES_REP_ID") int? salesRepId,
+            @JsonKey(name: "SALES_REPRESENTATIVE") String? salesRepresentative,
+            @JsonKey(name: "CLASS_ID") dynamic classId,
+            @JsonKey(name: "CLASS_NAME") dynamic className,
+            @JsonKey(name: "STATUS") int? status,
+            @JsonKey(name: "STATUS_NAME") String? statusName,
+            @JsonKey(name: "LEDGER_ID") dynamic ledgerId,
+            @JsonKey(name: "LEDGER_NAME") dynamic ledgerName,
+            @JsonKey(name: "JOB_NO") dynamic jobNo,
+            @JsonKey(name: "CREDIT") dynamic credit,
+            @JsonKey(name: "BASE_PERIOD_ID") dynamic basePeriodId,
+            @JsonKey(name: "BASE_PERIOD") dynamic basePeriod,
+            @JsonKey(name: "PURPOSE") dynamic purpose,
+            @JsonKey(name: "CUSTOMER_PO_REF") dynamic customerPoRef,
+            @JsonKey(name: "REF_INVOICE_ID") int? refInvoiceId,
+            @JsonKey(name: "PROMISE_DATE") dynamic promiseDate,
+            @JsonKey(name: "CONTRACT_PERIOD") dynamic contractPeriod,
+            @JsonKey(name: "IS_SYNCED") bool? isSynced,
+            @JsonKey(name: "DISCOUNT_ITEM_ID") dynamic discountItemId,
+            @JsonKey(name: "ITEM_NAME") dynamic itemName,
+            @JsonKey(name: "ITEM_RATE") dynamic itemRate,
+            @JsonKey(name: "UNAPPLIED") dynamic unapplied,
+            @JsonKey(name: "APPLIED") dynamic applied,
+            @JsonKey(name: "AUTO_APPLY") bool? autoApply,
+            @JsonKey(name: "credit_memo_details")
+            List<CreditMemoDetailDTO>? creditMemoDetails)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoByIdDto() when $default != null:
+        return $default(
+            _that.userNoteDetails,
+            _that.relationshipDetails,
+            _that.messageList,
+            _that.eventList,
+            _that.fileList,
+            _that.taskList,
+            _that.phoneCallDetails,
+            _that.creditMemoId,
+            _that.organisationId,
+            _that.orgaName,
+            _that.invoiceReferenceNo,
+            _that.integrationValue,
+            _that.creditMemoNo,
+            _that.customerId,
+            _that.customerName,
+            _that.partyAddress,
+            _that.panNo,
+            _that.address,
+            _that.onBehalfOfId,
+            _that.creditMemoDate,
+            _that.memo,
+            _that.currencyId,
+            _that.currencyName,
+            _that.exchangeRate,
+            _that.projectId,
+            _that.projectName,
+            _that.locationId,
+            _that.locationName,
+            _that.departmentId,
+            _that.departmentName,
+            _that.nextApprover,
+            _that.nextApproverName,
+            _that.salesRepId,
+            _that.salesRepresentative,
+            _that.classId,
+            _that.className,
+            _that.status,
+            _that.statusName,
+            _that.ledgerId,
+            _that.ledgerName,
+            _that.jobNo,
+            _that.credit,
+            _that.basePeriodId,
+            _that.basePeriod,
+            _that.purpose,
+            _that.customerPoRef,
+            _that.refInvoiceId,
+            _that.promiseDate,
+            _that.contractPeriod,
+            _that.isSynced,
+            _that.discountItemId,
+            _that.itemName,
+            _that.itemRate,
+            _that.unapplied,
+            _that.applied,
+            _that.autoApply,
+            _that.creditMemoDetails);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "user_note_details") List<dynamic>? userNoteDetails,
+            @JsonKey(name: "relationship_details")
+            List<dynamic>? relationshipDetails,
+            @JsonKey(name: "message_list") List<dynamic>? messageList,
+            @JsonKey(name: "event_list") List<dynamic>? eventList,
+            @JsonKey(name: "fileList") List<dynamic>? fileList,
+            @JsonKey(name: "task_list") List<dynamic>? taskList,
+            @JsonKey(name: "phone_call_details")
+            List<dynamic>? phoneCallDetails,
+            @JsonKey(name: "CREDIT_MEMO_ID") int? creditMemoId,
+            @JsonKey(name: "ORGANISATION_ID") int? organisationId,
+            @JsonKey(name: "ORGA_NAME") String? orgaName,
+            @JsonKey(name: "INVOICE_REFERENCE_NO") String? invoiceReferenceNo,
+            @JsonKey(name: "INTEGRATION_VALUE") dynamic integrationValue,
+            @JsonKey(name: "CREDIT_MEMO_NO") String? creditMemoNo,
+            @JsonKey(name: "CUSTOMER_ID") int? customerId,
+            @JsonKey(name: "CUSTOMER_NAME") String? customerName,
+            @JsonKey(name: "PARTY_ADDRESS") String? partyAddress,
+            @JsonKey(name: "PAN_NO") String? panNo,
+            @JsonKey(name: "ADDRESS") String? address,
+            @JsonKey(name: "ON_BEHALF_OF_ID") dynamic onBehalfOfId,
+            @JsonKey(name: "CREDIT_MEMO_DATE") DateTime? creditMemoDate,
+            @JsonKey(name: "MEMO") dynamic memo,
+            @JsonKey(name: "CURRENCY_ID") int? currencyId,
+            @JsonKey(name: "CURRENCY_NAME") String? currencyName,
+            @JsonKey(name: "EXCHANGE_RATE") int? exchangeRate,
+            @JsonKey(name: "PROJECT_ID") dynamic projectId,
+            @JsonKey(name: "PROJECT_NAME") dynamic projectName,
+            @JsonKey(name: "LOCATION_ID") dynamic locationId,
+            @JsonKey(name: "LOCATION_NAME") dynamic locationName,
+            @JsonKey(name: "DEPARTMENT_ID") dynamic departmentId,
+            @JsonKey(name: "DEPARTMENT_NAME") dynamic departmentName,
+            @JsonKey(name: "NEXT_APPROVER") dynamic nextApprover,
+            @JsonKey(name: "NEXT_APPROVER_NAME") dynamic nextApproverName,
+            @JsonKey(name: "SALES_REP_ID") int? salesRepId,
+            @JsonKey(name: "SALES_REPRESENTATIVE") String? salesRepresentative,
+            @JsonKey(name: "CLASS_ID") dynamic classId,
+            @JsonKey(name: "CLASS_NAME") dynamic className,
+            @JsonKey(name: "STATUS") int? status,
+            @JsonKey(name: "STATUS_NAME") String? statusName,
+            @JsonKey(name: "LEDGER_ID") dynamic ledgerId,
+            @JsonKey(name: "LEDGER_NAME") dynamic ledgerName,
+            @JsonKey(name: "JOB_NO") dynamic jobNo,
+            @JsonKey(name: "CREDIT") dynamic credit,
+            @JsonKey(name: "BASE_PERIOD_ID") dynamic basePeriodId,
+            @JsonKey(name: "BASE_PERIOD") dynamic basePeriod,
+            @JsonKey(name: "PURPOSE") dynamic purpose,
+            @JsonKey(name: "CUSTOMER_PO_REF") dynamic customerPoRef,
+            @JsonKey(name: "REF_INVOICE_ID") int? refInvoiceId,
+            @JsonKey(name: "PROMISE_DATE") dynamic promiseDate,
+            @JsonKey(name: "CONTRACT_PERIOD") dynamic contractPeriod,
+            @JsonKey(name: "IS_SYNCED") bool? isSynced,
+            @JsonKey(name: "DISCOUNT_ITEM_ID") dynamic discountItemId,
+            @JsonKey(name: "ITEM_NAME") dynamic itemName,
+            @JsonKey(name: "ITEM_RATE") dynamic itemRate,
+            @JsonKey(name: "UNAPPLIED") dynamic unapplied,
+            @JsonKey(name: "APPLIED") dynamic applied,
+            @JsonKey(name: "AUTO_APPLY") bool? autoApply,
+            @JsonKey(name: "credit_memo_details")
+            List<CreditMemoDetailDTO>? creditMemoDetails)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoByIdDto():
+        return $default(
+            _that.userNoteDetails,
+            _that.relationshipDetails,
+            _that.messageList,
+            _that.eventList,
+            _that.fileList,
+            _that.taskList,
+            _that.phoneCallDetails,
+            _that.creditMemoId,
+            _that.organisationId,
+            _that.orgaName,
+            _that.invoiceReferenceNo,
+            _that.integrationValue,
+            _that.creditMemoNo,
+            _that.customerId,
+            _that.customerName,
+            _that.partyAddress,
+            _that.panNo,
+            _that.address,
+            _that.onBehalfOfId,
+            _that.creditMemoDate,
+            _that.memo,
+            _that.currencyId,
+            _that.currencyName,
+            _that.exchangeRate,
+            _that.projectId,
+            _that.projectName,
+            _that.locationId,
+            _that.locationName,
+            _that.departmentId,
+            _that.departmentName,
+            _that.nextApprover,
+            _that.nextApproverName,
+            _that.salesRepId,
+            _that.salesRepresentative,
+            _that.classId,
+            _that.className,
+            _that.status,
+            _that.statusName,
+            _that.ledgerId,
+            _that.ledgerName,
+            _that.jobNo,
+            _that.credit,
+            _that.basePeriodId,
+            _that.basePeriod,
+            _that.purpose,
+            _that.customerPoRef,
+            _that.refInvoiceId,
+            _that.promiseDate,
+            _that.contractPeriod,
+            _that.isSynced,
+            _that.discountItemId,
+            _that.itemName,
+            _that.itemRate,
+            _that.unapplied,
+            _that.applied,
+            _that.autoApply,
+            _that.creditMemoDetails);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "user_note_details") List<dynamic>? userNoteDetails,
+            @JsonKey(name: "relationship_details")
+            List<dynamic>? relationshipDetails,
+            @JsonKey(name: "message_list") List<dynamic>? messageList,
+            @JsonKey(name: "event_list") List<dynamic>? eventList,
+            @JsonKey(name: "fileList") List<dynamic>? fileList,
+            @JsonKey(name: "task_list") List<dynamic>? taskList,
+            @JsonKey(name: "phone_call_details")
+            List<dynamic>? phoneCallDetails,
+            @JsonKey(name: "CREDIT_MEMO_ID") int? creditMemoId,
+            @JsonKey(name: "ORGANISATION_ID") int? organisationId,
+            @JsonKey(name: "ORGA_NAME") String? orgaName,
+            @JsonKey(name: "INVOICE_REFERENCE_NO") String? invoiceReferenceNo,
+            @JsonKey(name: "INTEGRATION_VALUE") dynamic integrationValue,
+            @JsonKey(name: "CREDIT_MEMO_NO") String? creditMemoNo,
+            @JsonKey(name: "CUSTOMER_ID") int? customerId,
+            @JsonKey(name: "CUSTOMER_NAME") String? customerName,
+            @JsonKey(name: "PARTY_ADDRESS") String? partyAddress,
+            @JsonKey(name: "PAN_NO") String? panNo,
+            @JsonKey(name: "ADDRESS") String? address,
+            @JsonKey(name: "ON_BEHALF_OF_ID") dynamic onBehalfOfId,
+            @JsonKey(name: "CREDIT_MEMO_DATE") DateTime? creditMemoDate,
+            @JsonKey(name: "MEMO") dynamic memo,
+            @JsonKey(name: "CURRENCY_ID") int? currencyId,
+            @JsonKey(name: "CURRENCY_NAME") String? currencyName,
+            @JsonKey(name: "EXCHANGE_RATE") int? exchangeRate,
+            @JsonKey(name: "PROJECT_ID") dynamic projectId,
+            @JsonKey(name: "PROJECT_NAME") dynamic projectName,
+            @JsonKey(name: "LOCATION_ID") dynamic locationId,
+            @JsonKey(name: "LOCATION_NAME") dynamic locationName,
+            @JsonKey(name: "DEPARTMENT_ID") dynamic departmentId,
+            @JsonKey(name: "DEPARTMENT_NAME") dynamic departmentName,
+            @JsonKey(name: "NEXT_APPROVER") dynamic nextApprover,
+            @JsonKey(name: "NEXT_APPROVER_NAME") dynamic nextApproverName,
+            @JsonKey(name: "SALES_REP_ID") int? salesRepId,
+            @JsonKey(name: "SALES_REPRESENTATIVE") String? salesRepresentative,
+            @JsonKey(name: "CLASS_ID") dynamic classId,
+            @JsonKey(name: "CLASS_NAME") dynamic className,
+            @JsonKey(name: "STATUS") int? status,
+            @JsonKey(name: "STATUS_NAME") String? statusName,
+            @JsonKey(name: "LEDGER_ID") dynamic ledgerId,
+            @JsonKey(name: "LEDGER_NAME") dynamic ledgerName,
+            @JsonKey(name: "JOB_NO") dynamic jobNo,
+            @JsonKey(name: "CREDIT") dynamic credit,
+            @JsonKey(name: "BASE_PERIOD_ID") dynamic basePeriodId,
+            @JsonKey(name: "BASE_PERIOD") dynamic basePeriod,
+            @JsonKey(name: "PURPOSE") dynamic purpose,
+            @JsonKey(name: "CUSTOMER_PO_REF") dynamic customerPoRef,
+            @JsonKey(name: "REF_INVOICE_ID") int? refInvoiceId,
+            @JsonKey(name: "PROMISE_DATE") dynamic promiseDate,
+            @JsonKey(name: "CONTRACT_PERIOD") dynamic contractPeriod,
+            @JsonKey(name: "IS_SYNCED") bool? isSynced,
+            @JsonKey(name: "DISCOUNT_ITEM_ID") dynamic discountItemId,
+            @JsonKey(name: "ITEM_NAME") dynamic itemName,
+            @JsonKey(name: "ITEM_RATE") dynamic itemRate,
+            @JsonKey(name: "UNAPPLIED") dynamic unapplied,
+            @JsonKey(name: "APPLIED") dynamic applied,
+            @JsonKey(name: "AUTO_APPLY") bool? autoApply,
+            @JsonKey(name: "credit_memo_details")
+            List<CreditMemoDetailDTO>? creditMemoDetails)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoByIdDto() when $default != null:
+        return $default(
+            _that.userNoteDetails,
+            _that.relationshipDetails,
+            _that.messageList,
+            _that.eventList,
+            _that.fileList,
+            _that.taskList,
+            _that.phoneCallDetails,
+            _that.creditMemoId,
+            _that.organisationId,
+            _that.orgaName,
+            _that.invoiceReferenceNo,
+            _that.integrationValue,
+            _that.creditMemoNo,
+            _that.customerId,
+            _that.customerName,
+            _that.partyAddress,
+            _that.panNo,
+            _that.address,
+            _that.onBehalfOfId,
+            _that.creditMemoDate,
+            _that.memo,
+            _that.currencyId,
+            _that.currencyName,
+            _that.exchangeRate,
+            _that.projectId,
+            _that.projectName,
+            _that.locationId,
+            _that.locationName,
+            _that.departmentId,
+            _that.departmentName,
+            _that.nextApprover,
+            _that.nextApproverName,
+            _that.salesRepId,
+            _that.salesRepresentative,
+            _that.classId,
+            _that.className,
+            _that.status,
+            _that.statusName,
+            _that.ledgerId,
+            _that.ledgerName,
+            _that.jobNo,
+            _that.credit,
+            _that.basePeriodId,
+            _that.basePeriod,
+            _that.purpose,
+            _that.customerPoRef,
+            _that.refInvoiceId,
+            _that.promiseDate,
+            _that.contractPeriod,
+            _that.isSynced,
+            _that.discountItemId,
+            _that.itemName,
+            _that.itemRate,
+            _that.unapplied,
+            _that.applied,
+            _that.autoApply,
+            _that.creditMemoDetails);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 @JsonSerializable()
 class _CreditMemoByIdDto implements CreditMemoByIdDto {
@@ -3705,6 +4762,424 @@ class _$CreditMemoDetailDTOCopyWithImpl<$Res>
           : locationName // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [CreditMemoDetailDTO].
+extension CreditMemoDetailDTOPatterns on CreditMemoDetailDTO {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_CreditMemoDetailDTO value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDetailDTO() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_CreditMemoDetailDTO value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDetailDTO():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_CreditMemoDetailDTO value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDetailDTO() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "CREDIT_MEMO_ID") int? creditMemoId,
+            @JsonKey(name: "DETAIL_ID") int? detailId,
+            @JsonKey(name: "ITEM_ID") int? itemId,
+            @JsonKey(name: "HS_CODE") String? hsCode,
+            @JsonKey(name: "REF_DETAIL_ID") int? refDetailId,
+            @JsonKey(name: "ITEM_NAME") String? itemName,
+            @JsonKey(name: "DESCRIPTION") String? description,
+            @JsonKey(name: "UNIT_ID") int? unitId,
+            @JsonKey(name: "UNIT_NAME") String? unitName,
+            @JsonKey(name: "RATE") int? rate,
+            @JsonKey(name: "QUANTITY") int? quantity,
+            @JsonKey(name: "DISCOUNT") int? discount,
+            @JsonKey(name: "DISCOUNT_PERCENT") double? discountPercent,
+            @JsonKey(name: "GROSS_AMOUNT") int? grossAmount,
+            @JsonKey(name: "TSC_CODE") String? tscCode,
+            @JsonKey(name: "TSC_CODE_NAME") String? tscCodeName,
+            @JsonKey(name: "TSC_RATE") int? tscRate,
+            @JsonKey(name: "TSC_AMOUNT") int? tscAmount,
+            @JsonKey(name: "PRICE_LEVEL_ID") dynamic priceLevelId,
+            @JsonKey(name: "PRICE_LEVEL_NAME") dynamic priceLevelName,
+            @JsonKey(name: "TAX_ID") int? taxId,
+            @JsonKey(name: "TAX_CODE_NAME") String? taxCodeName,
+            @JsonKey(name: "TAX_RATE") int? taxRate,
+            @JsonKey(name: "TAX_AMOUNT") double? taxAmount,
+            @JsonKey(name: "AMOUNT") double? amount,
+            @JsonKey(name: "IS_APPLY_WH_TAX") bool? isApplyWhTax,
+            @JsonKey(name: "WH_TAX_CODE") dynamic whTaxCode,
+            @JsonKey(name: "WH_TAX_CODE_NAME") dynamic whTaxCodeName,
+            @JsonKey(name: "WH_TAX_RATE") dynamic whTaxRate,
+            @JsonKey(name: "WH_TAX_BASE_AMOUNT") dynamic whTaxBaseAmount,
+            @JsonKey(name: "WH_TAX_AMOUNT") int? whTaxAmount,
+            @JsonKey(name: "MODEL_ID") dynamic modelId,
+            @JsonKey(name: "MODEL_NAME") dynamic modelName,
+            @JsonKey(name: "VARIANT_ID") dynamic variantId,
+            @JsonKey(name: "VARIENT_NAME") dynamic varientName,
+            @JsonKey(name: "MADE_YEAR") dynamic madeYear,
+            @JsonKey(name: "ENGINE_NO") dynamic engineNo,
+            @JsonKey(name: "VEHICLE_REG_NUMBER") dynamic vehicleRegNumber,
+            @JsonKey(name: "VIN_NO") dynamic vinNo,
+            @JsonKey(name: "DEPARTMENT_ID") int? departmentId,
+            @JsonKey(name: "DEPARTMENT_NAME") String? departmentName,
+            @JsonKey(name: "LOCATION_ID") int? locationId,
+            @JsonKey(name: "LOCATION_NAME") String? locationName)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDetailDTO() when $default != null:
+        return $default(
+            _that.creditMemoId,
+            _that.detailId,
+            _that.itemId,
+            _that.hsCode,
+            _that.refDetailId,
+            _that.itemName,
+            _that.description,
+            _that.unitId,
+            _that.unitName,
+            _that.rate,
+            _that.quantity,
+            _that.discount,
+            _that.discountPercent,
+            _that.grossAmount,
+            _that.tscCode,
+            _that.tscCodeName,
+            _that.tscRate,
+            _that.tscAmount,
+            _that.priceLevelId,
+            _that.priceLevelName,
+            _that.taxId,
+            _that.taxCodeName,
+            _that.taxRate,
+            _that.taxAmount,
+            _that.amount,
+            _that.isApplyWhTax,
+            _that.whTaxCode,
+            _that.whTaxCodeName,
+            _that.whTaxRate,
+            _that.whTaxBaseAmount,
+            _that.whTaxAmount,
+            _that.modelId,
+            _that.modelName,
+            _that.variantId,
+            _that.varientName,
+            _that.madeYear,
+            _that.engineNo,
+            _that.vehicleRegNumber,
+            _that.vinNo,
+            _that.departmentId,
+            _that.departmentName,
+            _that.locationId,
+            _that.locationName);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "CREDIT_MEMO_ID") int? creditMemoId,
+            @JsonKey(name: "DETAIL_ID") int? detailId,
+            @JsonKey(name: "ITEM_ID") int? itemId,
+            @JsonKey(name: "HS_CODE") String? hsCode,
+            @JsonKey(name: "REF_DETAIL_ID") int? refDetailId,
+            @JsonKey(name: "ITEM_NAME") String? itemName,
+            @JsonKey(name: "DESCRIPTION") String? description,
+            @JsonKey(name: "UNIT_ID") int? unitId,
+            @JsonKey(name: "UNIT_NAME") String? unitName,
+            @JsonKey(name: "RATE") int? rate,
+            @JsonKey(name: "QUANTITY") int? quantity,
+            @JsonKey(name: "DISCOUNT") int? discount,
+            @JsonKey(name: "DISCOUNT_PERCENT") double? discountPercent,
+            @JsonKey(name: "GROSS_AMOUNT") int? grossAmount,
+            @JsonKey(name: "TSC_CODE") String? tscCode,
+            @JsonKey(name: "TSC_CODE_NAME") String? tscCodeName,
+            @JsonKey(name: "TSC_RATE") int? tscRate,
+            @JsonKey(name: "TSC_AMOUNT") int? tscAmount,
+            @JsonKey(name: "PRICE_LEVEL_ID") dynamic priceLevelId,
+            @JsonKey(name: "PRICE_LEVEL_NAME") dynamic priceLevelName,
+            @JsonKey(name: "TAX_ID") int? taxId,
+            @JsonKey(name: "TAX_CODE_NAME") String? taxCodeName,
+            @JsonKey(name: "TAX_RATE") int? taxRate,
+            @JsonKey(name: "TAX_AMOUNT") double? taxAmount,
+            @JsonKey(name: "AMOUNT") double? amount,
+            @JsonKey(name: "IS_APPLY_WH_TAX") bool? isApplyWhTax,
+            @JsonKey(name: "WH_TAX_CODE") dynamic whTaxCode,
+            @JsonKey(name: "WH_TAX_CODE_NAME") dynamic whTaxCodeName,
+            @JsonKey(name: "WH_TAX_RATE") dynamic whTaxRate,
+            @JsonKey(name: "WH_TAX_BASE_AMOUNT") dynamic whTaxBaseAmount,
+            @JsonKey(name: "WH_TAX_AMOUNT") int? whTaxAmount,
+            @JsonKey(name: "MODEL_ID") dynamic modelId,
+            @JsonKey(name: "MODEL_NAME") dynamic modelName,
+            @JsonKey(name: "VARIANT_ID") dynamic variantId,
+            @JsonKey(name: "VARIENT_NAME") dynamic varientName,
+            @JsonKey(name: "MADE_YEAR") dynamic madeYear,
+            @JsonKey(name: "ENGINE_NO") dynamic engineNo,
+            @JsonKey(name: "VEHICLE_REG_NUMBER") dynamic vehicleRegNumber,
+            @JsonKey(name: "VIN_NO") dynamic vinNo,
+            @JsonKey(name: "DEPARTMENT_ID") int? departmentId,
+            @JsonKey(name: "DEPARTMENT_NAME") String? departmentName,
+            @JsonKey(name: "LOCATION_ID") int? locationId,
+            @JsonKey(name: "LOCATION_NAME") String? locationName)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDetailDTO():
+        return $default(
+            _that.creditMemoId,
+            _that.detailId,
+            _that.itemId,
+            _that.hsCode,
+            _that.refDetailId,
+            _that.itemName,
+            _that.description,
+            _that.unitId,
+            _that.unitName,
+            _that.rate,
+            _that.quantity,
+            _that.discount,
+            _that.discountPercent,
+            _that.grossAmount,
+            _that.tscCode,
+            _that.tscCodeName,
+            _that.tscRate,
+            _that.tscAmount,
+            _that.priceLevelId,
+            _that.priceLevelName,
+            _that.taxId,
+            _that.taxCodeName,
+            _that.taxRate,
+            _that.taxAmount,
+            _that.amount,
+            _that.isApplyWhTax,
+            _that.whTaxCode,
+            _that.whTaxCodeName,
+            _that.whTaxRate,
+            _that.whTaxBaseAmount,
+            _that.whTaxAmount,
+            _that.modelId,
+            _that.modelName,
+            _that.variantId,
+            _that.varientName,
+            _that.madeYear,
+            _that.engineNo,
+            _that.vehicleRegNumber,
+            _that.vinNo,
+            _that.departmentId,
+            _that.departmentName,
+            _that.locationId,
+            _that.locationName);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "CREDIT_MEMO_ID") int? creditMemoId,
+            @JsonKey(name: "DETAIL_ID") int? detailId,
+            @JsonKey(name: "ITEM_ID") int? itemId,
+            @JsonKey(name: "HS_CODE") String? hsCode,
+            @JsonKey(name: "REF_DETAIL_ID") int? refDetailId,
+            @JsonKey(name: "ITEM_NAME") String? itemName,
+            @JsonKey(name: "DESCRIPTION") String? description,
+            @JsonKey(name: "UNIT_ID") int? unitId,
+            @JsonKey(name: "UNIT_NAME") String? unitName,
+            @JsonKey(name: "RATE") int? rate,
+            @JsonKey(name: "QUANTITY") int? quantity,
+            @JsonKey(name: "DISCOUNT") int? discount,
+            @JsonKey(name: "DISCOUNT_PERCENT") double? discountPercent,
+            @JsonKey(name: "GROSS_AMOUNT") int? grossAmount,
+            @JsonKey(name: "TSC_CODE") String? tscCode,
+            @JsonKey(name: "TSC_CODE_NAME") String? tscCodeName,
+            @JsonKey(name: "TSC_RATE") int? tscRate,
+            @JsonKey(name: "TSC_AMOUNT") int? tscAmount,
+            @JsonKey(name: "PRICE_LEVEL_ID") dynamic priceLevelId,
+            @JsonKey(name: "PRICE_LEVEL_NAME") dynamic priceLevelName,
+            @JsonKey(name: "TAX_ID") int? taxId,
+            @JsonKey(name: "TAX_CODE_NAME") String? taxCodeName,
+            @JsonKey(name: "TAX_RATE") int? taxRate,
+            @JsonKey(name: "TAX_AMOUNT") double? taxAmount,
+            @JsonKey(name: "AMOUNT") double? amount,
+            @JsonKey(name: "IS_APPLY_WH_TAX") bool? isApplyWhTax,
+            @JsonKey(name: "WH_TAX_CODE") dynamic whTaxCode,
+            @JsonKey(name: "WH_TAX_CODE_NAME") dynamic whTaxCodeName,
+            @JsonKey(name: "WH_TAX_RATE") dynamic whTaxRate,
+            @JsonKey(name: "WH_TAX_BASE_AMOUNT") dynamic whTaxBaseAmount,
+            @JsonKey(name: "WH_TAX_AMOUNT") int? whTaxAmount,
+            @JsonKey(name: "MODEL_ID") dynamic modelId,
+            @JsonKey(name: "MODEL_NAME") dynamic modelName,
+            @JsonKey(name: "VARIANT_ID") dynamic variantId,
+            @JsonKey(name: "VARIENT_NAME") dynamic varientName,
+            @JsonKey(name: "MADE_YEAR") dynamic madeYear,
+            @JsonKey(name: "ENGINE_NO") dynamic engineNo,
+            @JsonKey(name: "VEHICLE_REG_NUMBER") dynamic vehicleRegNumber,
+            @JsonKey(name: "VIN_NO") dynamic vinNo,
+            @JsonKey(name: "DEPARTMENT_ID") int? departmentId,
+            @JsonKey(name: "DEPARTMENT_NAME") String? departmentName,
+            @JsonKey(name: "LOCATION_ID") int? locationId,
+            @JsonKey(name: "LOCATION_NAME") String? locationName)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDetailDTO() when $default != null:
+        return $default(
+            _that.creditMemoId,
+            _that.detailId,
+            _that.itemId,
+            _that.hsCode,
+            _that.refDetailId,
+            _that.itemName,
+            _that.description,
+            _that.unitId,
+            _that.unitName,
+            _that.rate,
+            _that.quantity,
+            _that.discount,
+            _that.discountPercent,
+            _that.grossAmount,
+            _that.tscCode,
+            _that.tscCodeName,
+            _that.tscRate,
+            _that.tscAmount,
+            _that.priceLevelId,
+            _that.priceLevelName,
+            _that.taxId,
+            _that.taxCodeName,
+            _that.taxRate,
+            _that.taxAmount,
+            _that.amount,
+            _that.isApplyWhTax,
+            _that.whTaxCode,
+            _that.whTaxCodeName,
+            _that.whTaxRate,
+            _that.whTaxBaseAmount,
+            _that.whTaxAmount,
+            _that.modelId,
+            _that.modelName,
+            _that.variantId,
+            _that.varientName,
+            _that.madeYear,
+            _that.engineNo,
+            _that.vehicleRegNumber,
+            _that.vinNo,
+            _that.departmentId,
+            _that.departmentName,
+            _that.locationId,
+            _that.locationName);
+      case _:
+        return null;
+    }
   }
 }
 

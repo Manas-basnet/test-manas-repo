@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -295,6 +294,295 @@ class _$SalesEstimateDetailEntityCopyWithImpl<$Res>
           : expectedReceiptDate // ignore: cast_nullable_to_non_nullable
               as DateTime?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [SalesEstimateDetailEntity].
+extension SalesEstimateDetailEntityPatterns on SalesEstimateDetailEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_SalesEstimateDetailEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateDetailEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_SalesEstimateDetailEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateDetailEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_SalesEstimateDetailEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateDetailEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "ITEM_NAME") String? itemName,
+            @JsonKey(name: "UNIT_NAME") String? unitName,
+            @JsonKey(name: "DESCRIPTION") String? description,
+            @JsonKey(name: "ESTIMATE_ID") int? estimateId,
+            @JsonKey(name: "DETAIL_ID") int? detailId,
+            @JsonKey(name: "ITEM_ID") int? itemId,
+            @JsonKey(name: "UNIT_ID") int? unitId,
+            @JsonKey(name: "RATE") num? rate,
+            @JsonKey(name: "QUANTITY") int? quantity,
+            @JsonKey(name: "PRICE_LEVEL_ID") dynamic priceLevelId,
+            @JsonKey(name: "PRICE_LEVEL") dynamic priceLevel,
+            @JsonKey(name: "DISCOUNT") double? discount,
+            @JsonKey(name: "GROSS_AMOUNT") double? grossAmount,
+            @JsonKey(name: "AMOUNT") double? amount,
+            @JsonKey(name: "TAX_AMOUNT") double? taxAmount,
+            @JsonKey(name: "TAX_ID") int? taxId,
+            @JsonKey(name: "TAX_NAME") String? taxName,
+            @JsonKey(name: "TAX_RATE") num? taxRate,
+            @JsonKey(name: "LOCATION_ID") int? locationId,
+            @JsonKey(name: "LOCATION_NAME") String? locationName,
+            @JsonKey(name: "EXPECTED_RECEIPT_DATE")
+            DateTime? expectedReceiptDate)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateDetailEntity() when $default != null:
+        return $default(
+            _that.itemName,
+            _that.unitName,
+            _that.description,
+            _that.estimateId,
+            _that.detailId,
+            _that.itemId,
+            _that.unitId,
+            _that.rate,
+            _that.quantity,
+            _that.priceLevelId,
+            _that.priceLevel,
+            _that.discount,
+            _that.grossAmount,
+            _that.amount,
+            _that.taxAmount,
+            _that.taxId,
+            _that.taxName,
+            _that.taxRate,
+            _that.locationId,
+            _that.locationName,
+            _that.expectedReceiptDate);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "ITEM_NAME") String? itemName,
+            @JsonKey(name: "UNIT_NAME") String? unitName,
+            @JsonKey(name: "DESCRIPTION") String? description,
+            @JsonKey(name: "ESTIMATE_ID") int? estimateId,
+            @JsonKey(name: "DETAIL_ID") int? detailId,
+            @JsonKey(name: "ITEM_ID") int? itemId,
+            @JsonKey(name: "UNIT_ID") int? unitId,
+            @JsonKey(name: "RATE") num? rate,
+            @JsonKey(name: "QUANTITY") int? quantity,
+            @JsonKey(name: "PRICE_LEVEL_ID") dynamic priceLevelId,
+            @JsonKey(name: "PRICE_LEVEL") dynamic priceLevel,
+            @JsonKey(name: "DISCOUNT") double? discount,
+            @JsonKey(name: "GROSS_AMOUNT") double? grossAmount,
+            @JsonKey(name: "AMOUNT") double? amount,
+            @JsonKey(name: "TAX_AMOUNT") double? taxAmount,
+            @JsonKey(name: "TAX_ID") int? taxId,
+            @JsonKey(name: "TAX_NAME") String? taxName,
+            @JsonKey(name: "TAX_RATE") num? taxRate,
+            @JsonKey(name: "LOCATION_ID") int? locationId,
+            @JsonKey(name: "LOCATION_NAME") String? locationName,
+            @JsonKey(name: "EXPECTED_RECEIPT_DATE")
+            DateTime? expectedReceiptDate)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateDetailEntity():
+        return $default(
+            _that.itemName,
+            _that.unitName,
+            _that.description,
+            _that.estimateId,
+            _that.detailId,
+            _that.itemId,
+            _that.unitId,
+            _that.rate,
+            _that.quantity,
+            _that.priceLevelId,
+            _that.priceLevel,
+            _that.discount,
+            _that.grossAmount,
+            _that.amount,
+            _that.taxAmount,
+            _that.taxId,
+            _that.taxName,
+            _that.taxRate,
+            _that.locationId,
+            _that.locationName,
+            _that.expectedReceiptDate);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "ITEM_NAME") String? itemName,
+            @JsonKey(name: "UNIT_NAME") String? unitName,
+            @JsonKey(name: "DESCRIPTION") String? description,
+            @JsonKey(name: "ESTIMATE_ID") int? estimateId,
+            @JsonKey(name: "DETAIL_ID") int? detailId,
+            @JsonKey(name: "ITEM_ID") int? itemId,
+            @JsonKey(name: "UNIT_ID") int? unitId,
+            @JsonKey(name: "RATE") num? rate,
+            @JsonKey(name: "QUANTITY") int? quantity,
+            @JsonKey(name: "PRICE_LEVEL_ID") dynamic priceLevelId,
+            @JsonKey(name: "PRICE_LEVEL") dynamic priceLevel,
+            @JsonKey(name: "DISCOUNT") double? discount,
+            @JsonKey(name: "GROSS_AMOUNT") double? grossAmount,
+            @JsonKey(name: "AMOUNT") double? amount,
+            @JsonKey(name: "TAX_AMOUNT") double? taxAmount,
+            @JsonKey(name: "TAX_ID") int? taxId,
+            @JsonKey(name: "TAX_NAME") String? taxName,
+            @JsonKey(name: "TAX_RATE") num? taxRate,
+            @JsonKey(name: "LOCATION_ID") int? locationId,
+            @JsonKey(name: "LOCATION_NAME") String? locationName,
+            @JsonKey(name: "EXPECTED_RECEIPT_DATE")
+            DateTime? expectedReceiptDate)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateDetailEntity() when $default != null:
+        return $default(
+            _that.itemName,
+            _that.unitName,
+            _that.description,
+            _that.estimateId,
+            _that.detailId,
+            _that.itemId,
+            _that.unitId,
+            _that.rate,
+            _that.quantity,
+            _that.priceLevelId,
+            _that.priceLevel,
+            _that.discount,
+            _that.grossAmount,
+            _that.amount,
+            _that.taxAmount,
+            _that.taxId,
+            _that.taxName,
+            _that.taxRate,
+            _that.locationId,
+            _that.locationName,
+            _that.expectedReceiptDate);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -1043,6 +1331,382 @@ class _$SalesEstimateEntityCopyWithImpl<$Res>
           : details // ignore: cast_nullable_to_non_nullable
               as List<SalesEstimateDetailEntity>,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [SalesEstimateEntity].
+extension SalesEstimateEntityPatterns on SalesEstimateEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_SalesEstimateEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_SalesEstimateEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_SalesEstimateEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            int? id,
+            int? refId,
+            String? opportunityNumber,
+            String? title,
+            int? customerId,
+            String? partyName,
+            String? estimateNumber,
+            String? address,
+            String? secondaryAddress,
+            DateTime? date,
+            String? nepDate,
+            int? projectId,
+            String? projectName,
+            int? currencyId,
+            String? currencyName,
+            int? exchangeRate,
+            int? nextApproverId,
+            String? nextApproverName,
+            String? memo,
+            dynamic dueDate,
+            int? locationId,
+            int? salesRepId,
+            int? status,
+            String? statusName,
+            String? formStatus,
+            String? bgColor,
+            String? locationName,
+            String? salesRepName,
+            dynamic partner,
+            String? partnerName,
+            int? departmentId,
+            String? departmentName,
+            int? classId,
+            String? className,
+            double? netAmount,
+            List<SalesEstimateDetailEntity> details)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateEntity() when $default != null:
+        return $default(
+            _that.id,
+            _that.refId,
+            _that.opportunityNumber,
+            _that.title,
+            _that.customerId,
+            _that.partyName,
+            _that.estimateNumber,
+            _that.address,
+            _that.secondaryAddress,
+            _that.date,
+            _that.nepDate,
+            _that.projectId,
+            _that.projectName,
+            _that.currencyId,
+            _that.currencyName,
+            _that.exchangeRate,
+            _that.nextApproverId,
+            _that.nextApproverName,
+            _that.memo,
+            _that.dueDate,
+            _that.locationId,
+            _that.salesRepId,
+            _that.status,
+            _that.statusName,
+            _that.formStatus,
+            _that.bgColor,
+            _that.locationName,
+            _that.salesRepName,
+            _that.partner,
+            _that.partnerName,
+            _that.departmentId,
+            _that.departmentName,
+            _that.classId,
+            _that.className,
+            _that.netAmount,
+            _that.details);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            int? id,
+            int? refId,
+            String? opportunityNumber,
+            String? title,
+            int? customerId,
+            String? partyName,
+            String? estimateNumber,
+            String? address,
+            String? secondaryAddress,
+            DateTime? date,
+            String? nepDate,
+            int? projectId,
+            String? projectName,
+            int? currencyId,
+            String? currencyName,
+            int? exchangeRate,
+            int? nextApproverId,
+            String? nextApproverName,
+            String? memo,
+            dynamic dueDate,
+            int? locationId,
+            int? salesRepId,
+            int? status,
+            String? statusName,
+            String? formStatus,
+            String? bgColor,
+            String? locationName,
+            String? salesRepName,
+            dynamic partner,
+            String? partnerName,
+            int? departmentId,
+            String? departmentName,
+            int? classId,
+            String? className,
+            double? netAmount,
+            List<SalesEstimateDetailEntity> details)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateEntity():
+        return $default(
+            _that.id,
+            _that.refId,
+            _that.opportunityNumber,
+            _that.title,
+            _that.customerId,
+            _that.partyName,
+            _that.estimateNumber,
+            _that.address,
+            _that.secondaryAddress,
+            _that.date,
+            _that.nepDate,
+            _that.projectId,
+            _that.projectName,
+            _that.currencyId,
+            _that.currencyName,
+            _that.exchangeRate,
+            _that.nextApproverId,
+            _that.nextApproverName,
+            _that.memo,
+            _that.dueDate,
+            _that.locationId,
+            _that.salesRepId,
+            _that.status,
+            _that.statusName,
+            _that.formStatus,
+            _that.bgColor,
+            _that.locationName,
+            _that.salesRepName,
+            _that.partner,
+            _that.partnerName,
+            _that.departmentId,
+            _that.departmentName,
+            _that.classId,
+            _that.className,
+            _that.netAmount,
+            _that.details);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            int? id,
+            int? refId,
+            String? opportunityNumber,
+            String? title,
+            int? customerId,
+            String? partyName,
+            String? estimateNumber,
+            String? address,
+            String? secondaryAddress,
+            DateTime? date,
+            String? nepDate,
+            int? projectId,
+            String? projectName,
+            int? currencyId,
+            String? currencyName,
+            int? exchangeRate,
+            int? nextApproverId,
+            String? nextApproverName,
+            String? memo,
+            dynamic dueDate,
+            int? locationId,
+            int? salesRepId,
+            int? status,
+            String? statusName,
+            String? formStatus,
+            String? bgColor,
+            String? locationName,
+            String? salesRepName,
+            dynamic partner,
+            String? partnerName,
+            int? departmentId,
+            String? departmentName,
+            int? classId,
+            String? className,
+            double? netAmount,
+            List<SalesEstimateDetailEntity> details)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateEntity() when $default != null:
+        return $default(
+            _that.id,
+            _that.refId,
+            _that.opportunityNumber,
+            _that.title,
+            _that.customerId,
+            _that.partyName,
+            _that.estimateNumber,
+            _that.address,
+            _that.secondaryAddress,
+            _that.date,
+            _that.nepDate,
+            _that.projectId,
+            _that.projectName,
+            _that.currencyId,
+            _that.currencyName,
+            _that.exchangeRate,
+            _that.nextApproverId,
+            _that.nextApproverName,
+            _that.memo,
+            _that.dueDate,
+            _that.locationId,
+            _that.salesRepId,
+            _that.status,
+            _that.statusName,
+            _that.formStatus,
+            _that.bgColor,
+            _that.locationName,
+            _that.salesRepName,
+            _that.partner,
+            _that.partnerName,
+            _that.departmentId,
+            _that.departmentName,
+            _that.classId,
+            _that.className,
+            _that.netAmount,
+            _that.details);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -1899,6 +2563,340 @@ class _$SalesEstimateParamsCopyWithImpl<$Res>
   }
 }
 
+/// Adds pattern-matching-related methods to [SalesEstimateParams].
+extension SalesEstimateParamsPatterns on SalesEstimateParams {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_SalesEstimateParams value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateParams() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_SalesEstimateParams value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateParams():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_SalesEstimateParams value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateParams() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "id") int? id,
+            @JsonKey(name: "party_id") int? partyId,
+            @JsonKey(name: "address") String? address,
+            @JsonKey(name: "title") String? title,
+            @JsonKey(name: "date") DateTime? date,
+            @JsonKey(name: "due_date") dynamic dueDate,
+            @JsonKey(name: "estimate_status") int? estimateStatus,
+            @JsonKey(name: "probablity") dynamic probablity,
+            @JsonKey(name: "sales_rep_id") dynamic salesRepId,
+            @JsonKey(name: "memo") String? memo,
+            @JsonKey(name: "currency_id") int? currencyId,
+            @JsonKey(name: "exchange_rate") int? exchangeRate,
+            @JsonKey(name: "sales_representative") dynamic salesRepresentative,
+            @JsonKey(name: "project_id") dynamic projectId,
+            @JsonKey(name: "partner") dynamic partner,
+            @JsonKey(name: "ref_id") dynamic refId,
+            @JsonKey(name: "department_id") dynamic departmentId,
+            @JsonKey(name: "class_id") dynamic classId,
+            @JsonKey(name: "location_id") dynamic locationId,
+            @JsonKey(name: "message_list") List<dynamic>? messageList,
+            @JsonKey(name: "task_list") List<dynamic>? taskList,
+            @JsonKey(name: "event_list") List<dynamic>? eventList,
+            @JsonKey(name: "phone_call_details")
+            List<dynamic>? phoneCallDetails,
+            @JsonKey(name: "user_note_details") List<dynamic>? userNoteDetails,
+            @JsonKey(name: "relationship_details")
+            List<dynamic>? relationshipDetails,
+            @JsonKey(name: "fileList") List<dynamic>? fileList,
+            @JsonKey(name: "details") List<SalesEstimateDetailParams> details)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateParams() when $default != null:
+        return $default(
+            _that.organisationId,
+            _that.id,
+            _that.partyId,
+            _that.address,
+            _that.title,
+            _that.date,
+            _that.dueDate,
+            _that.estimateStatus,
+            _that.probablity,
+            _that.salesRepId,
+            _that.memo,
+            _that.currencyId,
+            _that.exchangeRate,
+            _that.salesRepresentative,
+            _that.projectId,
+            _that.partner,
+            _that.refId,
+            _that.departmentId,
+            _that.classId,
+            _that.locationId,
+            _that.messageList,
+            _that.taskList,
+            _that.eventList,
+            _that.phoneCallDetails,
+            _that.userNoteDetails,
+            _that.relationshipDetails,
+            _that.fileList,
+            _that.details);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "id") int? id,
+            @JsonKey(name: "party_id") int? partyId,
+            @JsonKey(name: "address") String? address,
+            @JsonKey(name: "title") String? title,
+            @JsonKey(name: "date") DateTime? date,
+            @JsonKey(name: "due_date") dynamic dueDate,
+            @JsonKey(name: "estimate_status") int? estimateStatus,
+            @JsonKey(name: "probablity") dynamic probablity,
+            @JsonKey(name: "sales_rep_id") dynamic salesRepId,
+            @JsonKey(name: "memo") String? memo,
+            @JsonKey(name: "currency_id") int? currencyId,
+            @JsonKey(name: "exchange_rate") int? exchangeRate,
+            @JsonKey(name: "sales_representative") dynamic salesRepresentative,
+            @JsonKey(name: "project_id") dynamic projectId,
+            @JsonKey(name: "partner") dynamic partner,
+            @JsonKey(name: "ref_id") dynamic refId,
+            @JsonKey(name: "department_id") dynamic departmentId,
+            @JsonKey(name: "class_id") dynamic classId,
+            @JsonKey(name: "location_id") dynamic locationId,
+            @JsonKey(name: "message_list") List<dynamic>? messageList,
+            @JsonKey(name: "task_list") List<dynamic>? taskList,
+            @JsonKey(name: "event_list") List<dynamic>? eventList,
+            @JsonKey(name: "phone_call_details")
+            List<dynamic>? phoneCallDetails,
+            @JsonKey(name: "user_note_details") List<dynamic>? userNoteDetails,
+            @JsonKey(name: "relationship_details")
+            List<dynamic>? relationshipDetails,
+            @JsonKey(name: "fileList") List<dynamic>? fileList,
+            @JsonKey(name: "details") List<SalesEstimateDetailParams> details)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateParams():
+        return $default(
+            _that.organisationId,
+            _that.id,
+            _that.partyId,
+            _that.address,
+            _that.title,
+            _that.date,
+            _that.dueDate,
+            _that.estimateStatus,
+            _that.probablity,
+            _that.salesRepId,
+            _that.memo,
+            _that.currencyId,
+            _that.exchangeRate,
+            _that.salesRepresentative,
+            _that.projectId,
+            _that.partner,
+            _that.refId,
+            _that.departmentId,
+            _that.classId,
+            _that.locationId,
+            _that.messageList,
+            _that.taskList,
+            _that.eventList,
+            _that.phoneCallDetails,
+            _that.userNoteDetails,
+            _that.relationshipDetails,
+            _that.fileList,
+            _that.details);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "id") int? id,
+            @JsonKey(name: "party_id") int? partyId,
+            @JsonKey(name: "address") String? address,
+            @JsonKey(name: "title") String? title,
+            @JsonKey(name: "date") DateTime? date,
+            @JsonKey(name: "due_date") dynamic dueDate,
+            @JsonKey(name: "estimate_status") int? estimateStatus,
+            @JsonKey(name: "probablity") dynamic probablity,
+            @JsonKey(name: "sales_rep_id") dynamic salesRepId,
+            @JsonKey(name: "memo") String? memo,
+            @JsonKey(name: "currency_id") int? currencyId,
+            @JsonKey(name: "exchange_rate") int? exchangeRate,
+            @JsonKey(name: "sales_representative") dynamic salesRepresentative,
+            @JsonKey(name: "project_id") dynamic projectId,
+            @JsonKey(name: "partner") dynamic partner,
+            @JsonKey(name: "ref_id") dynamic refId,
+            @JsonKey(name: "department_id") dynamic departmentId,
+            @JsonKey(name: "class_id") dynamic classId,
+            @JsonKey(name: "location_id") dynamic locationId,
+            @JsonKey(name: "message_list") List<dynamic>? messageList,
+            @JsonKey(name: "task_list") List<dynamic>? taskList,
+            @JsonKey(name: "event_list") List<dynamic>? eventList,
+            @JsonKey(name: "phone_call_details")
+            List<dynamic>? phoneCallDetails,
+            @JsonKey(name: "user_note_details") List<dynamic>? userNoteDetails,
+            @JsonKey(name: "relationship_details")
+            List<dynamic>? relationshipDetails,
+            @JsonKey(name: "fileList") List<dynamic>? fileList,
+            @JsonKey(name: "details") List<SalesEstimateDetailParams> details)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateParams() when $default != null:
+        return $default(
+            _that.organisationId,
+            _that.id,
+            _that.partyId,
+            _that.address,
+            _that.title,
+            _that.date,
+            _that.dueDate,
+            _that.estimateStatus,
+            _that.probablity,
+            _that.salesRepId,
+            _that.memo,
+            _that.currencyId,
+            _that.exchangeRate,
+            _that.salesRepresentative,
+            _that.projectId,
+            _that.partner,
+            _that.refId,
+            _that.departmentId,
+            _that.classId,
+            _that.locationId,
+            _that.messageList,
+            _that.taskList,
+            _that.eventList,
+            _that.phoneCallDetails,
+            _that.userNoteDetails,
+            _that.relationshipDetails,
+            _that.fileList,
+            _that.details);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 @JsonSerializable()
 class _SalesEstimateParams implements SalesEstimateParams {
@@ -2739,6 +3737,333 @@ class _$SalesEstimateDetailParamsCopyWithImpl<$Res>
           : inventoryDetails // ignore: cast_nullable_to_non_nullable
               as List<dynamic>?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [SalesEstimateDetailParams].
+extension SalesEstimateDetailParamsPatterns on SalesEstimateDetailParams {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_SalesEstimateDetailParams value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateDetailParams() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_SalesEstimateDetailParams value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateDetailParams():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_SalesEstimateDetailParams value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateDetailParams() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "details_id") int? detailsId,
+            @JsonKey(name: "ref_detail_id") int? refDetailId,
+            @JsonKey(name: "item_id") int? itemId,
+            @JsonKey(name: "unit_id") int? unitId,
+            @JsonKey(name: "price_level_id") dynamic priceLevelId,
+            @JsonKey(name: "rate") num? rate,
+            @JsonKey(name: "quantity") int? quantity,
+            @JsonKey(name: "gross_amount") String? grossAmount,
+            @JsonKey(name: "discount_percent") int? discountPercent,
+            @JsonKey(name: "discount") String? discount,
+            @JsonKey(name: "tax_id") int? taxId,
+            @JsonKey(name: "tax_rate") num? taxRate,
+            @JsonKey(name: "tax_amount") String? taxAmount,
+            @JsonKey(name: "tsc_code") dynamic tscCode,
+            @JsonKey(name: "tsc_rate") int? tscRate,
+            @JsonKey(name: "tsc_amount") String? tscAmount,
+            @JsonKey(name: "amount") String? amount,
+            @JsonKey(name: "location_id") dynamic locationId,
+            @JsonKey(name: "description") String? description,
+            @JsonKey(name: "model_id") dynamic modelId,
+            @JsonKey(name: "variant_id") dynamic variantId,
+            @JsonKey(name: "made_year") dynamic madeYear,
+            @JsonKey(name: "engine_no") dynamic engineNo,
+            @JsonKey(name: "vehicle_reg_number") String? vehicleRegNumber,
+            @JsonKey(name: "is_vehicle") bool? isVehicle,
+            @JsonKey(name: "expected_receipt_date")
+            DateTime? expectedReceiptDate,
+            @JsonKey(name: "inventory_details")
+            List<dynamic>? inventoryDetails)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateDetailParams() when $default != null:
+        return $default(
+            _that.detailsId,
+            _that.refDetailId,
+            _that.itemId,
+            _that.unitId,
+            _that.priceLevelId,
+            _that.rate,
+            _that.quantity,
+            _that.grossAmount,
+            _that.discountPercent,
+            _that.discount,
+            _that.taxId,
+            _that.taxRate,
+            _that.taxAmount,
+            _that.tscCode,
+            _that.tscRate,
+            _that.tscAmount,
+            _that.amount,
+            _that.locationId,
+            _that.description,
+            _that.modelId,
+            _that.variantId,
+            _that.madeYear,
+            _that.engineNo,
+            _that.vehicleRegNumber,
+            _that.isVehicle,
+            _that.expectedReceiptDate,
+            _that.inventoryDetails);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "details_id") int? detailsId,
+            @JsonKey(name: "ref_detail_id") int? refDetailId,
+            @JsonKey(name: "item_id") int? itemId,
+            @JsonKey(name: "unit_id") int? unitId,
+            @JsonKey(name: "price_level_id") dynamic priceLevelId,
+            @JsonKey(name: "rate") num? rate,
+            @JsonKey(name: "quantity") int? quantity,
+            @JsonKey(name: "gross_amount") String? grossAmount,
+            @JsonKey(name: "discount_percent") int? discountPercent,
+            @JsonKey(name: "discount") String? discount,
+            @JsonKey(name: "tax_id") int? taxId,
+            @JsonKey(name: "tax_rate") num? taxRate,
+            @JsonKey(name: "tax_amount") String? taxAmount,
+            @JsonKey(name: "tsc_code") dynamic tscCode,
+            @JsonKey(name: "tsc_rate") int? tscRate,
+            @JsonKey(name: "tsc_amount") String? tscAmount,
+            @JsonKey(name: "amount") String? amount,
+            @JsonKey(name: "location_id") dynamic locationId,
+            @JsonKey(name: "description") String? description,
+            @JsonKey(name: "model_id") dynamic modelId,
+            @JsonKey(name: "variant_id") dynamic variantId,
+            @JsonKey(name: "made_year") dynamic madeYear,
+            @JsonKey(name: "engine_no") dynamic engineNo,
+            @JsonKey(name: "vehicle_reg_number") String? vehicleRegNumber,
+            @JsonKey(name: "is_vehicle") bool? isVehicle,
+            @JsonKey(name: "expected_receipt_date")
+            DateTime? expectedReceiptDate,
+            @JsonKey(name: "inventory_details") List<dynamic>? inventoryDetails)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateDetailParams():
+        return $default(
+            _that.detailsId,
+            _that.refDetailId,
+            _that.itemId,
+            _that.unitId,
+            _that.priceLevelId,
+            _that.rate,
+            _that.quantity,
+            _that.grossAmount,
+            _that.discountPercent,
+            _that.discount,
+            _that.taxId,
+            _that.taxRate,
+            _that.taxAmount,
+            _that.tscCode,
+            _that.tscRate,
+            _that.tscAmount,
+            _that.amount,
+            _that.locationId,
+            _that.description,
+            _that.modelId,
+            _that.variantId,
+            _that.madeYear,
+            _that.engineNo,
+            _that.vehicleRegNumber,
+            _that.isVehicle,
+            _that.expectedReceiptDate,
+            _that.inventoryDetails);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "details_id") int? detailsId,
+            @JsonKey(name: "ref_detail_id") int? refDetailId,
+            @JsonKey(name: "item_id") int? itemId,
+            @JsonKey(name: "unit_id") int? unitId,
+            @JsonKey(name: "price_level_id") dynamic priceLevelId,
+            @JsonKey(name: "rate") num? rate,
+            @JsonKey(name: "quantity") int? quantity,
+            @JsonKey(name: "gross_amount") String? grossAmount,
+            @JsonKey(name: "discount_percent") int? discountPercent,
+            @JsonKey(name: "discount") String? discount,
+            @JsonKey(name: "tax_id") int? taxId,
+            @JsonKey(name: "tax_rate") num? taxRate,
+            @JsonKey(name: "tax_amount") String? taxAmount,
+            @JsonKey(name: "tsc_code") dynamic tscCode,
+            @JsonKey(name: "tsc_rate") int? tscRate,
+            @JsonKey(name: "tsc_amount") String? tscAmount,
+            @JsonKey(name: "amount") String? amount,
+            @JsonKey(name: "location_id") dynamic locationId,
+            @JsonKey(name: "description") String? description,
+            @JsonKey(name: "model_id") dynamic modelId,
+            @JsonKey(name: "variant_id") dynamic variantId,
+            @JsonKey(name: "made_year") dynamic madeYear,
+            @JsonKey(name: "engine_no") dynamic engineNo,
+            @JsonKey(name: "vehicle_reg_number") String? vehicleRegNumber,
+            @JsonKey(name: "is_vehicle") bool? isVehicle,
+            @JsonKey(name: "expected_receipt_date")
+            DateTime? expectedReceiptDate,
+            @JsonKey(name: "inventory_details")
+            List<dynamic>? inventoryDetails)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SalesEstimateDetailParams() when $default != null:
+        return $default(
+            _that.detailsId,
+            _that.refDetailId,
+            _that.itemId,
+            _that.unitId,
+            _that.priceLevelId,
+            _that.rate,
+            _that.quantity,
+            _that.grossAmount,
+            _that.discountPercent,
+            _that.discount,
+            _that.taxId,
+            _that.taxRate,
+            _that.taxAmount,
+            _that.tscCode,
+            _that.tscRate,
+            _that.tscAmount,
+            _that.amount,
+            _that.locationId,
+            _that.description,
+            _that.modelId,
+            _that.variantId,
+            _that.madeYear,
+            _that.engineNo,
+            _that.vehicleRegNumber,
+            _that.isVehicle,
+            _that.expectedReceiptDate,
+            _that.inventoryDetails);
+      case _:
+        return null;
+    }
   }
 }
 

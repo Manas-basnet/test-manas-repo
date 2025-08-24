@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -891,6 +890,637 @@ class _$LeadEntityCopyWithImpl<$Res> implements $LeadEntityCopyWith<$Res> {
           : holdStatusName // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [LeadEntity].
+extension LeadEntityPatterns on LeadEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_LeadEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _LeadEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_LeadEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _LeadEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_LeadEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _LeadEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "GUID") String? guid,
+            @JsonKey(name: "ID") int? id,
+            @JsonKey(name: "PARTY_ID") int? partyId,
+            @JsonKey(name: "ORGA_NAME") String? orgaName,
+            @JsonKey(name: "TYPE") int? type,
+            @JsonKey(name: "TYPE_NAME") String? typeName,
+            @JsonKey(name: "COMPANY_NAME") String? companyName,
+            @JsonKey(name: "FIRST_NAME") dynamic firstName,
+            @JsonKey(name: "LAST_NAME") dynamic lastName,
+            @JsonKey(name: "INTEGRATION_VALUE") dynamic integrationValue,
+            @JsonKey(name: "NAME") String? name,
+            @JsonKey(name: "STATUS") int? status,
+            @JsonKey(name: "STATUS_NAME") String? statusName,
+            @JsonKey(name: "LEAD_SOURCE") int? leadSource,
+            @JsonKey(name: "LEAD_SOURCE_NAME") String? leadSourceName,
+            @JsonKey(name: "SALES_REP_ID") int? salesRepId,
+            @JsonKey(name: "SALES_REP_NAME") String? salesRepName,
+            @JsonKey(name: "TERRITORY_ID") dynamic territoryId,
+            @JsonKey(name: "TERRITORY_NAME") dynamic territoryName,
+            @JsonKey(name: "EMPLOYEE_ID") dynamic employeeId,
+            @JsonKey(name: "EMPLOYEE_NAME") dynamic employeeName,
+            @JsonKey(name: "QUALIFIED_ON") DateTime? qualifiedOn,
+            @JsonKey(name: "ANNUAL_REVENUE") dynamic annualRevenue,
+            @JsonKey(name: "NO_OF_EMPLOYEE") dynamic noOfEmployee,
+            @JsonKey(name: "INDUSTRY") dynamic industry,
+            @JsonKey(name: "LATITUDE") dynamic latitude,
+            @JsonKey(name: "LONGITUDE") dynamic longitude,
+            @JsonKey(name: "LEDGER_NAME") dynamic ledgerName,
+            @JsonKey(name: "VISIT_NUMBER") dynamic visitNumber,
+            @JsonKey(name: "PERSON_TITLE") dynamic personTitle,
+            @JsonKey(name: "ORDER_PRIORITY") dynamic orderPriority,
+            @JsonKey(name: "PROPRIETOR_NAME") dynamic proprietorName,
+            @JsonKey(name: "EMAIL") String? email,
+            @JsonKey(name: "PHONE") String? phone,
+            @JsonKey(name: "ALT_PHONE") String? altPhone,
+            @JsonKey(name: "FAX") String? fax,
+            @JsonKey(name: "ADDRESS") dynamic address,
+            @JsonKey(name: "SHIPPING_ADDRESS") dynamic shippingAddress,
+            @JsonKey(name: "ADDRESS2") String? address2,
+            @JsonKey(name: "SEGMENT_ID") dynamic segmentId,
+            @JsonKey(name: "CUSTOMER_CATEGORY_ID") dynamic customerCategoryId,
+            @JsonKey(name: "CUSTOMER_CATEGORY_NAME")
+            dynamic customerCategoryName,
+            @JsonKey(name: "BUYING_INTENSION_ID") dynamic buyingIntensionId,
+            @JsonKey(name: "VEHICLE_ID") dynamic vehicleId,
+            @JsonKey(name: "PAN_NO") dynamic panNo,
+            @JsonKey(name: "IS_INDIVIDUAL") bool? isIndividual,
+            @JsonKey(name: "IS_VISIT") bool? isVisit,
+            @JsonKey(name: "VISIT_DATE") DateTime? visitDate,
+            @JsonKey(name: "IS_POTTENTIAL") bool? isPottential,
+            @JsonKey(name: "POTTENTIAL_DATE") dynamic pottentialDate,
+            @JsonKey(name: "IS_BILLED") bool? isBilled,
+            @JsonKey(name: "IS_BILLED_SYNC") bool? isBilledSync,
+            @JsonKey(name: "BILLED_DATE") DateTime? billedDate,
+            @JsonKey(name: "REASON_FOR_CLOSE_LOST") dynamic reasonForCloseLost,
+            @JsonKey(name: "SUBSIDIARY_ID") dynamic subsidiaryId,
+            @JsonKey(name: "SUBSIDIARY_NAME") dynamic subsidiaryName,
+            @JsonKey(name: "MEMO") dynamic memo,
+            @JsonKey(name: "IS_UPDATED") bool? isUpdated,
+            @JsonKey(name: "IS_BANNED") bool? isBanned,
+            @JsonKey(name: "IS_INACTIVE") bool? isInactive,
+            @JsonKey(name: "PROSPECT_STATUS") dynamic prospectStatus,
+            @JsonKey(name: "PROSPECT_STATUS_NAME") String? prospectStatusName,
+            @JsonKey(name: "PROSPECT_SOURCE") dynamic prospectSource,
+            @JsonKey(name: "PROSPECT_SOURCE_NAME") dynamic prospectSourceName,
+            @JsonKey(name: "WEB_ADDRESS") dynamic webAddress,
+            @JsonKey(name: "CLASS_ID") dynamic classId,
+            @JsonKey(name: "class_name") dynamic className,
+            @JsonKey(name: "CURRENCY_ID") dynamic currencyId,
+            @JsonKey(name: "CURRENCY_NAME") dynamic currencyName,
+            @JsonKey(name: "TERM_ID") dynamic termId,
+            @JsonKey(name: "TERM_NAME") dynamic termName,
+            @JsonKey(name: "WH_TAX_ID") dynamic whTaxId,
+            @JsonKey(name: "WH_TAX_CODE") dynamic whTaxCode,
+            @JsonKey(name: "TAX_ID") dynamic taxId,
+            @JsonKey(name: "TAX_CODE") dynamic taxCode,
+            @JsonKey(name: "CREDIT_LIMIT") dynamic creditLimit,
+            @JsonKey(name: "HOLD_STATUS") int? holdStatus,
+            @JsonKey(name: "HOLD_STATUS_NAME") String? holdStatusName)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _LeadEntity() when $default != null:
+        return $default(
+            _that.guid,
+            _that.id,
+            _that.partyId,
+            _that.orgaName,
+            _that.type,
+            _that.typeName,
+            _that.companyName,
+            _that.firstName,
+            _that.lastName,
+            _that.integrationValue,
+            _that.name,
+            _that.status,
+            _that.statusName,
+            _that.leadSource,
+            _that.leadSourceName,
+            _that.salesRepId,
+            _that.salesRepName,
+            _that.territoryId,
+            _that.territoryName,
+            _that.employeeId,
+            _that.employeeName,
+            _that.qualifiedOn,
+            _that.annualRevenue,
+            _that.noOfEmployee,
+            _that.industry,
+            _that.latitude,
+            _that.longitude,
+            _that.ledgerName,
+            _that.visitNumber,
+            _that.personTitle,
+            _that.orderPriority,
+            _that.proprietorName,
+            _that.email,
+            _that.phone,
+            _that.altPhone,
+            _that.fax,
+            _that.address,
+            _that.shippingAddress,
+            _that.address2,
+            _that.segmentId,
+            _that.customerCategoryId,
+            _that.customerCategoryName,
+            _that.buyingIntensionId,
+            _that.vehicleId,
+            _that.panNo,
+            _that.isIndividual,
+            _that.isVisit,
+            _that.visitDate,
+            _that.isPottential,
+            _that.pottentialDate,
+            _that.isBilled,
+            _that.isBilledSync,
+            _that.billedDate,
+            _that.reasonForCloseLost,
+            _that.subsidiaryId,
+            _that.subsidiaryName,
+            _that.memo,
+            _that.isUpdated,
+            _that.isBanned,
+            _that.isInactive,
+            _that.prospectStatus,
+            _that.prospectStatusName,
+            _that.prospectSource,
+            _that.prospectSourceName,
+            _that.webAddress,
+            _that.classId,
+            _that.className,
+            _that.currencyId,
+            _that.currencyName,
+            _that.termId,
+            _that.termName,
+            _that.whTaxId,
+            _that.whTaxCode,
+            _that.taxId,
+            _that.taxCode,
+            _that.creditLimit,
+            _that.holdStatus,
+            _that.holdStatusName);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "GUID") String? guid,
+            @JsonKey(name: "ID") int? id,
+            @JsonKey(name: "PARTY_ID") int? partyId,
+            @JsonKey(name: "ORGA_NAME") String? orgaName,
+            @JsonKey(name: "TYPE") int? type,
+            @JsonKey(name: "TYPE_NAME") String? typeName,
+            @JsonKey(name: "COMPANY_NAME") String? companyName,
+            @JsonKey(name: "FIRST_NAME") dynamic firstName,
+            @JsonKey(name: "LAST_NAME") dynamic lastName,
+            @JsonKey(name: "INTEGRATION_VALUE") dynamic integrationValue,
+            @JsonKey(name: "NAME") String? name,
+            @JsonKey(name: "STATUS") int? status,
+            @JsonKey(name: "STATUS_NAME") String? statusName,
+            @JsonKey(name: "LEAD_SOURCE") int? leadSource,
+            @JsonKey(name: "LEAD_SOURCE_NAME") String? leadSourceName,
+            @JsonKey(name: "SALES_REP_ID") int? salesRepId,
+            @JsonKey(name: "SALES_REP_NAME") String? salesRepName,
+            @JsonKey(name: "TERRITORY_ID") dynamic territoryId,
+            @JsonKey(name: "TERRITORY_NAME") dynamic territoryName,
+            @JsonKey(name: "EMPLOYEE_ID") dynamic employeeId,
+            @JsonKey(name: "EMPLOYEE_NAME") dynamic employeeName,
+            @JsonKey(name: "QUALIFIED_ON") DateTime? qualifiedOn,
+            @JsonKey(name: "ANNUAL_REVENUE") dynamic annualRevenue,
+            @JsonKey(name: "NO_OF_EMPLOYEE") dynamic noOfEmployee,
+            @JsonKey(name: "INDUSTRY") dynamic industry,
+            @JsonKey(name: "LATITUDE") dynamic latitude,
+            @JsonKey(name: "LONGITUDE") dynamic longitude,
+            @JsonKey(name: "LEDGER_NAME") dynamic ledgerName,
+            @JsonKey(name: "VISIT_NUMBER") dynamic visitNumber,
+            @JsonKey(name: "PERSON_TITLE") dynamic personTitle,
+            @JsonKey(name: "ORDER_PRIORITY") dynamic orderPriority,
+            @JsonKey(name: "PROPRIETOR_NAME") dynamic proprietorName,
+            @JsonKey(name: "EMAIL") String? email,
+            @JsonKey(name: "PHONE") String? phone,
+            @JsonKey(name: "ALT_PHONE") String? altPhone,
+            @JsonKey(name: "FAX") String? fax,
+            @JsonKey(name: "ADDRESS") dynamic address,
+            @JsonKey(name: "SHIPPING_ADDRESS") dynamic shippingAddress,
+            @JsonKey(name: "ADDRESS2") String? address2,
+            @JsonKey(name: "SEGMENT_ID") dynamic segmentId,
+            @JsonKey(name: "CUSTOMER_CATEGORY_ID") dynamic customerCategoryId,
+            @JsonKey(name: "CUSTOMER_CATEGORY_NAME")
+            dynamic customerCategoryName,
+            @JsonKey(name: "BUYING_INTENSION_ID") dynamic buyingIntensionId,
+            @JsonKey(name: "VEHICLE_ID") dynamic vehicleId,
+            @JsonKey(name: "PAN_NO") dynamic panNo,
+            @JsonKey(name: "IS_INDIVIDUAL") bool? isIndividual,
+            @JsonKey(name: "IS_VISIT") bool? isVisit,
+            @JsonKey(name: "VISIT_DATE") DateTime? visitDate,
+            @JsonKey(name: "IS_POTTENTIAL") bool? isPottential,
+            @JsonKey(name: "POTTENTIAL_DATE") dynamic pottentialDate,
+            @JsonKey(name: "IS_BILLED") bool? isBilled,
+            @JsonKey(name: "IS_BILLED_SYNC") bool? isBilledSync,
+            @JsonKey(name: "BILLED_DATE") DateTime? billedDate,
+            @JsonKey(name: "REASON_FOR_CLOSE_LOST") dynamic reasonForCloseLost,
+            @JsonKey(name: "SUBSIDIARY_ID") dynamic subsidiaryId,
+            @JsonKey(name: "SUBSIDIARY_NAME") dynamic subsidiaryName,
+            @JsonKey(name: "MEMO") dynamic memo,
+            @JsonKey(name: "IS_UPDATED") bool? isUpdated,
+            @JsonKey(name: "IS_BANNED") bool? isBanned,
+            @JsonKey(name: "IS_INACTIVE") bool? isInactive,
+            @JsonKey(name: "PROSPECT_STATUS") dynamic prospectStatus,
+            @JsonKey(name: "PROSPECT_STATUS_NAME") String? prospectStatusName,
+            @JsonKey(name: "PROSPECT_SOURCE") dynamic prospectSource,
+            @JsonKey(name: "PROSPECT_SOURCE_NAME") dynamic prospectSourceName,
+            @JsonKey(name: "WEB_ADDRESS") dynamic webAddress,
+            @JsonKey(name: "CLASS_ID") dynamic classId,
+            @JsonKey(name: "class_name") dynamic className,
+            @JsonKey(name: "CURRENCY_ID") dynamic currencyId,
+            @JsonKey(name: "CURRENCY_NAME") dynamic currencyName,
+            @JsonKey(name: "TERM_ID") dynamic termId,
+            @JsonKey(name: "TERM_NAME") dynamic termName,
+            @JsonKey(name: "WH_TAX_ID") dynamic whTaxId,
+            @JsonKey(name: "WH_TAX_CODE") dynamic whTaxCode,
+            @JsonKey(name: "TAX_ID") dynamic taxId,
+            @JsonKey(name: "TAX_CODE") dynamic taxCode,
+            @JsonKey(name: "CREDIT_LIMIT") dynamic creditLimit,
+            @JsonKey(name: "HOLD_STATUS") int? holdStatus,
+            @JsonKey(name: "HOLD_STATUS_NAME") String? holdStatusName)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _LeadEntity():
+        return $default(
+            _that.guid,
+            _that.id,
+            _that.partyId,
+            _that.orgaName,
+            _that.type,
+            _that.typeName,
+            _that.companyName,
+            _that.firstName,
+            _that.lastName,
+            _that.integrationValue,
+            _that.name,
+            _that.status,
+            _that.statusName,
+            _that.leadSource,
+            _that.leadSourceName,
+            _that.salesRepId,
+            _that.salesRepName,
+            _that.territoryId,
+            _that.territoryName,
+            _that.employeeId,
+            _that.employeeName,
+            _that.qualifiedOn,
+            _that.annualRevenue,
+            _that.noOfEmployee,
+            _that.industry,
+            _that.latitude,
+            _that.longitude,
+            _that.ledgerName,
+            _that.visitNumber,
+            _that.personTitle,
+            _that.orderPriority,
+            _that.proprietorName,
+            _that.email,
+            _that.phone,
+            _that.altPhone,
+            _that.fax,
+            _that.address,
+            _that.shippingAddress,
+            _that.address2,
+            _that.segmentId,
+            _that.customerCategoryId,
+            _that.customerCategoryName,
+            _that.buyingIntensionId,
+            _that.vehicleId,
+            _that.panNo,
+            _that.isIndividual,
+            _that.isVisit,
+            _that.visitDate,
+            _that.isPottential,
+            _that.pottentialDate,
+            _that.isBilled,
+            _that.isBilledSync,
+            _that.billedDate,
+            _that.reasonForCloseLost,
+            _that.subsidiaryId,
+            _that.subsidiaryName,
+            _that.memo,
+            _that.isUpdated,
+            _that.isBanned,
+            _that.isInactive,
+            _that.prospectStatus,
+            _that.prospectStatusName,
+            _that.prospectSource,
+            _that.prospectSourceName,
+            _that.webAddress,
+            _that.classId,
+            _that.className,
+            _that.currencyId,
+            _that.currencyName,
+            _that.termId,
+            _that.termName,
+            _that.whTaxId,
+            _that.whTaxCode,
+            _that.taxId,
+            _that.taxCode,
+            _that.creditLimit,
+            _that.holdStatus,
+            _that.holdStatusName);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "GUID") String? guid,
+            @JsonKey(name: "ID") int? id,
+            @JsonKey(name: "PARTY_ID") int? partyId,
+            @JsonKey(name: "ORGA_NAME") String? orgaName,
+            @JsonKey(name: "TYPE") int? type,
+            @JsonKey(name: "TYPE_NAME") String? typeName,
+            @JsonKey(name: "COMPANY_NAME") String? companyName,
+            @JsonKey(name: "FIRST_NAME") dynamic firstName,
+            @JsonKey(name: "LAST_NAME") dynamic lastName,
+            @JsonKey(name: "INTEGRATION_VALUE") dynamic integrationValue,
+            @JsonKey(name: "NAME") String? name,
+            @JsonKey(name: "STATUS") int? status,
+            @JsonKey(name: "STATUS_NAME") String? statusName,
+            @JsonKey(name: "LEAD_SOURCE") int? leadSource,
+            @JsonKey(name: "LEAD_SOURCE_NAME") String? leadSourceName,
+            @JsonKey(name: "SALES_REP_ID") int? salesRepId,
+            @JsonKey(name: "SALES_REP_NAME") String? salesRepName,
+            @JsonKey(name: "TERRITORY_ID") dynamic territoryId,
+            @JsonKey(name: "TERRITORY_NAME") dynamic territoryName,
+            @JsonKey(name: "EMPLOYEE_ID") dynamic employeeId,
+            @JsonKey(name: "EMPLOYEE_NAME") dynamic employeeName,
+            @JsonKey(name: "QUALIFIED_ON") DateTime? qualifiedOn,
+            @JsonKey(name: "ANNUAL_REVENUE") dynamic annualRevenue,
+            @JsonKey(name: "NO_OF_EMPLOYEE") dynamic noOfEmployee,
+            @JsonKey(name: "INDUSTRY") dynamic industry,
+            @JsonKey(name: "LATITUDE") dynamic latitude,
+            @JsonKey(name: "LONGITUDE") dynamic longitude,
+            @JsonKey(name: "LEDGER_NAME") dynamic ledgerName,
+            @JsonKey(name: "VISIT_NUMBER") dynamic visitNumber,
+            @JsonKey(name: "PERSON_TITLE") dynamic personTitle,
+            @JsonKey(name: "ORDER_PRIORITY") dynamic orderPriority,
+            @JsonKey(name: "PROPRIETOR_NAME") dynamic proprietorName,
+            @JsonKey(name: "EMAIL") String? email,
+            @JsonKey(name: "PHONE") String? phone,
+            @JsonKey(name: "ALT_PHONE") String? altPhone,
+            @JsonKey(name: "FAX") String? fax,
+            @JsonKey(name: "ADDRESS") dynamic address,
+            @JsonKey(name: "SHIPPING_ADDRESS") dynamic shippingAddress,
+            @JsonKey(name: "ADDRESS2") String? address2,
+            @JsonKey(name: "SEGMENT_ID") dynamic segmentId,
+            @JsonKey(name: "CUSTOMER_CATEGORY_ID") dynamic customerCategoryId,
+            @JsonKey(name: "CUSTOMER_CATEGORY_NAME")
+            dynamic customerCategoryName,
+            @JsonKey(name: "BUYING_INTENSION_ID") dynamic buyingIntensionId,
+            @JsonKey(name: "VEHICLE_ID") dynamic vehicleId,
+            @JsonKey(name: "PAN_NO") dynamic panNo,
+            @JsonKey(name: "IS_INDIVIDUAL") bool? isIndividual,
+            @JsonKey(name: "IS_VISIT") bool? isVisit,
+            @JsonKey(name: "VISIT_DATE") DateTime? visitDate,
+            @JsonKey(name: "IS_POTTENTIAL") bool? isPottential,
+            @JsonKey(name: "POTTENTIAL_DATE") dynamic pottentialDate,
+            @JsonKey(name: "IS_BILLED") bool? isBilled,
+            @JsonKey(name: "IS_BILLED_SYNC") bool? isBilledSync,
+            @JsonKey(name: "BILLED_DATE") DateTime? billedDate,
+            @JsonKey(name: "REASON_FOR_CLOSE_LOST") dynamic reasonForCloseLost,
+            @JsonKey(name: "SUBSIDIARY_ID") dynamic subsidiaryId,
+            @JsonKey(name: "SUBSIDIARY_NAME") dynamic subsidiaryName,
+            @JsonKey(name: "MEMO") dynamic memo,
+            @JsonKey(name: "IS_UPDATED") bool? isUpdated,
+            @JsonKey(name: "IS_BANNED") bool? isBanned,
+            @JsonKey(name: "IS_INACTIVE") bool? isInactive,
+            @JsonKey(name: "PROSPECT_STATUS") dynamic prospectStatus,
+            @JsonKey(name: "PROSPECT_STATUS_NAME") String? prospectStatusName,
+            @JsonKey(name: "PROSPECT_SOURCE") dynamic prospectSource,
+            @JsonKey(name: "PROSPECT_SOURCE_NAME") dynamic prospectSourceName,
+            @JsonKey(name: "WEB_ADDRESS") dynamic webAddress,
+            @JsonKey(name: "CLASS_ID") dynamic classId,
+            @JsonKey(name: "class_name") dynamic className,
+            @JsonKey(name: "CURRENCY_ID") dynamic currencyId,
+            @JsonKey(name: "CURRENCY_NAME") dynamic currencyName,
+            @JsonKey(name: "TERM_ID") dynamic termId,
+            @JsonKey(name: "TERM_NAME") dynamic termName,
+            @JsonKey(name: "WH_TAX_ID") dynamic whTaxId,
+            @JsonKey(name: "WH_TAX_CODE") dynamic whTaxCode,
+            @JsonKey(name: "TAX_ID") dynamic taxId,
+            @JsonKey(name: "TAX_CODE") dynamic taxCode,
+            @JsonKey(name: "CREDIT_LIMIT") dynamic creditLimit,
+            @JsonKey(name: "HOLD_STATUS") int? holdStatus,
+            @JsonKey(name: "HOLD_STATUS_NAME") String? holdStatusName)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _LeadEntity() when $default != null:
+        return $default(
+            _that.guid,
+            _that.id,
+            _that.partyId,
+            _that.orgaName,
+            _that.type,
+            _that.typeName,
+            _that.companyName,
+            _that.firstName,
+            _that.lastName,
+            _that.integrationValue,
+            _that.name,
+            _that.status,
+            _that.statusName,
+            _that.leadSource,
+            _that.leadSourceName,
+            _that.salesRepId,
+            _that.salesRepName,
+            _that.territoryId,
+            _that.territoryName,
+            _that.employeeId,
+            _that.employeeName,
+            _that.qualifiedOn,
+            _that.annualRevenue,
+            _that.noOfEmployee,
+            _that.industry,
+            _that.latitude,
+            _that.longitude,
+            _that.ledgerName,
+            _that.visitNumber,
+            _that.personTitle,
+            _that.orderPriority,
+            _that.proprietorName,
+            _that.email,
+            _that.phone,
+            _that.altPhone,
+            _that.fax,
+            _that.address,
+            _that.shippingAddress,
+            _that.address2,
+            _that.segmentId,
+            _that.customerCategoryId,
+            _that.customerCategoryName,
+            _that.buyingIntensionId,
+            _that.vehicleId,
+            _that.panNo,
+            _that.isIndividual,
+            _that.isVisit,
+            _that.visitDate,
+            _that.isPottential,
+            _that.pottentialDate,
+            _that.isBilled,
+            _that.isBilledSync,
+            _that.billedDate,
+            _that.reasonForCloseLost,
+            _that.subsidiaryId,
+            _that.subsidiaryName,
+            _that.memo,
+            _that.isUpdated,
+            _that.isBanned,
+            _that.isInactive,
+            _that.prospectStatus,
+            _that.prospectStatusName,
+            _that.prospectSource,
+            _that.prospectSourceName,
+            _that.webAddress,
+            _that.classId,
+            _that.className,
+            _that.currencyId,
+            _that.currencyName,
+            _that.termId,
+            _that.termName,
+            _that.whTaxId,
+            _that.whTaxCode,
+            _that.taxId,
+            _that.taxCode,
+            _that.creditLimit,
+            _that.holdStatus,
+            _that.holdStatusName);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -2404,6 +3034,400 @@ class _$LeadParamCopyWithImpl<$Res> implements $LeadParamCopyWith<$Res> {
           : fileList // ignore: cast_nullable_to_non_nullable
               as List<dynamic>?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [LeadParam].
+extension LeadParamPatterns on LeadParam {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_LeadParam value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _LeadParam() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_LeadParam value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _LeadParam():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_LeadParam value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _LeadParam() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "visit_id") int visitId,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "lead_status") int? leadStatus,
+            @JsonKey(name: "type") int? type,
+            @JsonKey(name: "is_individual") bool? isIndividual,
+            @JsonKey(name: "company_name") String? companyName,
+            @JsonKey(name: "lead_source") int? leadSource,
+            @JsonKey(name: "is_visit_no_auto") bool? isVisitNoAuto,
+            @JsonKey(name: "first_name") String? firstName,
+            @JsonKey(name: "last_name") String? lastName,
+            @JsonKey(name: "person_title") String? personTitle,
+            @JsonKey(name: "email") String? email,
+            @JsonKey(name: "phone") String? phone,
+            @JsonKey(name: "alt_phone") String? altPhone,
+            @JsonKey(name: "fax") String? fax,
+            @JsonKey(name: "address2") String? address2,
+            @JsonKey(name: "is_banned") bool? isBanned,
+            @JsonKey(name: "is_inactive") bool? isInactive,
+            @JsonKey(name: "customer_category_id") dynamic customerCategoryId,
+            @JsonKey(name: "is_visit") bool? isVisit,
+            @JsonKey(name: "ledger_id") dynamic ledgerId,
+            @JsonKey(name: "sales_rep_id") int? salesRepId,
+            @JsonKey(name: "territory_id") dynamic territoryId,
+            @JsonKey(name: "employee_id") dynamic employeeId,
+            @JsonKey(name: "qualified_on") dynamic qualifiedOn,
+            @JsonKey(name: "annual_revenue") dynamic annualRevenue,
+            @JsonKey(name: "no_of_employee") dynamic noOfEmployee,
+            @JsonKey(name: "industry") dynamic industry,
+            @JsonKey(name: "address") dynamic address,
+            @JsonKey(name: "shipping_address") dynamic shippingAddress,
+            @JsonKey(name: "web_address") dynamic webAddress,
+            @JsonKey(name: "message_list") List<dynamic>? messageList,
+            @JsonKey(name: "task_list") List<dynamic>? taskList,
+            @JsonKey(name: "event_list") List<dynamic>? eventList,
+            @JsonKey(name: "phone_call_details")
+            List<dynamic>? phoneCallDetails,
+            @JsonKey(name: "user_note_details") List<dynamic>? userNoteDetails,
+            @JsonKey(name: "relationship_details")
+            List<dynamic>? relationshipDetails,
+            @JsonKey(name: "fileList") List<dynamic>? fileList)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _LeadParam() when $default != null:
+        return $default(
+            _that.visitId,
+            _that.organisationId,
+            _that.leadStatus,
+            _that.type,
+            _that.isIndividual,
+            _that.companyName,
+            _that.leadSource,
+            _that.isVisitNoAuto,
+            _that.firstName,
+            _that.lastName,
+            _that.personTitle,
+            _that.email,
+            _that.phone,
+            _that.altPhone,
+            _that.fax,
+            _that.address2,
+            _that.isBanned,
+            _that.isInactive,
+            _that.customerCategoryId,
+            _that.isVisit,
+            _that.ledgerId,
+            _that.salesRepId,
+            _that.territoryId,
+            _that.employeeId,
+            _that.qualifiedOn,
+            _that.annualRevenue,
+            _that.noOfEmployee,
+            _that.industry,
+            _that.address,
+            _that.shippingAddress,
+            _that.webAddress,
+            _that.messageList,
+            _that.taskList,
+            _that.eventList,
+            _that.phoneCallDetails,
+            _that.userNoteDetails,
+            _that.relationshipDetails,
+            _that.fileList);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "visit_id") int visitId,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "lead_status") int? leadStatus,
+            @JsonKey(name: "type") int? type,
+            @JsonKey(name: "is_individual") bool? isIndividual,
+            @JsonKey(name: "company_name") String? companyName,
+            @JsonKey(name: "lead_source") int? leadSource,
+            @JsonKey(name: "is_visit_no_auto") bool? isVisitNoAuto,
+            @JsonKey(name: "first_name") String? firstName,
+            @JsonKey(name: "last_name") String? lastName,
+            @JsonKey(name: "person_title") String? personTitle,
+            @JsonKey(name: "email") String? email,
+            @JsonKey(name: "phone") String? phone,
+            @JsonKey(name: "alt_phone") String? altPhone,
+            @JsonKey(name: "fax") String? fax,
+            @JsonKey(name: "address2") String? address2,
+            @JsonKey(name: "is_banned") bool? isBanned,
+            @JsonKey(name: "is_inactive") bool? isInactive,
+            @JsonKey(name: "customer_category_id") dynamic customerCategoryId,
+            @JsonKey(name: "is_visit") bool? isVisit,
+            @JsonKey(name: "ledger_id") dynamic ledgerId,
+            @JsonKey(name: "sales_rep_id") int? salesRepId,
+            @JsonKey(name: "territory_id") dynamic territoryId,
+            @JsonKey(name: "employee_id") dynamic employeeId,
+            @JsonKey(name: "qualified_on") dynamic qualifiedOn,
+            @JsonKey(name: "annual_revenue") dynamic annualRevenue,
+            @JsonKey(name: "no_of_employee") dynamic noOfEmployee,
+            @JsonKey(name: "industry") dynamic industry,
+            @JsonKey(name: "address") dynamic address,
+            @JsonKey(name: "shipping_address") dynamic shippingAddress,
+            @JsonKey(name: "web_address") dynamic webAddress,
+            @JsonKey(name: "message_list") List<dynamic>? messageList,
+            @JsonKey(name: "task_list") List<dynamic>? taskList,
+            @JsonKey(name: "event_list") List<dynamic>? eventList,
+            @JsonKey(name: "phone_call_details")
+            List<dynamic>? phoneCallDetails,
+            @JsonKey(name: "user_note_details") List<dynamic>? userNoteDetails,
+            @JsonKey(name: "relationship_details")
+            List<dynamic>? relationshipDetails,
+            @JsonKey(name: "fileList") List<dynamic>? fileList)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _LeadParam():
+        return $default(
+            _that.visitId,
+            _that.organisationId,
+            _that.leadStatus,
+            _that.type,
+            _that.isIndividual,
+            _that.companyName,
+            _that.leadSource,
+            _that.isVisitNoAuto,
+            _that.firstName,
+            _that.lastName,
+            _that.personTitle,
+            _that.email,
+            _that.phone,
+            _that.altPhone,
+            _that.fax,
+            _that.address2,
+            _that.isBanned,
+            _that.isInactive,
+            _that.customerCategoryId,
+            _that.isVisit,
+            _that.ledgerId,
+            _that.salesRepId,
+            _that.territoryId,
+            _that.employeeId,
+            _that.qualifiedOn,
+            _that.annualRevenue,
+            _that.noOfEmployee,
+            _that.industry,
+            _that.address,
+            _that.shippingAddress,
+            _that.webAddress,
+            _that.messageList,
+            _that.taskList,
+            _that.eventList,
+            _that.phoneCallDetails,
+            _that.userNoteDetails,
+            _that.relationshipDetails,
+            _that.fileList);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "visit_id") int visitId,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "lead_status") int? leadStatus,
+            @JsonKey(name: "type") int? type,
+            @JsonKey(name: "is_individual") bool? isIndividual,
+            @JsonKey(name: "company_name") String? companyName,
+            @JsonKey(name: "lead_source") int? leadSource,
+            @JsonKey(name: "is_visit_no_auto") bool? isVisitNoAuto,
+            @JsonKey(name: "first_name") String? firstName,
+            @JsonKey(name: "last_name") String? lastName,
+            @JsonKey(name: "person_title") String? personTitle,
+            @JsonKey(name: "email") String? email,
+            @JsonKey(name: "phone") String? phone,
+            @JsonKey(name: "alt_phone") String? altPhone,
+            @JsonKey(name: "fax") String? fax,
+            @JsonKey(name: "address2") String? address2,
+            @JsonKey(name: "is_banned") bool? isBanned,
+            @JsonKey(name: "is_inactive") bool? isInactive,
+            @JsonKey(name: "customer_category_id") dynamic customerCategoryId,
+            @JsonKey(name: "is_visit") bool? isVisit,
+            @JsonKey(name: "ledger_id") dynamic ledgerId,
+            @JsonKey(name: "sales_rep_id") int? salesRepId,
+            @JsonKey(name: "territory_id") dynamic territoryId,
+            @JsonKey(name: "employee_id") dynamic employeeId,
+            @JsonKey(name: "qualified_on") dynamic qualifiedOn,
+            @JsonKey(name: "annual_revenue") dynamic annualRevenue,
+            @JsonKey(name: "no_of_employee") dynamic noOfEmployee,
+            @JsonKey(name: "industry") dynamic industry,
+            @JsonKey(name: "address") dynamic address,
+            @JsonKey(name: "shipping_address") dynamic shippingAddress,
+            @JsonKey(name: "web_address") dynamic webAddress,
+            @JsonKey(name: "message_list") List<dynamic>? messageList,
+            @JsonKey(name: "task_list") List<dynamic>? taskList,
+            @JsonKey(name: "event_list") List<dynamic>? eventList,
+            @JsonKey(name: "phone_call_details")
+            List<dynamic>? phoneCallDetails,
+            @JsonKey(name: "user_note_details") List<dynamic>? userNoteDetails,
+            @JsonKey(name: "relationship_details")
+            List<dynamic>? relationshipDetails,
+            @JsonKey(name: "fileList") List<dynamic>? fileList)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _LeadParam() when $default != null:
+        return $default(
+            _that.visitId,
+            _that.organisationId,
+            _that.leadStatus,
+            _that.type,
+            _that.isIndividual,
+            _that.companyName,
+            _that.leadSource,
+            _that.isVisitNoAuto,
+            _that.firstName,
+            _that.lastName,
+            _that.personTitle,
+            _that.email,
+            _that.phone,
+            _that.altPhone,
+            _that.fax,
+            _that.address2,
+            _that.isBanned,
+            _that.isInactive,
+            _that.customerCategoryId,
+            _that.isVisit,
+            _that.ledgerId,
+            _that.salesRepId,
+            _that.territoryId,
+            _that.employeeId,
+            _that.qualifiedOn,
+            _that.annualRevenue,
+            _that.noOfEmployee,
+            _that.industry,
+            _that.address,
+            _that.shippingAddress,
+            _that.webAddress,
+            _that.messageList,
+            _that.taskList,
+            _that.eventList,
+            _that.phoneCallDetails,
+            _that.userNoteDetails,
+            _that.relationshipDetails,
+            _that.fileList);
+      case _:
+        return null;
+    }
   }
 }
 

@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -175,6 +174,226 @@ class _$FileEntityCopyWithImpl<$Res> implements $FileEntityCopyWith<$Res> {
           : path // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [FileEntity].
+extension FileEntityPatterns on FileEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FileEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _FileEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FileEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FileEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "Id") int? id,
+            @JsonKey(name: "FileId") int? fileId,
+            @JsonKey(name: "OrganisationId") dynamic organisationId,
+            @JsonKey(name: "EntityType") int? entityType,
+            @JsonKey(name: "EntityRefId") int? entityRefId,
+            @JsonKey(name: "FileName") String? fileName,
+            @JsonKey(name: "FolderName") String? folderName,
+            @JsonKey(name: "FileSize") double? fileSize,
+            @JsonKey(name: "Folder_id") int? folderId,
+            @JsonKey(name: "Path") String? path)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _FileEntity() when $default != null:
+        return $default(
+            _that.id,
+            _that.fileId,
+            _that.organisationId,
+            _that.entityType,
+            _that.entityRefId,
+            _that.fileName,
+            _that.folderName,
+            _that.fileSize,
+            _that.folderId,
+            _that.path);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "Id") int? id,
+            @JsonKey(name: "FileId") int? fileId,
+            @JsonKey(name: "OrganisationId") dynamic organisationId,
+            @JsonKey(name: "EntityType") int? entityType,
+            @JsonKey(name: "EntityRefId") int? entityRefId,
+            @JsonKey(name: "FileName") String? fileName,
+            @JsonKey(name: "FolderName") String? folderName,
+            @JsonKey(name: "FileSize") double? fileSize,
+            @JsonKey(name: "Folder_id") int? folderId,
+            @JsonKey(name: "Path") String? path)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileEntity():
+        return $default(
+            _that.id,
+            _that.fileId,
+            _that.organisationId,
+            _that.entityType,
+            _that.entityRefId,
+            _that.fileName,
+            _that.folderName,
+            _that.fileSize,
+            _that.folderId,
+            _that.path);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "Id") int? id,
+            @JsonKey(name: "FileId") int? fileId,
+            @JsonKey(name: "OrganisationId") dynamic organisationId,
+            @JsonKey(name: "EntityType") int? entityType,
+            @JsonKey(name: "EntityRefId") int? entityRefId,
+            @JsonKey(name: "FileName") String? fileName,
+            @JsonKey(name: "FolderName") String? folderName,
+            @JsonKey(name: "FileSize") double? fileSize,
+            @JsonKey(name: "Folder_id") int? folderId,
+            @JsonKey(name: "Path") String? path)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileEntity() when $default != null:
+        return $default(
+            _that.id,
+            _that.fileId,
+            _that.organisationId,
+            _that.entityType,
+            _that.entityRefId,
+            _that.fileName,
+            _that.folderName,
+            _that.fileSize,
+            _that.folderId,
+            _that.path);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -478,6 +697,181 @@ class _$FileFormDataParamsCopyWithImpl<$Res>
   }
 }
 
+/// Adds pattern-matching-related methods to [FileFormDataParams].
+extension FileFormDataParamsPatterns on FileFormDataParams {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FileFormDataParams value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _FileFormDataParams() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FileFormDataParams value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileFormDataParams():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FileFormDataParams value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileFormDataParams() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "filePath") List<String> filePath,
+            @JsonKey(name: "parent_folder") int folderId,
+            @JsonKey(name: "makeFolder") bool makeFolder,
+            @JsonKey(name: "folder_name") String? folderName)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _FileFormDataParams() when $default != null:
+        return $default(
+            _that.filePath, _that.folderId, _that.makeFolder, _that.folderName);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "filePath") List<String> filePath,
+            @JsonKey(name: "parent_folder") int folderId,
+            @JsonKey(name: "makeFolder") bool makeFolder,
+            @JsonKey(name: "folder_name") String? folderName)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileFormDataParams():
+        return $default(
+            _that.filePath, _that.folderId, _that.makeFolder, _that.folderName);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "filePath") List<String> filePath,
+            @JsonKey(name: "parent_folder") int folderId,
+            @JsonKey(name: "makeFolder") bool makeFolder,
+            @JsonKey(name: "folder_name") String? folderName)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileFormDataParams() when $default != null:
+        return $default(
+            _that.filePath, _that.folderId, _that.makeFolder, _that.folderName);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 @JsonSerializable()
 class _FileFormDataParams implements FileFormDataParams {
@@ -728,6 +1122,190 @@ class _$FileParamsCopyWithImpl<$Res> implements $FileParamsCopyWith<$Res> {
           : path // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [FileParams].
+extension FileParamsPatterns on FileParams {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FileParams value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _FileParams() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FileParams value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileParams():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FileParams value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileParams() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "id") int id,
+            @JsonKey(name: "FileId") int? fileId,
+            @JsonKey(name: "folder_id") int? folderId,
+            @JsonKey(name: "file_size") double? fileSize,
+            @JsonKey(name: "folder_name") String? folderName,
+            @JsonKey(name: "file_name") String? fileName,
+            String? path)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _FileParams() when $default != null:
+        return $default(_that.id, _that.fileId, _that.folderId, _that.fileSize,
+            _that.folderName, _that.fileName, _that.path);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "id") int id,
+            @JsonKey(name: "FileId") int? fileId,
+            @JsonKey(name: "folder_id") int? folderId,
+            @JsonKey(name: "file_size") double? fileSize,
+            @JsonKey(name: "folder_name") String? folderName,
+            @JsonKey(name: "file_name") String? fileName,
+            String? path)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileParams():
+        return $default(_that.id, _that.fileId, _that.folderId, _that.fileSize,
+            _that.folderName, _that.fileName, _that.path);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "id") int id,
+            @JsonKey(name: "FileId") int? fileId,
+            @JsonKey(name: "folder_id") int? folderId,
+            @JsonKey(name: "file_size") double? fileSize,
+            @JsonKey(name: "folder_name") String? folderName,
+            @JsonKey(name: "file_name") String? fileName,
+            String? path)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileParams() when $default != null:
+        return $default(_that.id, _that.fileId, _that.folderId, _that.fileSize,
+            _that.folderName, _that.fileName, _that.path);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -1007,6 +1585,208 @@ class _$FileResEntityCopyWithImpl<$Res>
           : parentFolderId // ignore: cast_nullable_to_non_nullable
               as int?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [FileResEntity].
+extension FileResEntityPatterns on FileResEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FileResEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _FileResEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FileResEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileResEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FileResEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileResEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "fileId") int? fileId,
+            @JsonKey(name: "folderId") int? folderId,
+            @JsonKey(name: "folderName") String? folderName,
+            @JsonKey(name: "folderHararPath") String? folderHararPath,
+            @JsonKey(name: "fileSize") double? fileSize,
+            @JsonKey(name: "fileName") String? fileName,
+            @JsonKey(name: "parentFolderId") int? parentFolderId)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _FileResEntity() when $default != null:
+        return $default(
+            _that.fileId,
+            _that.folderId,
+            _that.folderName,
+            _that.folderHararPath,
+            _that.fileSize,
+            _that.fileName,
+            _that.parentFolderId);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "fileId") int? fileId,
+            @JsonKey(name: "folderId") int? folderId,
+            @JsonKey(name: "folderName") String? folderName,
+            @JsonKey(name: "folderHararPath") String? folderHararPath,
+            @JsonKey(name: "fileSize") double? fileSize,
+            @JsonKey(name: "fileName") String? fileName,
+            @JsonKey(name: "parentFolderId") int? parentFolderId)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileResEntity():
+        return $default(
+            _that.fileId,
+            _that.folderId,
+            _that.folderName,
+            _that.folderHararPath,
+            _that.fileSize,
+            _that.fileName,
+            _that.parentFolderId);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "fileId") int? fileId,
+            @JsonKey(name: "folderId") int? folderId,
+            @JsonKey(name: "folderName") String? folderName,
+            @JsonKey(name: "folderHararPath") String? folderHararPath,
+            @JsonKey(name: "fileSize") double? fileSize,
+            @JsonKey(name: "fileName") String? fileName,
+            @JsonKey(name: "parentFolderId") int? parentFolderId)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FileResEntity() when $default != null:
+        return $default(
+            _that.fileId,
+            _that.folderId,
+            _that.folderName,
+            _that.folderHararPath,
+            _that.fileSize,
+            _that.fileName,
+            _that.parentFolderId);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -1307,6 +2087,193 @@ class _$FolderEntityCopyWithImpl<$Res> implements $FolderEntityCopyWith<$Res> {
   }
 }
 
+/// Adds pattern-matching-related methods to [FolderEntity].
+extension FolderEntityPatterns on FolderEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FolderEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _FolderEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FolderEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FolderEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FolderEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FolderEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "Id") int? id,
+            @JsonKey(name: "PerformedBy") String? performedBy,
+            @JsonKey(name: "Name") String? name,
+            @JsonKey(name: "Path") String? path,
+            @JsonKey(name: "ParentId") int? parentId,
+            @JsonKey(name: "FileSize") double? fileSize,
+            @JsonKey(name: "type") dynamic type,
+            @JsonKey(name: "EntityType") int? entityType)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _FolderEntity() when $default != null:
+        return $default(_that.id, _that.performedBy, _that.name, _that.path,
+            _that.parentId, _that.fileSize, _that.type, _that.entityType);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "Id") int? id,
+            @JsonKey(name: "PerformedBy") String? performedBy,
+            @JsonKey(name: "Name") String? name,
+            @JsonKey(name: "Path") String? path,
+            @JsonKey(name: "ParentId") int? parentId,
+            @JsonKey(name: "FileSize") double? fileSize,
+            @JsonKey(name: "type") dynamic type,
+            @JsonKey(name: "EntityType") int? entityType)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FolderEntity():
+        return $default(_that.id, _that.performedBy, _that.name, _that.path,
+            _that.parentId, _that.fileSize, _that.type, _that.entityType);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "Id") int? id,
+            @JsonKey(name: "PerformedBy") String? performedBy,
+            @JsonKey(name: "Name") String? name,
+            @JsonKey(name: "Path") String? path,
+            @JsonKey(name: "ParentId") int? parentId,
+            @JsonKey(name: "FileSize") double? fileSize,
+            @JsonKey(name: "type") dynamic type,
+            @JsonKey(name: "EntityType") int? entityType)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _FolderEntity() when $default != null:
+        return $default(_that.id, _that.performedBy, _that.name, _that.path,
+            _that.parentId, _that.fileSize, _that.type, _that.entityType);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 @JsonSerializable()
 class _FolderEntity implements FolderEntity {
@@ -1601,6 +2568,190 @@ class _$PartyFileParamCopyWithImpl<$Res>
           : createdBy // ignore: cast_nullable_to_non_nullable
               as int?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [PartyFileParam].
+extension PartyFileParamPatterns on PartyFileParam {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_PartyFileParam value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _PartyFileParam() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_PartyFileParam value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PartyFileParam():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_PartyFileParam value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PartyFileParam() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "id") int? id,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "party_id") int? partyId,
+            @JsonKey(name: "file_id") int? fileId,
+            @JsonKey(name: "file_name") String? fileName,
+            @JsonKey(name: "files") List<String>? files,
+            @JsonKey(name: "created_by") int? createdBy)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _PartyFileParam() when $default != null:
+        return $default(_that.id, _that.organisationId, _that.partyId,
+            _that.fileId, _that.fileName, _that.files, _that.createdBy);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "id") int? id,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "party_id") int? partyId,
+            @JsonKey(name: "file_id") int? fileId,
+            @JsonKey(name: "file_name") String? fileName,
+            @JsonKey(name: "files") List<String>? files,
+            @JsonKey(name: "created_by") int? createdBy)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PartyFileParam():
+        return $default(_that.id, _that.organisationId, _that.partyId,
+            _that.fileId, _that.fileName, _that.files, _that.createdBy);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "id") int? id,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "party_id") int? partyId,
+            @JsonKey(name: "file_id") int? fileId,
+            @JsonKey(name: "file_name") String? fileName,
+            @JsonKey(name: "files") List<String>? files,
+            @JsonKey(name: "created_by") int? createdBy)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PartyFileParam() when $default != null:
+        return $default(_that.id, _that.organisationId, _that.partyId,
+            _that.fileId, _that.fileName, _that.files, _that.createdBy);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -2014,6 +3165,274 @@ class _$PartyFileResponseCopyWithImpl<$Res>
           : netsuiteCancelBy // ignore: cast_nullable_to_non_nullable
               as dynamic,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [PartyFileResponse].
+extension PartyFileResponsePatterns on PartyFileResponse {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_PartyFileResponse value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _PartyFileResponse() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_PartyFileResponse value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PartyFileResponse():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_PartyFileResponse value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PartyFileResponse() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "ORGANISATION_ID") int? organisationId,
+            @JsonKey(name: "PARTY_ID") int? partyId,
+            @JsonKey(name: "FILE_ID") int? fileId,
+            @JsonKey(name: "FILE_NAME") String? fileName,
+            @JsonKey(name: "organisation") dynamic organisation,
+            @JsonKey(name: "MODIFIED_BY") dynamic modifiedBy,
+            @JsonKey(name: "MODIFIED_DATE") dynamic modifiedDate,
+            @JsonKey(name: "IS_DELETED") bool? isDeleted,
+            @JsonKey(name: "TENANT_ID") int? tenantId,
+            @JsonKey(name: "ID") int? id,
+            @JsonKey(name: "GUID") String? guid,
+            @JsonKey(name: "CREATED_BY") int? createdBy,
+            @JsonKey(name: "CREATED_DATE") DateTime? createdDate,
+            @JsonKey(name: "OWNER_BY") dynamic ownerBy,
+            @JsonKey(name: "DOC_NO") dynamic docNo,
+            @JsonKey(name: "INTEGRATION_VALUE") dynamic integrationValue,
+            @JsonKey(name: "IS_SYNCED") bool? isSynced,
+            @JsonKey(name: "NETSUITE_CANCEL_BY") dynamic netsuiteCancelBy)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _PartyFileResponse() when $default != null:
+        return $default(
+            _that.organisationId,
+            _that.partyId,
+            _that.fileId,
+            _that.fileName,
+            _that.organisation,
+            _that.modifiedBy,
+            _that.modifiedDate,
+            _that.isDeleted,
+            _that.tenantId,
+            _that.id,
+            _that.guid,
+            _that.createdBy,
+            _that.createdDate,
+            _that.ownerBy,
+            _that.docNo,
+            _that.integrationValue,
+            _that.isSynced,
+            _that.netsuiteCancelBy);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "ORGANISATION_ID") int? organisationId,
+            @JsonKey(name: "PARTY_ID") int? partyId,
+            @JsonKey(name: "FILE_ID") int? fileId,
+            @JsonKey(name: "FILE_NAME") String? fileName,
+            @JsonKey(name: "organisation") dynamic organisation,
+            @JsonKey(name: "MODIFIED_BY") dynamic modifiedBy,
+            @JsonKey(name: "MODIFIED_DATE") dynamic modifiedDate,
+            @JsonKey(name: "IS_DELETED") bool? isDeleted,
+            @JsonKey(name: "TENANT_ID") int? tenantId,
+            @JsonKey(name: "ID") int? id,
+            @JsonKey(name: "GUID") String? guid,
+            @JsonKey(name: "CREATED_BY") int? createdBy,
+            @JsonKey(name: "CREATED_DATE") DateTime? createdDate,
+            @JsonKey(name: "OWNER_BY") dynamic ownerBy,
+            @JsonKey(name: "DOC_NO") dynamic docNo,
+            @JsonKey(name: "INTEGRATION_VALUE") dynamic integrationValue,
+            @JsonKey(name: "IS_SYNCED") bool? isSynced,
+            @JsonKey(name: "NETSUITE_CANCEL_BY") dynamic netsuiteCancelBy)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PartyFileResponse():
+        return $default(
+            _that.organisationId,
+            _that.partyId,
+            _that.fileId,
+            _that.fileName,
+            _that.organisation,
+            _that.modifiedBy,
+            _that.modifiedDate,
+            _that.isDeleted,
+            _that.tenantId,
+            _that.id,
+            _that.guid,
+            _that.createdBy,
+            _that.createdDate,
+            _that.ownerBy,
+            _that.docNo,
+            _that.integrationValue,
+            _that.isSynced,
+            _that.netsuiteCancelBy);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "ORGANISATION_ID") int? organisationId,
+            @JsonKey(name: "PARTY_ID") int? partyId,
+            @JsonKey(name: "FILE_ID") int? fileId,
+            @JsonKey(name: "FILE_NAME") String? fileName,
+            @JsonKey(name: "organisation") dynamic organisation,
+            @JsonKey(name: "MODIFIED_BY") dynamic modifiedBy,
+            @JsonKey(name: "MODIFIED_DATE") dynamic modifiedDate,
+            @JsonKey(name: "IS_DELETED") bool? isDeleted,
+            @JsonKey(name: "TENANT_ID") int? tenantId,
+            @JsonKey(name: "ID") int? id,
+            @JsonKey(name: "GUID") String? guid,
+            @JsonKey(name: "CREATED_BY") int? createdBy,
+            @JsonKey(name: "CREATED_DATE") DateTime? createdDate,
+            @JsonKey(name: "OWNER_BY") dynamic ownerBy,
+            @JsonKey(name: "DOC_NO") dynamic docNo,
+            @JsonKey(name: "INTEGRATION_VALUE") dynamic integrationValue,
+            @JsonKey(name: "IS_SYNCED") bool? isSynced,
+            @JsonKey(name: "NETSUITE_CANCEL_BY") dynamic netsuiteCancelBy)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PartyFileResponse() when $default != null:
+        return $default(
+            _that.organisationId,
+            _that.partyId,
+            _that.fileId,
+            _that.fileName,
+            _that.organisation,
+            _that.modifiedBy,
+            _that.modifiedDate,
+            _that.isDeleted,
+            _that.tenantId,
+            _that.id,
+            _that.guid,
+            _that.createdBy,
+            _that.createdDate,
+            _that.ownerBy,
+            _that.docNo,
+            _that.integrationValue,
+            _that.isSynced,
+            _that.netsuiteCancelBy);
+      case _:
+        return null;
+    }
   }
 }
 

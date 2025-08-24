@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:sfm/app/app.dart';
+import 'package:sfm/features/shorebird/domain/entities/entities.dart';
+import 'package:sfm/features/shorebird/presentation/notifier/notifier.dart';
+import 'package:sfm/features/shorebird/presentation/widgets/widgets.dart';
 import 'package:utils/utils.dart';
 
 /// A scaffold that shows navigation bar/rail when the current path is a navigation
@@ -23,6 +26,15 @@ class ScaffoldWithNavigation extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    ref.listen<ShorebirdUpdateState>(
+      shorebirdUpdateNotifierProvider,
+      (previous, current) {
+        if (current.status == AppUpdateStatus.available) {
+          showUpdateBottomSheet(context);
+        }
+      },
+    );
+
     void onDestinationSelected(int index) {
       switch (index) {
         case 0:

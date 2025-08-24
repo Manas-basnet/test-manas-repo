@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -1214,6 +1213,859 @@ class _$ItemEntityCopyWithImpl<$Res> implements $ItemEntityCopyWith<$Res> {
     return $UnitEntityCopyWith<$Res>(_self.standardUnit!, (value) {
       return _then(_self.copyWith(standardUnit: value));
     });
+  }
+}
+
+/// Adds pattern-matching-related methods to [ItemEntity].
+extension ItemEntityPatterns on ItemEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_ItemEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _ItemEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_ItemEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ItemEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_ItemEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ItemEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "performed_by") int? performedBy,
+            @JsonKey(name: "item_id") int? itemId,
+            @JsonKey(name: "standard_unit_id") int? standardUnitId,
+            @JsonKey(name: "is_maintain_stock") bool? isMaintainStock,
+            @JsonKey(name: "is_multiple_uom") bool? isMultipleUom,
+            @JsonKey(name: "is_variant") bool? isVariant,
+            @JsonKey(name: "is_fixed_assets") bool? isFixedAssets,
+            @JsonKey(name: "purchase_unit_id") int? purchaseUnitId,
+            @JsonKey(name: "sales_unit_id") int? salesUnitId,
+            @JsonKey(name: "stock_unit_id") int? stockUnitId,
+            @JsonKey(name: "consumption_out_unit_id") int? consumptionOutUnitId,
+            @JsonKey(name: "category_id") int? categoryId,
+            @JsonKey(name: "brand_id") int? brandId,
+            @JsonKey(name: "initial_purchase_rate") double? initialPurchaseRate,
+            @JsonKey(name: "initial_sales_rate") double? initialSalesRate,
+            @JsonKey(name: "item_type") int? itemType,
+            @JsonKey(name: "sub_type") dynamic subType,
+            @JsonKey(name: "is_track_landed_cost") bool? isTrackLandedCost,
+            @JsonKey(name: "item_description") String? itemDescription,
+            @JsonKey(name: "is_inactive") bool? isInactive,
+            @JsonKey(name: "income_account_id") int? incomeAccountId,
+            @JsonKey(name: "expense_account_id") int? expenseAccountId,
+            @JsonKey(name: "asset_account_id") int? assetAccountId,
+            @JsonKey(name: "cogs_account_id") int? cogsAccountId,
+            @JsonKey(name: "gain_loss_account_id") int? gainLossAccountId,
+            @JsonKey(name: "is_non_posting") bool? isNonPosting,
+            @JsonKey(name: "life_in_days") dynamic lifeInDays,
+            @JsonKey(name: "warranty_period") dynamic warrantyPeriod,
+            @JsonKey(name: "end_of_life") dynamic endOfLife,
+            @JsonKey(name: "costing_method") int? costingMethod,
+            @JsonKey(name: "safety_stock_level") dynamic safetyStockLevel,
+            @JsonKey(name: "reorder_minimun_quantity")
+            dynamic reorderMinimunQuantity,
+            @JsonKey(name: "is_serialized") bool? isSerialized,
+            @JsonKey(name: "is_batch_no") bool? isBatchNo,
+            @JsonKey(name: "is_allow_negetive_stock")
+            bool? isAllowNegetiveStock,
+            @JsonKey(name: "minimun_order_quantity")
+            dynamic minimunOrderQuantity,
+            @JsonKey(name: "lead_time_in_days") dynamic leadTimeInDays,
+            @JsonKey(name: "vendor_id") dynamic vendorId,
+            @JsonKey(name: "is_discount_allowed") bool? isDiscountAllowed,
+            @JsonKey(name: "default_discount_amount")
+            double? defaultDiscountAmount,
+            @JsonKey(name: "default_discount_percentage")
+            int? defaultDiscountPercentage,
+            @JsonKey(name: "is_grant_comision") bool? isGrantComision,
+            @JsonKey(name: "has_warranty") bool? hasWarranty,
+            @JsonKey(name: "minimun_sales_quantity")
+            dynamic minimunSalesQuantity,
+            @JsonKey(name: "max_sales_quantity") dynamic maxSalesQuantity,
+            @JsonKey(name: "tax_id") int? taxId,
+            @JsonKey(name: "parent_id") dynamic parentId,
+            @JsonKey(name: "item_code") String? itemCode,
+            @JsonKey(name: "hs_code") String? hsCode,
+            @JsonKey(name: "item_name") String? itemName,
+            @JsonKey(name: "brand_name") dynamic brandName,
+            @JsonKey(name: "short_cut") dynamic shortCut,
+            @JsonKey(name: "quantity") int? quantity,
+            @JsonKey(name: "wh_tax_code") dynamic whTaxCode,
+            @JsonKey(name: "tax_schedule") dynamic taxSchedule,
+            @JsonKey(name: "lot_no") dynamic lotNo,
+            @JsonKey(name: "org_name") String? orgName,
+            @JsonKey(name: "location_id") dynamic locationId,
+            @JsonKey(name: "cost_estimate_type") int? costEstimateType,
+            @JsonKey(name: "subsidiary_id") int? subsidiaryId,
+            @JsonKey(name: "class_id") dynamic classId,
+            @JsonKey(name: "department_id") dynamic departmentId,
+            @JsonKey(name: "data_sheet_id") dynamic dataSheetId,
+            @JsonKey(name: "purchase_description") dynamic purchaseDescription,
+            @JsonKey(name: "transfer_price") dynamic transferPrice,
+            @JsonKey(name: "manufacturer") dynamic manufacturer,
+            @JsonKey(name: "mpn") dynamic mpn,
+            @JsonKey(name: "manufacturer_country") dynamic manufacturerCountry,
+            @JsonKey(name: "po_quantity_tolerance") dynamic poQuantityTolerance,
+            @JsonKey(name: "po_amount_difference") dynamic poAmountDifference,
+            @JsonKey(name: "po_quantity_difference")
+            dynamic poQuantityDifference,
+            @JsonKey(name: "item_receipt_quantity_tolerance")
+            dynamic itemReceiptQuantityTolerance,
+            @JsonKey(name: "item_receipt_amount_tolerance")
+            dynamic itemReceiptAmountTolerance,
+            @JsonKey(name: "item_receipt_quantity_difference")
+            dynamic itemReceiptQuantityDifference,
+            @JsonKey(name: "sales_description") dynamic salesDescription,
+            @JsonKey(name: "maximum_order_quantity")
+            dynamic maximumOrderQuantity,
+            @JsonKey(name: "item_define_cost") dynamic itemDefineCost,
+            @JsonKey(name: "item_weight") dynamic itemWeight,
+            @JsonKey(name: "package_id") dynamic packageId,
+            @JsonKey(name: "handling_cost") dynamic handlingCost,
+            @JsonKey(name: "shipping_cost") dynamic shippingCost,
+            @JsonKey(name: "cost_estimate") dynamic costEstimate,
+            @JsonKey(name: "deffered_account_id") dynamic defferedAccountId,
+            @JsonKey(name: "price_variance_account_id")
+            dynamic priceVarianceAccountId,
+            @JsonKey(name: "quantity_variance_account_id")
+            dynamic quantityVarianceAccountId,
+            @JsonKey(name: "apply_before_salestax") dynamic applyBeforeSalestax,
+            @JsonKey(name: "deffered_expenses_account_id")
+            dynamic defferedExpensesAccountId,
+            @JsonKey(name: "exchange_rate_variance_account_id")
+            dynamic exchangeRateVarianceAccountId,
+            @JsonKey(name: "scrap_account_id") dynamic scrapAccountId,
+            @JsonKey(name: "wip_account_id") dynamic wipAccountId,
+            @JsonKey(name: "rate") double? rate,
+            @JsonKey(name: "IsPercentage") bool? isPercentage,
+            @JsonKey(name: "max_thresshold") int? maxThresshold,
+            @JsonKey(name: "min_thresshold") int? minThresshold,
+            @JsonKey(name: "tax_percentage") int? taxPercentage,
+            @JsonKey(name: "is_taxable") bool? isTaxable,
+            @JsonKey(name: "is_inclusive") bool? isInclusive,
+            @JsonKey(name: "image_path") String? imagePath,
+            @JsonKey(name: "type") dynamic type,
+            @JsonKey(name: "address") String? address,
+            @JsonKey(name: "remarks") String? remarks,
+            @JsonKey(name: "manufacture_date") dynamic manufactureDate,
+            @JsonKey(name: "expiry_date") dynamic expiryDate,
+            @JsonKey(name: "serial_no") dynamic serialNo,
+            @JsonKey(name: "custom_field") dynamic customField,
+            @JsonKey(name: "StandardUnit") UnitEntity? standardUnit,
+            @JsonKey(name: "PurchaseUnit") dynamic purchaseUnit,
+            @JsonKey(name: "SalesUnit") dynamic salesUnit)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _ItemEntity() when $default != null:
+        return $default(
+            _that.performedBy,
+            _that.itemId,
+            _that.standardUnitId,
+            _that.isMaintainStock,
+            _that.isMultipleUom,
+            _that.isVariant,
+            _that.isFixedAssets,
+            _that.purchaseUnitId,
+            _that.salesUnitId,
+            _that.stockUnitId,
+            _that.consumptionOutUnitId,
+            _that.categoryId,
+            _that.brandId,
+            _that.initialPurchaseRate,
+            _that.initialSalesRate,
+            _that.itemType,
+            _that.subType,
+            _that.isTrackLandedCost,
+            _that.itemDescription,
+            _that.isInactive,
+            _that.incomeAccountId,
+            _that.expenseAccountId,
+            _that.assetAccountId,
+            _that.cogsAccountId,
+            _that.gainLossAccountId,
+            _that.isNonPosting,
+            _that.lifeInDays,
+            _that.warrantyPeriod,
+            _that.endOfLife,
+            _that.costingMethod,
+            _that.safetyStockLevel,
+            _that.reorderMinimunQuantity,
+            _that.isSerialized,
+            _that.isBatchNo,
+            _that.isAllowNegetiveStock,
+            _that.minimunOrderQuantity,
+            _that.leadTimeInDays,
+            _that.vendorId,
+            _that.isDiscountAllowed,
+            _that.defaultDiscountAmount,
+            _that.defaultDiscountPercentage,
+            _that.isGrantComision,
+            _that.hasWarranty,
+            _that.minimunSalesQuantity,
+            _that.maxSalesQuantity,
+            _that.taxId,
+            _that.parentId,
+            _that.itemCode,
+            _that.hsCode,
+            _that.itemName,
+            _that.brandName,
+            _that.shortCut,
+            _that.quantity,
+            _that.whTaxCode,
+            _that.taxSchedule,
+            _that.lotNo,
+            _that.orgName,
+            _that.locationId,
+            _that.costEstimateType,
+            _that.subsidiaryId,
+            _that.classId,
+            _that.departmentId,
+            _that.dataSheetId,
+            _that.purchaseDescription,
+            _that.transferPrice,
+            _that.manufacturer,
+            _that.mpn,
+            _that.manufacturerCountry,
+            _that.poQuantityTolerance,
+            _that.poAmountDifference,
+            _that.poQuantityDifference,
+            _that.itemReceiptQuantityTolerance,
+            _that.itemReceiptAmountTolerance,
+            _that.itemReceiptQuantityDifference,
+            _that.salesDescription,
+            _that.maximumOrderQuantity,
+            _that.itemDefineCost,
+            _that.itemWeight,
+            _that.packageId,
+            _that.handlingCost,
+            _that.shippingCost,
+            _that.costEstimate,
+            _that.defferedAccountId,
+            _that.priceVarianceAccountId,
+            _that.quantityVarianceAccountId,
+            _that.applyBeforeSalestax,
+            _that.defferedExpensesAccountId,
+            _that.exchangeRateVarianceAccountId,
+            _that.scrapAccountId,
+            _that.wipAccountId,
+            _that.rate,
+            _that.isPercentage,
+            _that.maxThresshold,
+            _that.minThresshold,
+            _that.taxPercentage,
+            _that.isTaxable,
+            _that.isInclusive,
+            _that.imagePath,
+            _that.type,
+            _that.address,
+            _that.remarks,
+            _that.manufactureDate,
+            _that.expiryDate,
+            _that.serialNo,
+            _that.customField,
+            _that.standardUnit,
+            _that.purchaseUnit,
+            _that.salesUnit);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "performed_by") int? performedBy,
+            @JsonKey(name: "item_id") int? itemId,
+            @JsonKey(name: "standard_unit_id") int? standardUnitId,
+            @JsonKey(name: "is_maintain_stock") bool? isMaintainStock,
+            @JsonKey(name: "is_multiple_uom") bool? isMultipleUom,
+            @JsonKey(name: "is_variant") bool? isVariant,
+            @JsonKey(name: "is_fixed_assets") bool? isFixedAssets,
+            @JsonKey(name: "purchase_unit_id") int? purchaseUnitId,
+            @JsonKey(name: "sales_unit_id") int? salesUnitId,
+            @JsonKey(name: "stock_unit_id") int? stockUnitId,
+            @JsonKey(name: "consumption_out_unit_id") int? consumptionOutUnitId,
+            @JsonKey(name: "category_id") int? categoryId,
+            @JsonKey(name: "brand_id") int? brandId,
+            @JsonKey(name: "initial_purchase_rate") double? initialPurchaseRate,
+            @JsonKey(name: "initial_sales_rate") double? initialSalesRate,
+            @JsonKey(name: "item_type") int? itemType,
+            @JsonKey(name: "sub_type") dynamic subType,
+            @JsonKey(name: "is_track_landed_cost") bool? isTrackLandedCost,
+            @JsonKey(name: "item_description") String? itemDescription,
+            @JsonKey(name: "is_inactive") bool? isInactive,
+            @JsonKey(name: "income_account_id") int? incomeAccountId,
+            @JsonKey(name: "expense_account_id") int? expenseAccountId,
+            @JsonKey(name: "asset_account_id") int? assetAccountId,
+            @JsonKey(name: "cogs_account_id") int? cogsAccountId,
+            @JsonKey(name: "gain_loss_account_id") int? gainLossAccountId,
+            @JsonKey(name: "is_non_posting") bool? isNonPosting,
+            @JsonKey(name: "life_in_days") dynamic lifeInDays,
+            @JsonKey(name: "warranty_period") dynamic warrantyPeriod,
+            @JsonKey(name: "end_of_life") dynamic endOfLife,
+            @JsonKey(name: "costing_method") int? costingMethod,
+            @JsonKey(name: "safety_stock_level") dynamic safetyStockLevel,
+            @JsonKey(name: "reorder_minimun_quantity")
+            dynamic reorderMinimunQuantity,
+            @JsonKey(name: "is_serialized") bool? isSerialized,
+            @JsonKey(name: "is_batch_no") bool? isBatchNo,
+            @JsonKey(name: "is_allow_negetive_stock")
+            bool? isAllowNegetiveStock,
+            @JsonKey(name: "minimun_order_quantity")
+            dynamic minimunOrderQuantity,
+            @JsonKey(name: "lead_time_in_days") dynamic leadTimeInDays,
+            @JsonKey(name: "vendor_id") dynamic vendorId,
+            @JsonKey(name: "is_discount_allowed") bool? isDiscountAllowed,
+            @JsonKey(name: "default_discount_amount")
+            double? defaultDiscountAmount,
+            @JsonKey(name: "default_discount_percentage")
+            int? defaultDiscountPercentage,
+            @JsonKey(name: "is_grant_comision") bool? isGrantComision,
+            @JsonKey(name: "has_warranty") bool? hasWarranty,
+            @JsonKey(name: "minimun_sales_quantity")
+            dynamic minimunSalesQuantity,
+            @JsonKey(name: "max_sales_quantity") dynamic maxSalesQuantity,
+            @JsonKey(name: "tax_id") int? taxId,
+            @JsonKey(name: "parent_id") dynamic parentId,
+            @JsonKey(name: "item_code") String? itemCode,
+            @JsonKey(name: "hs_code") String? hsCode,
+            @JsonKey(name: "item_name") String? itemName,
+            @JsonKey(name: "brand_name") dynamic brandName,
+            @JsonKey(name: "short_cut") dynamic shortCut,
+            @JsonKey(name: "quantity") int? quantity,
+            @JsonKey(name: "wh_tax_code") dynamic whTaxCode,
+            @JsonKey(name: "tax_schedule") dynamic taxSchedule,
+            @JsonKey(name: "lot_no") dynamic lotNo,
+            @JsonKey(name: "org_name") String? orgName,
+            @JsonKey(name: "location_id") dynamic locationId,
+            @JsonKey(name: "cost_estimate_type") int? costEstimateType,
+            @JsonKey(name: "subsidiary_id") int? subsidiaryId,
+            @JsonKey(name: "class_id") dynamic classId,
+            @JsonKey(name: "department_id") dynamic departmentId,
+            @JsonKey(name: "data_sheet_id") dynamic dataSheetId,
+            @JsonKey(name: "purchase_description") dynamic purchaseDescription,
+            @JsonKey(name: "transfer_price") dynamic transferPrice,
+            @JsonKey(name: "manufacturer") dynamic manufacturer,
+            @JsonKey(name: "mpn") dynamic mpn,
+            @JsonKey(name: "manufacturer_country") dynamic manufacturerCountry,
+            @JsonKey(name: "po_quantity_tolerance") dynamic poQuantityTolerance,
+            @JsonKey(name: "po_amount_difference") dynamic poAmountDifference,
+            @JsonKey(name: "po_quantity_difference")
+            dynamic poQuantityDifference,
+            @JsonKey(name: "item_receipt_quantity_tolerance")
+            dynamic itemReceiptQuantityTolerance,
+            @JsonKey(name: "item_receipt_amount_tolerance")
+            dynamic itemReceiptAmountTolerance,
+            @JsonKey(name: "item_receipt_quantity_difference")
+            dynamic itemReceiptQuantityDifference,
+            @JsonKey(name: "sales_description") dynamic salesDescription,
+            @JsonKey(name: "maximum_order_quantity")
+            dynamic maximumOrderQuantity,
+            @JsonKey(name: "item_define_cost") dynamic itemDefineCost,
+            @JsonKey(name: "item_weight") dynamic itemWeight,
+            @JsonKey(name: "package_id") dynamic packageId,
+            @JsonKey(name: "handling_cost") dynamic handlingCost,
+            @JsonKey(name: "shipping_cost") dynamic shippingCost,
+            @JsonKey(name: "cost_estimate") dynamic costEstimate,
+            @JsonKey(name: "deffered_account_id") dynamic defferedAccountId,
+            @JsonKey(name: "price_variance_account_id")
+            dynamic priceVarianceAccountId,
+            @JsonKey(name: "quantity_variance_account_id")
+            dynamic quantityVarianceAccountId,
+            @JsonKey(name: "apply_before_salestax") dynamic applyBeforeSalestax,
+            @JsonKey(name: "deffered_expenses_account_id")
+            dynamic defferedExpensesAccountId,
+            @JsonKey(name: "exchange_rate_variance_account_id")
+            dynamic exchangeRateVarianceAccountId,
+            @JsonKey(name: "scrap_account_id") dynamic scrapAccountId,
+            @JsonKey(name: "wip_account_id") dynamic wipAccountId,
+            @JsonKey(name: "rate") double? rate,
+            @JsonKey(name: "IsPercentage") bool? isPercentage,
+            @JsonKey(name: "max_thresshold") int? maxThresshold,
+            @JsonKey(name: "min_thresshold") int? minThresshold,
+            @JsonKey(name: "tax_percentage") int? taxPercentage,
+            @JsonKey(name: "is_taxable") bool? isTaxable,
+            @JsonKey(name: "is_inclusive") bool? isInclusive,
+            @JsonKey(name: "image_path") String? imagePath,
+            @JsonKey(name: "type") dynamic type,
+            @JsonKey(name: "address") String? address,
+            @JsonKey(name: "remarks") String? remarks,
+            @JsonKey(name: "manufacture_date") dynamic manufactureDate,
+            @JsonKey(name: "expiry_date") dynamic expiryDate,
+            @JsonKey(name: "serial_no") dynamic serialNo,
+            @JsonKey(name: "custom_field") dynamic customField,
+            @JsonKey(name: "StandardUnit") UnitEntity? standardUnit,
+            @JsonKey(name: "PurchaseUnit") dynamic purchaseUnit,
+            @JsonKey(name: "SalesUnit") dynamic salesUnit)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ItemEntity():
+        return $default(
+            _that.performedBy,
+            _that.itemId,
+            _that.standardUnitId,
+            _that.isMaintainStock,
+            _that.isMultipleUom,
+            _that.isVariant,
+            _that.isFixedAssets,
+            _that.purchaseUnitId,
+            _that.salesUnitId,
+            _that.stockUnitId,
+            _that.consumptionOutUnitId,
+            _that.categoryId,
+            _that.brandId,
+            _that.initialPurchaseRate,
+            _that.initialSalesRate,
+            _that.itemType,
+            _that.subType,
+            _that.isTrackLandedCost,
+            _that.itemDescription,
+            _that.isInactive,
+            _that.incomeAccountId,
+            _that.expenseAccountId,
+            _that.assetAccountId,
+            _that.cogsAccountId,
+            _that.gainLossAccountId,
+            _that.isNonPosting,
+            _that.lifeInDays,
+            _that.warrantyPeriod,
+            _that.endOfLife,
+            _that.costingMethod,
+            _that.safetyStockLevel,
+            _that.reorderMinimunQuantity,
+            _that.isSerialized,
+            _that.isBatchNo,
+            _that.isAllowNegetiveStock,
+            _that.minimunOrderQuantity,
+            _that.leadTimeInDays,
+            _that.vendorId,
+            _that.isDiscountAllowed,
+            _that.defaultDiscountAmount,
+            _that.defaultDiscountPercentage,
+            _that.isGrantComision,
+            _that.hasWarranty,
+            _that.minimunSalesQuantity,
+            _that.maxSalesQuantity,
+            _that.taxId,
+            _that.parentId,
+            _that.itemCode,
+            _that.hsCode,
+            _that.itemName,
+            _that.brandName,
+            _that.shortCut,
+            _that.quantity,
+            _that.whTaxCode,
+            _that.taxSchedule,
+            _that.lotNo,
+            _that.orgName,
+            _that.locationId,
+            _that.costEstimateType,
+            _that.subsidiaryId,
+            _that.classId,
+            _that.departmentId,
+            _that.dataSheetId,
+            _that.purchaseDescription,
+            _that.transferPrice,
+            _that.manufacturer,
+            _that.mpn,
+            _that.manufacturerCountry,
+            _that.poQuantityTolerance,
+            _that.poAmountDifference,
+            _that.poQuantityDifference,
+            _that.itemReceiptQuantityTolerance,
+            _that.itemReceiptAmountTolerance,
+            _that.itemReceiptQuantityDifference,
+            _that.salesDescription,
+            _that.maximumOrderQuantity,
+            _that.itemDefineCost,
+            _that.itemWeight,
+            _that.packageId,
+            _that.handlingCost,
+            _that.shippingCost,
+            _that.costEstimate,
+            _that.defferedAccountId,
+            _that.priceVarianceAccountId,
+            _that.quantityVarianceAccountId,
+            _that.applyBeforeSalestax,
+            _that.defferedExpensesAccountId,
+            _that.exchangeRateVarianceAccountId,
+            _that.scrapAccountId,
+            _that.wipAccountId,
+            _that.rate,
+            _that.isPercentage,
+            _that.maxThresshold,
+            _that.minThresshold,
+            _that.taxPercentage,
+            _that.isTaxable,
+            _that.isInclusive,
+            _that.imagePath,
+            _that.type,
+            _that.address,
+            _that.remarks,
+            _that.manufactureDate,
+            _that.expiryDate,
+            _that.serialNo,
+            _that.customField,
+            _that.standardUnit,
+            _that.purchaseUnit,
+            _that.salesUnit);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "performed_by") int? performedBy,
+            @JsonKey(name: "item_id") int? itemId,
+            @JsonKey(name: "standard_unit_id") int? standardUnitId,
+            @JsonKey(name: "is_maintain_stock") bool? isMaintainStock,
+            @JsonKey(name: "is_multiple_uom") bool? isMultipleUom,
+            @JsonKey(name: "is_variant") bool? isVariant,
+            @JsonKey(name: "is_fixed_assets") bool? isFixedAssets,
+            @JsonKey(name: "purchase_unit_id") int? purchaseUnitId,
+            @JsonKey(name: "sales_unit_id") int? salesUnitId,
+            @JsonKey(name: "stock_unit_id") int? stockUnitId,
+            @JsonKey(name: "consumption_out_unit_id") int? consumptionOutUnitId,
+            @JsonKey(name: "category_id") int? categoryId,
+            @JsonKey(name: "brand_id") int? brandId,
+            @JsonKey(name: "initial_purchase_rate") double? initialPurchaseRate,
+            @JsonKey(name: "initial_sales_rate") double? initialSalesRate,
+            @JsonKey(name: "item_type") int? itemType,
+            @JsonKey(name: "sub_type") dynamic subType,
+            @JsonKey(name: "is_track_landed_cost") bool? isTrackLandedCost,
+            @JsonKey(name: "item_description") String? itemDescription,
+            @JsonKey(name: "is_inactive") bool? isInactive,
+            @JsonKey(name: "income_account_id") int? incomeAccountId,
+            @JsonKey(name: "expense_account_id") int? expenseAccountId,
+            @JsonKey(name: "asset_account_id") int? assetAccountId,
+            @JsonKey(name: "cogs_account_id") int? cogsAccountId,
+            @JsonKey(name: "gain_loss_account_id") int? gainLossAccountId,
+            @JsonKey(name: "is_non_posting") bool? isNonPosting,
+            @JsonKey(name: "life_in_days") dynamic lifeInDays,
+            @JsonKey(name: "warranty_period") dynamic warrantyPeriod,
+            @JsonKey(name: "end_of_life") dynamic endOfLife,
+            @JsonKey(name: "costing_method") int? costingMethod,
+            @JsonKey(name: "safety_stock_level") dynamic safetyStockLevel,
+            @JsonKey(name: "reorder_minimun_quantity")
+            dynamic reorderMinimunQuantity,
+            @JsonKey(name: "is_serialized") bool? isSerialized,
+            @JsonKey(name: "is_batch_no") bool? isBatchNo,
+            @JsonKey(name: "is_allow_negetive_stock")
+            bool? isAllowNegetiveStock,
+            @JsonKey(name: "minimun_order_quantity")
+            dynamic minimunOrderQuantity,
+            @JsonKey(name: "lead_time_in_days") dynamic leadTimeInDays,
+            @JsonKey(name: "vendor_id") dynamic vendorId,
+            @JsonKey(name: "is_discount_allowed") bool? isDiscountAllowed,
+            @JsonKey(name: "default_discount_amount")
+            double? defaultDiscountAmount,
+            @JsonKey(name: "default_discount_percentage")
+            int? defaultDiscountPercentage,
+            @JsonKey(name: "is_grant_comision") bool? isGrantComision,
+            @JsonKey(name: "has_warranty") bool? hasWarranty,
+            @JsonKey(name: "minimun_sales_quantity")
+            dynamic minimunSalesQuantity,
+            @JsonKey(name: "max_sales_quantity") dynamic maxSalesQuantity,
+            @JsonKey(name: "tax_id") int? taxId,
+            @JsonKey(name: "parent_id") dynamic parentId,
+            @JsonKey(name: "item_code") String? itemCode,
+            @JsonKey(name: "hs_code") String? hsCode,
+            @JsonKey(name: "item_name") String? itemName,
+            @JsonKey(name: "brand_name") dynamic brandName,
+            @JsonKey(name: "short_cut") dynamic shortCut,
+            @JsonKey(name: "quantity") int? quantity,
+            @JsonKey(name: "wh_tax_code") dynamic whTaxCode,
+            @JsonKey(name: "tax_schedule") dynamic taxSchedule,
+            @JsonKey(name: "lot_no") dynamic lotNo,
+            @JsonKey(name: "org_name") String? orgName,
+            @JsonKey(name: "location_id") dynamic locationId,
+            @JsonKey(name: "cost_estimate_type") int? costEstimateType,
+            @JsonKey(name: "subsidiary_id") int? subsidiaryId,
+            @JsonKey(name: "class_id") dynamic classId,
+            @JsonKey(name: "department_id") dynamic departmentId,
+            @JsonKey(name: "data_sheet_id") dynamic dataSheetId,
+            @JsonKey(name: "purchase_description") dynamic purchaseDescription,
+            @JsonKey(name: "transfer_price") dynamic transferPrice,
+            @JsonKey(name: "manufacturer") dynamic manufacturer,
+            @JsonKey(name: "mpn") dynamic mpn,
+            @JsonKey(name: "manufacturer_country") dynamic manufacturerCountry,
+            @JsonKey(name: "po_quantity_tolerance") dynamic poQuantityTolerance,
+            @JsonKey(name: "po_amount_difference") dynamic poAmountDifference,
+            @JsonKey(name: "po_quantity_difference")
+            dynamic poQuantityDifference,
+            @JsonKey(name: "item_receipt_quantity_tolerance")
+            dynamic itemReceiptQuantityTolerance,
+            @JsonKey(name: "item_receipt_amount_tolerance")
+            dynamic itemReceiptAmountTolerance,
+            @JsonKey(name: "item_receipt_quantity_difference")
+            dynamic itemReceiptQuantityDifference,
+            @JsonKey(name: "sales_description") dynamic salesDescription,
+            @JsonKey(name: "maximum_order_quantity")
+            dynamic maximumOrderQuantity,
+            @JsonKey(name: "item_define_cost") dynamic itemDefineCost,
+            @JsonKey(name: "item_weight") dynamic itemWeight,
+            @JsonKey(name: "package_id") dynamic packageId,
+            @JsonKey(name: "handling_cost") dynamic handlingCost,
+            @JsonKey(name: "shipping_cost") dynamic shippingCost,
+            @JsonKey(name: "cost_estimate") dynamic costEstimate,
+            @JsonKey(name: "deffered_account_id") dynamic defferedAccountId,
+            @JsonKey(name: "price_variance_account_id")
+            dynamic priceVarianceAccountId,
+            @JsonKey(name: "quantity_variance_account_id")
+            dynamic quantityVarianceAccountId,
+            @JsonKey(name: "apply_before_salestax") dynamic applyBeforeSalestax,
+            @JsonKey(name: "deffered_expenses_account_id")
+            dynamic defferedExpensesAccountId,
+            @JsonKey(name: "exchange_rate_variance_account_id")
+            dynamic exchangeRateVarianceAccountId,
+            @JsonKey(name: "scrap_account_id") dynamic scrapAccountId,
+            @JsonKey(name: "wip_account_id") dynamic wipAccountId,
+            @JsonKey(name: "rate") double? rate,
+            @JsonKey(name: "IsPercentage") bool? isPercentage,
+            @JsonKey(name: "max_thresshold") int? maxThresshold,
+            @JsonKey(name: "min_thresshold") int? minThresshold,
+            @JsonKey(name: "tax_percentage") int? taxPercentage,
+            @JsonKey(name: "is_taxable") bool? isTaxable,
+            @JsonKey(name: "is_inclusive") bool? isInclusive,
+            @JsonKey(name: "image_path") String? imagePath,
+            @JsonKey(name: "type") dynamic type,
+            @JsonKey(name: "address") String? address,
+            @JsonKey(name: "remarks") String? remarks,
+            @JsonKey(name: "manufacture_date") dynamic manufactureDate,
+            @JsonKey(name: "expiry_date") dynamic expiryDate,
+            @JsonKey(name: "serial_no") dynamic serialNo,
+            @JsonKey(name: "custom_field") dynamic customField,
+            @JsonKey(name: "StandardUnit") UnitEntity? standardUnit,
+            @JsonKey(name: "PurchaseUnit") dynamic purchaseUnit,
+            @JsonKey(name: "SalesUnit") dynamic salesUnit)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ItemEntity() when $default != null:
+        return $default(
+            _that.performedBy,
+            _that.itemId,
+            _that.standardUnitId,
+            _that.isMaintainStock,
+            _that.isMultipleUom,
+            _that.isVariant,
+            _that.isFixedAssets,
+            _that.purchaseUnitId,
+            _that.salesUnitId,
+            _that.stockUnitId,
+            _that.consumptionOutUnitId,
+            _that.categoryId,
+            _that.brandId,
+            _that.initialPurchaseRate,
+            _that.initialSalesRate,
+            _that.itemType,
+            _that.subType,
+            _that.isTrackLandedCost,
+            _that.itemDescription,
+            _that.isInactive,
+            _that.incomeAccountId,
+            _that.expenseAccountId,
+            _that.assetAccountId,
+            _that.cogsAccountId,
+            _that.gainLossAccountId,
+            _that.isNonPosting,
+            _that.lifeInDays,
+            _that.warrantyPeriod,
+            _that.endOfLife,
+            _that.costingMethod,
+            _that.safetyStockLevel,
+            _that.reorderMinimunQuantity,
+            _that.isSerialized,
+            _that.isBatchNo,
+            _that.isAllowNegetiveStock,
+            _that.minimunOrderQuantity,
+            _that.leadTimeInDays,
+            _that.vendorId,
+            _that.isDiscountAllowed,
+            _that.defaultDiscountAmount,
+            _that.defaultDiscountPercentage,
+            _that.isGrantComision,
+            _that.hasWarranty,
+            _that.minimunSalesQuantity,
+            _that.maxSalesQuantity,
+            _that.taxId,
+            _that.parentId,
+            _that.itemCode,
+            _that.hsCode,
+            _that.itemName,
+            _that.brandName,
+            _that.shortCut,
+            _that.quantity,
+            _that.whTaxCode,
+            _that.taxSchedule,
+            _that.lotNo,
+            _that.orgName,
+            _that.locationId,
+            _that.costEstimateType,
+            _that.subsidiaryId,
+            _that.classId,
+            _that.departmentId,
+            _that.dataSheetId,
+            _that.purchaseDescription,
+            _that.transferPrice,
+            _that.manufacturer,
+            _that.mpn,
+            _that.manufacturerCountry,
+            _that.poQuantityTolerance,
+            _that.poAmountDifference,
+            _that.poQuantityDifference,
+            _that.itemReceiptQuantityTolerance,
+            _that.itemReceiptAmountTolerance,
+            _that.itemReceiptQuantityDifference,
+            _that.salesDescription,
+            _that.maximumOrderQuantity,
+            _that.itemDefineCost,
+            _that.itemWeight,
+            _that.packageId,
+            _that.handlingCost,
+            _that.shippingCost,
+            _that.costEstimate,
+            _that.defferedAccountId,
+            _that.priceVarianceAccountId,
+            _that.quantityVarianceAccountId,
+            _that.applyBeforeSalestax,
+            _that.defferedExpensesAccountId,
+            _that.exchangeRateVarianceAccountId,
+            _that.scrapAccountId,
+            _that.wipAccountId,
+            _that.rate,
+            _that.isPercentage,
+            _that.maxThresshold,
+            _that.minThresshold,
+            _that.taxPercentage,
+            _that.isTaxable,
+            _that.isInclusive,
+            _that.imagePath,
+            _that.type,
+            _that.address,
+            _that.remarks,
+            _that.manufactureDate,
+            _that.expiryDate,
+            _that.serialNo,
+            _that.customField,
+            _that.standardUnit,
+            _that.purchaseUnit,
+            _that.salesUnit);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -3372,6 +4224,556 @@ class _$ItemParamsEntityCopyWithImpl<$Res>
   }
 }
 
+/// Adds pattern-matching-related methods to [ItemParamsEntity].
+extension ItemParamsEntityPatterns on ItemParamsEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_ItemParamsEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _ItemParamsEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_ItemParamsEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ItemParamsEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_ItemParamsEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ItemParamsEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "organisation_id")
+            int? itemParamsEntityOrganisationId,
+            @JsonKey(name: "ORGANISATION_ID") int? organisationId,
+            @JsonKey(name: "ITEM_ID") int itemId,
+            @JsonKey(name: "ITEM_CODE") String? itemCode,
+            @JsonKey(name: "HS_CODE") String? hsCode,
+            @JsonKey(name: "ITEM_NAME") String? itemName,
+            @JsonKey(name: "BRAND_NAME") String? brandName,
+            @JsonKey(name: "SHORT_CUT") String? shortCut,
+            @JsonKey(name: "ITEM_DESCRIPTION") String? itemDescription,
+            @JsonKey(name: "CATEGORY_CODE") String? categoryCode,
+            @JsonKey(name: "CATEGORY_NAME") String? categoryName,
+            @JsonKey(name: "IMAGE_PATH") String? imagePath,
+            @JsonKey(name: "QUANTITY") int? quantity,
+            @JsonKey(name: "IS_TAXABLE") bool? isTaxable,
+            @JsonKey(name: "IS_DISCOUNT_ALLOWED") bool? isDiscountAllowed,
+            @JsonKey(name: "ITEM_TYPE") int? itemType,
+            @JsonKey(name: "IS_TRACK_LANDED_COST") bool? isTrackLandedCost,
+            @JsonKey(name: "partyTypeMaps")
+            List<PartyTypeMapEntity>? partyTypeMaps,
+            @JsonKey(name: "item_mappings") List<dynamic>? itemMappings,
+            @JsonKey(name: "IS_INACTIVE") bool? isInactive,
+            @JsonKey(name: "IS_MAINTAIN_STOCK") bool? isMaintainStock,
+            @JsonKey(name: "IS_MULTIPLE_UOM") bool? isMultipleUom,
+            @JsonKey(name: "IS_VARIANT") bool? isVariant,
+            @JsonKey(name: "IS_FIXED_ASSETS") bool? isFixedAssets,
+            @JsonKey(name: "IS_ALLOW_NEGETIVE_STOCK")
+            bool? isAllowNegetiveStock,
+            @JsonKey(name: "custom_field_list") List<dynamic>? customFieldList,
+            @JsonKey(name: "IS_NON_POSTING") bool? isNonPosting,
+            @JsonKey(name: "IS_GRANT_COMISION") bool? isGrantComision,
+            @JsonKey(name: "GRANT_COMISION") bool? grantComision,
+            @JsonKey(name: "HAS_WARRANTY") bool? hasWarranty,
+            @JsonKey(name: "IS_SERIALIZED") bool? isSerialized,
+            @JsonKey(name: "IS_BATCH_NO") bool? isBatchNo,
+            @JsonKey(name: "IS_ALLOW_NEGETIVE_TOCK") bool? isAllowNegetiveTock,
+            @JsonKey(name: "SUB_TYPE") int? subType,
+            @JsonKey(name: "INCOME_ACCOUNT_ID") dynamic incomeAccountId,
+            @JsonKey(name: "EXPENSE_ACCOUNT_ID") dynamic expenseAccountId,
+            @JsonKey(name: "ASSET_ACCOUNT_ID") dynamic assetAccountId,
+            @JsonKey(name: "COGS_ACCOUNT_ID") dynamic cogsAccountId,
+            @JsonKey(name: "PARENT_ID") int? parentId,
+            @JsonKey(name: "STANDARD_UNIT_ID") int? standardUnitId,
+            @JsonKey(name: "CATEGORY_ID") int? categoryId,
+            @JsonKey(name: "BRAND_ID") int? brandId,
+            @JsonKey(name: "PURCHASE_UNIT_ID") int? purchaseUnitId,
+            @JsonKey(name: "SALES_UNIT_ID") int? salesUnitId,
+            @JsonKey(name: "STOCK_UNIT_ID") int? stockUnitId,
+            @JsonKey(name: "CONSUMPTION_OUT_UNIT_ID") int? consumptionOutUnitId,
+            @JsonKey(name: "INITIAL_PURCHASE_RATE") int? initialPurchaseRate,
+            @JsonKey(name: "INITIAL_SALES_RATE") int? initialSalesRate,
+            @JsonKey(name: "LIFE_IN_DAYS") int? lifeInDays,
+            @JsonKey(name: "WARRANTY_PERIOD") int? warrantyPeriod,
+            @JsonKey(name: "END_OF_LIFE") DateTime? endOfLife,
+            @JsonKey(name: "costing_method") int? costingMethod,
+            @JsonKey(name: "SAFETY_STOCK_LEVEL") int? safetyStockLevel,
+            @JsonKey(name: "REORDER_MINIMUN_QUANTITY")
+            int? reorderMinimunQuantity,
+            @JsonKey(name: "MINIMUN_ORDER_QUANTITY") int? minimunOrderQuantity,
+            @JsonKey(name: "LEAD_TIME_IN_DAYS") int? leadTimeInDays,
+            @JsonKey(name: "MINIMUN_SALES_QUANTITY") int? minimunSalesQuantity,
+            @JsonKey(name: "MAX_SALES_QUANTITY") int? maxSalesQuantity,
+            @JsonKey(name: "DEFAULT_DISCOUNT_AMOUNT")
+            int? defaultDiscountAmount,
+            @JsonKey(name: "DEFAULT_DISCOUNT_PERCENTAGE")
+            int? defaultDiscountPercentage,
+            @JsonKey(name: "TAX_ID") int? taxId,
+            @JsonKey(name: "VENDOR_ID") int? vendorId)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _ItemParamsEntity() when $default != null:
+        return $default(
+            _that.itemParamsEntityOrganisationId,
+            _that.organisationId,
+            _that.itemId,
+            _that.itemCode,
+            _that.hsCode,
+            _that.itemName,
+            _that.brandName,
+            _that.shortCut,
+            _that.itemDescription,
+            _that.categoryCode,
+            _that.categoryName,
+            _that.imagePath,
+            _that.quantity,
+            _that.isTaxable,
+            _that.isDiscountAllowed,
+            _that.itemType,
+            _that.isTrackLandedCost,
+            _that.partyTypeMaps,
+            _that.itemMappings,
+            _that.isInactive,
+            _that.isMaintainStock,
+            _that.isMultipleUom,
+            _that.isVariant,
+            _that.isFixedAssets,
+            _that.isAllowNegetiveStock,
+            _that.customFieldList,
+            _that.isNonPosting,
+            _that.isGrantComision,
+            _that.grantComision,
+            _that.hasWarranty,
+            _that.isSerialized,
+            _that.isBatchNo,
+            _that.isAllowNegetiveTock,
+            _that.subType,
+            _that.incomeAccountId,
+            _that.expenseAccountId,
+            _that.assetAccountId,
+            _that.cogsAccountId,
+            _that.parentId,
+            _that.standardUnitId,
+            _that.categoryId,
+            _that.brandId,
+            _that.purchaseUnitId,
+            _that.salesUnitId,
+            _that.stockUnitId,
+            _that.consumptionOutUnitId,
+            _that.initialPurchaseRate,
+            _that.initialSalesRate,
+            _that.lifeInDays,
+            _that.warrantyPeriod,
+            _that.endOfLife,
+            _that.costingMethod,
+            _that.safetyStockLevel,
+            _that.reorderMinimunQuantity,
+            _that.minimunOrderQuantity,
+            _that.leadTimeInDays,
+            _that.minimunSalesQuantity,
+            _that.maxSalesQuantity,
+            _that.defaultDiscountAmount,
+            _that.defaultDiscountPercentage,
+            _that.taxId,
+            _that.vendorId);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "organisation_id")
+            int? itemParamsEntityOrganisationId,
+            @JsonKey(name: "ORGANISATION_ID") int? organisationId,
+            @JsonKey(name: "ITEM_ID") int itemId,
+            @JsonKey(name: "ITEM_CODE") String? itemCode,
+            @JsonKey(name: "HS_CODE") String? hsCode,
+            @JsonKey(name: "ITEM_NAME") String? itemName,
+            @JsonKey(name: "BRAND_NAME") String? brandName,
+            @JsonKey(name: "SHORT_CUT") String? shortCut,
+            @JsonKey(name: "ITEM_DESCRIPTION") String? itemDescription,
+            @JsonKey(name: "CATEGORY_CODE") String? categoryCode,
+            @JsonKey(name: "CATEGORY_NAME") String? categoryName,
+            @JsonKey(name: "IMAGE_PATH") String? imagePath,
+            @JsonKey(name: "QUANTITY") int? quantity,
+            @JsonKey(name: "IS_TAXABLE") bool? isTaxable,
+            @JsonKey(name: "IS_DISCOUNT_ALLOWED") bool? isDiscountAllowed,
+            @JsonKey(name: "ITEM_TYPE") int? itemType,
+            @JsonKey(name: "IS_TRACK_LANDED_COST") bool? isTrackLandedCost,
+            @JsonKey(name: "partyTypeMaps")
+            List<PartyTypeMapEntity>? partyTypeMaps,
+            @JsonKey(name: "item_mappings") List<dynamic>? itemMappings,
+            @JsonKey(name: "IS_INACTIVE") bool? isInactive,
+            @JsonKey(name: "IS_MAINTAIN_STOCK") bool? isMaintainStock,
+            @JsonKey(name: "IS_MULTIPLE_UOM") bool? isMultipleUom,
+            @JsonKey(name: "IS_VARIANT") bool? isVariant,
+            @JsonKey(name: "IS_FIXED_ASSETS") bool? isFixedAssets,
+            @JsonKey(name: "IS_ALLOW_NEGETIVE_STOCK")
+            bool? isAllowNegetiveStock,
+            @JsonKey(name: "custom_field_list") List<dynamic>? customFieldList,
+            @JsonKey(name: "IS_NON_POSTING") bool? isNonPosting,
+            @JsonKey(name: "IS_GRANT_COMISION") bool? isGrantComision,
+            @JsonKey(name: "GRANT_COMISION") bool? grantComision,
+            @JsonKey(name: "HAS_WARRANTY") bool? hasWarranty,
+            @JsonKey(name: "IS_SERIALIZED") bool? isSerialized,
+            @JsonKey(name: "IS_BATCH_NO") bool? isBatchNo,
+            @JsonKey(name: "IS_ALLOW_NEGETIVE_TOCK") bool? isAllowNegetiveTock,
+            @JsonKey(name: "SUB_TYPE") int? subType,
+            @JsonKey(name: "INCOME_ACCOUNT_ID") dynamic incomeAccountId,
+            @JsonKey(name: "EXPENSE_ACCOUNT_ID") dynamic expenseAccountId,
+            @JsonKey(name: "ASSET_ACCOUNT_ID") dynamic assetAccountId,
+            @JsonKey(name: "COGS_ACCOUNT_ID") dynamic cogsAccountId,
+            @JsonKey(name: "PARENT_ID") int? parentId,
+            @JsonKey(name: "STANDARD_UNIT_ID") int? standardUnitId,
+            @JsonKey(name: "CATEGORY_ID") int? categoryId,
+            @JsonKey(name: "BRAND_ID") int? brandId,
+            @JsonKey(name: "PURCHASE_UNIT_ID") int? purchaseUnitId,
+            @JsonKey(name: "SALES_UNIT_ID") int? salesUnitId,
+            @JsonKey(name: "STOCK_UNIT_ID") int? stockUnitId,
+            @JsonKey(name: "CONSUMPTION_OUT_UNIT_ID") int? consumptionOutUnitId,
+            @JsonKey(name: "INITIAL_PURCHASE_RATE") int? initialPurchaseRate,
+            @JsonKey(name: "INITIAL_SALES_RATE") int? initialSalesRate,
+            @JsonKey(name: "LIFE_IN_DAYS") int? lifeInDays,
+            @JsonKey(name: "WARRANTY_PERIOD") int? warrantyPeriod,
+            @JsonKey(name: "END_OF_LIFE") DateTime? endOfLife,
+            @JsonKey(name: "costing_method") int? costingMethod,
+            @JsonKey(name: "SAFETY_STOCK_LEVEL") int? safetyStockLevel,
+            @JsonKey(name: "REORDER_MINIMUN_QUANTITY")
+            int? reorderMinimunQuantity,
+            @JsonKey(name: "MINIMUN_ORDER_QUANTITY") int? minimunOrderQuantity,
+            @JsonKey(name: "LEAD_TIME_IN_DAYS") int? leadTimeInDays,
+            @JsonKey(name: "MINIMUN_SALES_QUANTITY") int? minimunSalesQuantity,
+            @JsonKey(name: "MAX_SALES_QUANTITY") int? maxSalesQuantity,
+            @JsonKey(name: "DEFAULT_DISCOUNT_AMOUNT")
+            int? defaultDiscountAmount,
+            @JsonKey(name: "DEFAULT_DISCOUNT_PERCENTAGE")
+            int? defaultDiscountPercentage,
+            @JsonKey(name: "TAX_ID") int? taxId,
+            @JsonKey(name: "VENDOR_ID") int? vendorId)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ItemParamsEntity():
+        return $default(
+            _that.itemParamsEntityOrganisationId,
+            _that.organisationId,
+            _that.itemId,
+            _that.itemCode,
+            _that.hsCode,
+            _that.itemName,
+            _that.brandName,
+            _that.shortCut,
+            _that.itemDescription,
+            _that.categoryCode,
+            _that.categoryName,
+            _that.imagePath,
+            _that.quantity,
+            _that.isTaxable,
+            _that.isDiscountAllowed,
+            _that.itemType,
+            _that.isTrackLandedCost,
+            _that.partyTypeMaps,
+            _that.itemMappings,
+            _that.isInactive,
+            _that.isMaintainStock,
+            _that.isMultipleUom,
+            _that.isVariant,
+            _that.isFixedAssets,
+            _that.isAllowNegetiveStock,
+            _that.customFieldList,
+            _that.isNonPosting,
+            _that.isGrantComision,
+            _that.grantComision,
+            _that.hasWarranty,
+            _that.isSerialized,
+            _that.isBatchNo,
+            _that.isAllowNegetiveTock,
+            _that.subType,
+            _that.incomeAccountId,
+            _that.expenseAccountId,
+            _that.assetAccountId,
+            _that.cogsAccountId,
+            _that.parentId,
+            _that.standardUnitId,
+            _that.categoryId,
+            _that.brandId,
+            _that.purchaseUnitId,
+            _that.salesUnitId,
+            _that.stockUnitId,
+            _that.consumptionOutUnitId,
+            _that.initialPurchaseRate,
+            _that.initialSalesRate,
+            _that.lifeInDays,
+            _that.warrantyPeriod,
+            _that.endOfLife,
+            _that.costingMethod,
+            _that.safetyStockLevel,
+            _that.reorderMinimunQuantity,
+            _that.minimunOrderQuantity,
+            _that.leadTimeInDays,
+            _that.minimunSalesQuantity,
+            _that.maxSalesQuantity,
+            _that.defaultDiscountAmount,
+            _that.defaultDiscountPercentage,
+            _that.taxId,
+            _that.vendorId);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "organisation_id")
+            int? itemParamsEntityOrganisationId,
+            @JsonKey(name: "ORGANISATION_ID") int? organisationId,
+            @JsonKey(name: "ITEM_ID") int itemId,
+            @JsonKey(name: "ITEM_CODE") String? itemCode,
+            @JsonKey(name: "HS_CODE") String? hsCode,
+            @JsonKey(name: "ITEM_NAME") String? itemName,
+            @JsonKey(name: "BRAND_NAME") String? brandName,
+            @JsonKey(name: "SHORT_CUT") String? shortCut,
+            @JsonKey(name: "ITEM_DESCRIPTION") String? itemDescription,
+            @JsonKey(name: "CATEGORY_CODE") String? categoryCode,
+            @JsonKey(name: "CATEGORY_NAME") String? categoryName,
+            @JsonKey(name: "IMAGE_PATH") String? imagePath,
+            @JsonKey(name: "QUANTITY") int? quantity,
+            @JsonKey(name: "IS_TAXABLE") bool? isTaxable,
+            @JsonKey(name: "IS_DISCOUNT_ALLOWED") bool? isDiscountAllowed,
+            @JsonKey(name: "ITEM_TYPE") int? itemType,
+            @JsonKey(name: "IS_TRACK_LANDED_COST") bool? isTrackLandedCost,
+            @JsonKey(name: "partyTypeMaps")
+            List<PartyTypeMapEntity>? partyTypeMaps,
+            @JsonKey(name: "item_mappings") List<dynamic>? itemMappings,
+            @JsonKey(name: "IS_INACTIVE") bool? isInactive,
+            @JsonKey(name: "IS_MAINTAIN_STOCK") bool? isMaintainStock,
+            @JsonKey(name: "IS_MULTIPLE_UOM") bool? isMultipleUom,
+            @JsonKey(name: "IS_VARIANT") bool? isVariant,
+            @JsonKey(name: "IS_FIXED_ASSETS") bool? isFixedAssets,
+            @JsonKey(name: "IS_ALLOW_NEGETIVE_STOCK")
+            bool? isAllowNegetiveStock,
+            @JsonKey(name: "custom_field_list") List<dynamic>? customFieldList,
+            @JsonKey(name: "IS_NON_POSTING") bool? isNonPosting,
+            @JsonKey(name: "IS_GRANT_COMISION") bool? isGrantComision,
+            @JsonKey(name: "GRANT_COMISION") bool? grantComision,
+            @JsonKey(name: "HAS_WARRANTY") bool? hasWarranty,
+            @JsonKey(name: "IS_SERIALIZED") bool? isSerialized,
+            @JsonKey(name: "IS_BATCH_NO") bool? isBatchNo,
+            @JsonKey(name: "IS_ALLOW_NEGETIVE_TOCK") bool? isAllowNegetiveTock,
+            @JsonKey(name: "SUB_TYPE") int? subType,
+            @JsonKey(name: "INCOME_ACCOUNT_ID") dynamic incomeAccountId,
+            @JsonKey(name: "EXPENSE_ACCOUNT_ID") dynamic expenseAccountId,
+            @JsonKey(name: "ASSET_ACCOUNT_ID") dynamic assetAccountId,
+            @JsonKey(name: "COGS_ACCOUNT_ID") dynamic cogsAccountId,
+            @JsonKey(name: "PARENT_ID") int? parentId,
+            @JsonKey(name: "STANDARD_UNIT_ID") int? standardUnitId,
+            @JsonKey(name: "CATEGORY_ID") int? categoryId,
+            @JsonKey(name: "BRAND_ID") int? brandId,
+            @JsonKey(name: "PURCHASE_UNIT_ID") int? purchaseUnitId,
+            @JsonKey(name: "SALES_UNIT_ID") int? salesUnitId,
+            @JsonKey(name: "STOCK_UNIT_ID") int? stockUnitId,
+            @JsonKey(name: "CONSUMPTION_OUT_UNIT_ID") int? consumptionOutUnitId,
+            @JsonKey(name: "INITIAL_PURCHASE_RATE") int? initialPurchaseRate,
+            @JsonKey(name: "INITIAL_SALES_RATE") int? initialSalesRate,
+            @JsonKey(name: "LIFE_IN_DAYS") int? lifeInDays,
+            @JsonKey(name: "WARRANTY_PERIOD") int? warrantyPeriod,
+            @JsonKey(name: "END_OF_LIFE") DateTime? endOfLife,
+            @JsonKey(name: "costing_method") int? costingMethod,
+            @JsonKey(name: "SAFETY_STOCK_LEVEL") int? safetyStockLevel,
+            @JsonKey(name: "REORDER_MINIMUN_QUANTITY")
+            int? reorderMinimunQuantity,
+            @JsonKey(name: "MINIMUN_ORDER_QUANTITY") int? minimunOrderQuantity,
+            @JsonKey(name: "LEAD_TIME_IN_DAYS") int? leadTimeInDays,
+            @JsonKey(name: "MINIMUN_SALES_QUANTITY") int? minimunSalesQuantity,
+            @JsonKey(name: "MAX_SALES_QUANTITY") int? maxSalesQuantity,
+            @JsonKey(name: "DEFAULT_DISCOUNT_AMOUNT")
+            int? defaultDiscountAmount,
+            @JsonKey(name: "DEFAULT_DISCOUNT_PERCENTAGE")
+            int? defaultDiscountPercentage,
+            @JsonKey(name: "TAX_ID") int? taxId,
+            @JsonKey(name: "VENDOR_ID") int? vendorId)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ItemParamsEntity() when $default != null:
+        return $default(
+            _that.itemParamsEntityOrganisationId,
+            _that.organisationId,
+            _that.itemId,
+            _that.itemCode,
+            _that.hsCode,
+            _that.itemName,
+            _that.brandName,
+            _that.shortCut,
+            _that.itemDescription,
+            _that.categoryCode,
+            _that.categoryName,
+            _that.imagePath,
+            _that.quantity,
+            _that.isTaxable,
+            _that.isDiscountAllowed,
+            _that.itemType,
+            _that.isTrackLandedCost,
+            _that.partyTypeMaps,
+            _that.itemMappings,
+            _that.isInactive,
+            _that.isMaintainStock,
+            _that.isMultipleUom,
+            _that.isVariant,
+            _that.isFixedAssets,
+            _that.isAllowNegetiveStock,
+            _that.customFieldList,
+            _that.isNonPosting,
+            _that.isGrantComision,
+            _that.grantComision,
+            _that.hasWarranty,
+            _that.isSerialized,
+            _that.isBatchNo,
+            _that.isAllowNegetiveTock,
+            _that.subType,
+            _that.incomeAccountId,
+            _that.expenseAccountId,
+            _that.assetAccountId,
+            _that.cogsAccountId,
+            _that.parentId,
+            _that.standardUnitId,
+            _that.categoryId,
+            _that.brandId,
+            _that.purchaseUnitId,
+            _that.salesUnitId,
+            _that.stockUnitId,
+            _that.consumptionOutUnitId,
+            _that.initialPurchaseRate,
+            _that.initialSalesRate,
+            _that.lifeInDays,
+            _that.warrantyPeriod,
+            _that.endOfLife,
+            _that.costingMethod,
+            _that.safetyStockLevel,
+            _that.reorderMinimunQuantity,
+            _that.minimunOrderQuantity,
+            _that.leadTimeInDays,
+            _that.minimunSalesQuantity,
+            _that.maxSalesQuantity,
+            _that.defaultDiscountAmount,
+            _that.defaultDiscountPercentage,
+            _that.taxId,
+            _that.vendorId);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 @JsonSerializable()
 class _ItemParamsEntity implements ItemParamsEntity {
@@ -4330,6 +5732,169 @@ class _$PartyTypeMapEntityCopyWithImpl<$Res>
   }
 }
 
+/// Adds pattern-matching-related methods to [PartyTypeMapEntity].
+extension PartyTypeMapEntityPatterns on PartyTypeMapEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_PartyTypeMapEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _PartyTypeMapEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_PartyTypeMapEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PartyTypeMapEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_PartyTypeMapEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PartyTypeMapEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(@JsonKey(name: "PARTY_TYPE_ID") int? partyTypeId,
+            @JsonKey(name: "SALES_RATE") int? salesRate)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _PartyTypeMapEntity() when $default != null:
+        return $default(_that.partyTypeId, _that.salesRate);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(@JsonKey(name: "PARTY_TYPE_ID") int? partyTypeId,
+            @JsonKey(name: "SALES_RATE") int? salesRate)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PartyTypeMapEntity():
+        return $default(_that.partyTypeId, _that.salesRate);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(@JsonKey(name: "PARTY_TYPE_ID") int? partyTypeId,
+            @JsonKey(name: "SALES_RATE") int? salesRate)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _PartyTypeMapEntity() when $default != null:
+        return $default(_that.partyTypeId, _that.salesRate);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 @JsonSerializable()
 class _PartyTypeMapEntity implements PartyTypeMapEntity {
@@ -4500,6 +6065,169 @@ class _$SpecialTypeEntityCopyWithImpl<$Res>
   }
 }
 
+/// Adds pattern-matching-related methods to [SpecialTypeEntity].
+extension SpecialTypeEntityPatterns on SpecialTypeEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_SpecialTypeEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _SpecialTypeEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_SpecialTypeEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SpecialTypeEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_SpecialTypeEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SpecialTypeEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "id") int? id, @JsonKey(name: "type") String? type)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _SpecialTypeEntity() when $default != null:
+        return $default(_that.id, _that.type);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "id") int? id, @JsonKey(name: "type") String? type)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SpecialTypeEntity():
+        return $default(_that.id, _that.type);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "id") int? id, @JsonKey(name: "type") String? type)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SpecialTypeEntity() when $default != null:
+        return $default(_that.id, _that.type);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 @JsonSerializable()
 class _SpecialTypeEntity implements SpecialTypeEntity {
@@ -4663,6 +6391,169 @@ class _$SubTypeEntityCopyWithImpl<$Res>
           : type // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [SubTypeEntity].
+extension SubTypeEntityPatterns on SubTypeEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_SubTypeEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _SubTypeEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_SubTypeEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SubTypeEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_SubTypeEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SubTypeEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "id") int? id, @JsonKey(name: "type") String? type)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _SubTypeEntity() when $default != null:
+        return $default(_that.id, _that.type);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "id") int? id, @JsonKey(name: "type") String? type)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SubTypeEntity():
+        return $default(_that.id, _that.type);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "id") int? id, @JsonKey(name: "type") String? type)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _SubTypeEntity() when $default != null:
+        return $default(_that.id, _that.type);
+      case _:
+        return null;
+    }
   }
 }
 

@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -952,6 +951,670 @@ class _$EmployeeByIdResponseCopyWithImpl<$Res>
     return $UserAccountDtoCopyWith<$Res>(_self.userAccountDto!, (value) {
       return _then(_self.copyWith(userAccountDto: value));
     });
+  }
+}
+
+/// Adds pattern-matching-related methods to [EmployeeByIdResponse].
+extension EmployeeByIdResponsePatterns on EmployeeByIdResponse {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_EmployeeByIdResponse value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _EmployeeByIdResponse() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_EmployeeByIdResponse value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _EmployeeByIdResponse():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_EmployeeByIdResponse value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _EmployeeByIdResponse() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "employee_id") int? employeeId,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "organisation_ids") dynamic organisationIds,
+            @JsonKey(name: "company_id") dynamic companyId,
+            @JsonKey(name: "code") dynamic code,
+            @JsonKey(name: "first_name") String? firstName,
+            @JsonKey(name: "last_name") String? lastName,
+            @JsonKey(name: "full_name") dynamic fullName,
+            @JsonKey(name: "personal_email") String? personalEmail,
+            @JsonKey(name: "permanent_address") dynamic permanentAddress,
+            @JsonKey(name: "secondary_address") dynamic secondaryAddress,
+            @JsonKey(name: "primary_contact") String? primaryContact,
+            @JsonKey(name: "secondary_contact") dynamic secondaryContact,
+            @JsonKey(name: "is_active") bool? isActive,
+            @JsonKey(name: "login_email") dynamic loginEmail,
+            @JsonKey(name: "designation_id") dynamic designationId,
+            @JsonKey(name: "location_id") dynamic locationId,
+            @JsonKey(name: "designation_integration_value")
+            dynamic designationIntegrationValue,
+            @JsonKey(name: "base64_string") dynamic base64String,
+            @JsonKey(name: "password") dynamic password,
+            @JsonKey(name: "modified_by") int? modifiedBy,
+            @JsonKey(name: "created_by") int? createdBy,
+            @JsonKey(name: "is_inactive") bool? isInactive,
+            @JsonKey(name: "is_banned") bool? isBanned,
+            @JsonKey(name: "supervisor_id") dynamic supervisorId,
+            @JsonKey(name: "birth_date") dynamic birthDate,
+            @JsonKey(name: "hire_date") dynamic hireDate,
+            @JsonKey(name: "termination_date") dynamic terminationDate,
+            @JsonKey(name: "last_review") dynamic lastReview,
+            @JsonKey(name: "next_review") dynamic nextReview,
+            @JsonKey(name: "branch_ids") List<dynamic>? branchIds,
+            @JsonKey(name: "company_ids") List<dynamic>? companyIds,
+            @JsonKey(name: "employee_type") int? employeeType,
+            @JsonKey(name: "employee_type_id") int? employeeTypeId,
+            @JsonKey(name: "feminine") dynamic feminine,
+            @JsonKey(name: "fax") dynamic fax,
+            @JsonKey(name: "date_created") dynamic dateCreated,
+            @JsonKey(name: "currency_id") dynamic currencyId,
+            @JsonKey(name: "office_phone") dynamic officePhone,
+            @JsonKey(name: "tenant_id") dynamic tenantId,
+            @JsonKey(name: "user_Id") int? userId,
+            @JsonKey(name: "home_phone") dynamic homePhone,
+            @JsonKey(name: "department_id") dynamic departmentId,
+            @JsonKey(name: "subsidiary_id") dynamic subsidiaryId,
+            @JsonKey(name: "image_id") dynamic imageId,
+            @JsonKey(name: "account") dynamic account,
+            @JsonKey(name: "release_date") dynamic releaseDate,
+            @JsonKey(name: "social_security") dynamic socialSecurity,
+            @JsonKey(name: "time_approver") dynamic timeApprover,
+            @JsonKey(name: "notes") dynamic notes,
+            @JsonKey(name: "expenses_limit") dynamic expensesLimit,
+            @JsonKey(name: "is_sales_rep") bool? isSalesRep,
+            @JsonKey(name: "expenses_approver") dynamic expensesApprover,
+            @JsonKey(name: "is_support_rep") bool? isSupportRep,
+            @JsonKey(name: "is_project_rep") bool? isProjectRep,
+            @JsonKey(name: "expenses_approval_limit")
+            dynamic expensesApprovalLimit,
+            @JsonKey(name: "default_role_id") dynamic defaultRoleId,
+            @JsonKey(name: "job_title") dynamic jobTitle,
+            @JsonKey(name: "purchase_limit") dynamic purchaseLimit,
+            @JsonKey(name: "work_calendar") dynamic workCalendar,
+            @JsonKey(name: "purchase_approver") dynamic purchaseApprover,
+            @JsonKey(name: "labor_cost") dynamic laborCost,
+            @JsonKey(name: "job_description") dynamic jobDescription,
+            @JsonKey(name: "purchase_approval_limit")
+            dynamic purchaseApprovalLimit,
+            @JsonKey(name: "is_procurement_person") bool? isProcurementPerson,
+            @JsonKey(name: "is_active_access") bool? isActiveAccess,
+            @JsonKey(name: "is_notification_email") bool? isNotificationEmail,
+            @JsonKey(name: "is_change_password") bool? isChangePassword,
+            @JsonKey(name: "confirm_password") dynamic confirmPassword,
+            @JsonKey(name: "status") int? status,
+            @JsonKey(name: "jobTypeStatus") int? jobTypeStatus,
+            @JsonKey(name: "maritalStatus") dynamic maritalStatus,
+            @JsonKey(name: "religion") dynamic religion,
+            @JsonKey(name: "gender") dynamic gender,
+            @JsonKey(name: "approval_delegate") dynamic approvalDelegate,
+            @JsonKey(name: "user_account_dto") UserAccountDto? userAccountDto,
+            @JsonKey(name: "contact_details") List<dynamic>? contactDetails,
+            @JsonKey(name: "education_details") List<dynamic>? educationDetails,
+            @JsonKey(name: "corporate_card_details")
+            List<dynamic>? corporateCardDetails,
+            @JsonKey(name: "primary_id") int? primaryId,
+            @JsonKey(name: "integration_value") dynamic integrationValue,
+            @JsonKey(name: "is_synced") bool? isSynced)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _EmployeeByIdResponse() when $default != null:
+        return $default(
+            _that.employeeId,
+            _that.organisationId,
+            _that.organisationIds,
+            _that.companyId,
+            _that.code,
+            _that.firstName,
+            _that.lastName,
+            _that.fullName,
+            _that.personalEmail,
+            _that.permanentAddress,
+            _that.secondaryAddress,
+            _that.primaryContact,
+            _that.secondaryContact,
+            _that.isActive,
+            _that.loginEmail,
+            _that.designationId,
+            _that.locationId,
+            _that.designationIntegrationValue,
+            _that.base64String,
+            _that.password,
+            _that.modifiedBy,
+            _that.createdBy,
+            _that.isInactive,
+            _that.isBanned,
+            _that.supervisorId,
+            _that.birthDate,
+            _that.hireDate,
+            _that.terminationDate,
+            _that.lastReview,
+            _that.nextReview,
+            _that.branchIds,
+            _that.companyIds,
+            _that.employeeType,
+            _that.employeeTypeId,
+            _that.feminine,
+            _that.fax,
+            _that.dateCreated,
+            _that.currencyId,
+            _that.officePhone,
+            _that.tenantId,
+            _that.userId,
+            _that.homePhone,
+            _that.departmentId,
+            _that.subsidiaryId,
+            _that.imageId,
+            _that.account,
+            _that.releaseDate,
+            _that.socialSecurity,
+            _that.timeApprover,
+            _that.notes,
+            _that.expensesLimit,
+            _that.isSalesRep,
+            _that.expensesApprover,
+            _that.isSupportRep,
+            _that.isProjectRep,
+            _that.expensesApprovalLimit,
+            _that.defaultRoleId,
+            _that.jobTitle,
+            _that.purchaseLimit,
+            _that.workCalendar,
+            _that.purchaseApprover,
+            _that.laborCost,
+            _that.jobDescription,
+            _that.purchaseApprovalLimit,
+            _that.isProcurementPerson,
+            _that.isActiveAccess,
+            _that.isNotificationEmail,
+            _that.isChangePassword,
+            _that.confirmPassword,
+            _that.status,
+            _that.jobTypeStatus,
+            _that.maritalStatus,
+            _that.religion,
+            _that.gender,
+            _that.approvalDelegate,
+            _that.userAccountDto,
+            _that.contactDetails,
+            _that.educationDetails,
+            _that.corporateCardDetails,
+            _that.primaryId,
+            _that.integrationValue,
+            _that.isSynced);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "employee_id") int? employeeId,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "organisation_ids") dynamic organisationIds,
+            @JsonKey(name: "company_id") dynamic companyId,
+            @JsonKey(name: "code") dynamic code,
+            @JsonKey(name: "first_name") String? firstName,
+            @JsonKey(name: "last_name") String? lastName,
+            @JsonKey(name: "full_name") dynamic fullName,
+            @JsonKey(name: "personal_email") String? personalEmail,
+            @JsonKey(name: "permanent_address") dynamic permanentAddress,
+            @JsonKey(name: "secondary_address") dynamic secondaryAddress,
+            @JsonKey(name: "primary_contact") String? primaryContact,
+            @JsonKey(name: "secondary_contact") dynamic secondaryContact,
+            @JsonKey(name: "is_active") bool? isActive,
+            @JsonKey(name: "login_email") dynamic loginEmail,
+            @JsonKey(name: "designation_id") dynamic designationId,
+            @JsonKey(name: "location_id") dynamic locationId,
+            @JsonKey(name: "designation_integration_value")
+            dynamic designationIntegrationValue,
+            @JsonKey(name: "base64_string") dynamic base64String,
+            @JsonKey(name: "password") dynamic password,
+            @JsonKey(name: "modified_by") int? modifiedBy,
+            @JsonKey(name: "created_by") int? createdBy,
+            @JsonKey(name: "is_inactive") bool? isInactive,
+            @JsonKey(name: "is_banned") bool? isBanned,
+            @JsonKey(name: "supervisor_id") dynamic supervisorId,
+            @JsonKey(name: "birth_date") dynamic birthDate,
+            @JsonKey(name: "hire_date") dynamic hireDate,
+            @JsonKey(name: "termination_date") dynamic terminationDate,
+            @JsonKey(name: "last_review") dynamic lastReview,
+            @JsonKey(name: "next_review") dynamic nextReview,
+            @JsonKey(name: "branch_ids") List<dynamic>? branchIds,
+            @JsonKey(name: "company_ids") List<dynamic>? companyIds,
+            @JsonKey(name: "employee_type") int? employeeType,
+            @JsonKey(name: "employee_type_id") int? employeeTypeId,
+            @JsonKey(name: "feminine") dynamic feminine,
+            @JsonKey(name: "fax") dynamic fax,
+            @JsonKey(name: "date_created") dynamic dateCreated,
+            @JsonKey(name: "currency_id") dynamic currencyId,
+            @JsonKey(name: "office_phone") dynamic officePhone,
+            @JsonKey(name: "tenant_id") dynamic tenantId,
+            @JsonKey(name: "user_Id") int? userId,
+            @JsonKey(name: "home_phone") dynamic homePhone,
+            @JsonKey(name: "department_id") dynamic departmentId,
+            @JsonKey(name: "subsidiary_id") dynamic subsidiaryId,
+            @JsonKey(name: "image_id") dynamic imageId,
+            @JsonKey(name: "account") dynamic account,
+            @JsonKey(name: "release_date") dynamic releaseDate,
+            @JsonKey(name: "social_security") dynamic socialSecurity,
+            @JsonKey(name: "time_approver") dynamic timeApprover,
+            @JsonKey(name: "notes") dynamic notes,
+            @JsonKey(name: "expenses_limit") dynamic expensesLimit,
+            @JsonKey(name: "is_sales_rep") bool? isSalesRep,
+            @JsonKey(name: "expenses_approver") dynamic expensesApprover,
+            @JsonKey(name: "is_support_rep") bool? isSupportRep,
+            @JsonKey(name: "is_project_rep") bool? isProjectRep,
+            @JsonKey(name: "expenses_approval_limit")
+            dynamic expensesApprovalLimit,
+            @JsonKey(name: "default_role_id") dynamic defaultRoleId,
+            @JsonKey(name: "job_title") dynamic jobTitle,
+            @JsonKey(name: "purchase_limit") dynamic purchaseLimit,
+            @JsonKey(name: "work_calendar") dynamic workCalendar,
+            @JsonKey(name: "purchase_approver") dynamic purchaseApprover,
+            @JsonKey(name: "labor_cost") dynamic laborCost,
+            @JsonKey(name: "job_description") dynamic jobDescription,
+            @JsonKey(name: "purchase_approval_limit")
+            dynamic purchaseApprovalLimit,
+            @JsonKey(name: "is_procurement_person") bool? isProcurementPerson,
+            @JsonKey(name: "is_active_access") bool? isActiveAccess,
+            @JsonKey(name: "is_notification_email") bool? isNotificationEmail,
+            @JsonKey(name: "is_change_password") bool? isChangePassword,
+            @JsonKey(name: "confirm_password") dynamic confirmPassword,
+            @JsonKey(name: "status") int? status,
+            @JsonKey(name: "jobTypeStatus") int? jobTypeStatus,
+            @JsonKey(name: "maritalStatus") dynamic maritalStatus,
+            @JsonKey(name: "religion") dynamic religion,
+            @JsonKey(name: "gender") dynamic gender,
+            @JsonKey(name: "approval_delegate") dynamic approvalDelegate,
+            @JsonKey(name: "user_account_dto") UserAccountDto? userAccountDto,
+            @JsonKey(name: "contact_details") List<dynamic>? contactDetails,
+            @JsonKey(name: "education_details") List<dynamic>? educationDetails,
+            @JsonKey(name: "corporate_card_details")
+            List<dynamic>? corporateCardDetails,
+            @JsonKey(name: "primary_id") int? primaryId,
+            @JsonKey(name: "integration_value") dynamic integrationValue,
+            @JsonKey(name: "is_synced") bool? isSynced)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _EmployeeByIdResponse():
+        return $default(
+            _that.employeeId,
+            _that.organisationId,
+            _that.organisationIds,
+            _that.companyId,
+            _that.code,
+            _that.firstName,
+            _that.lastName,
+            _that.fullName,
+            _that.personalEmail,
+            _that.permanentAddress,
+            _that.secondaryAddress,
+            _that.primaryContact,
+            _that.secondaryContact,
+            _that.isActive,
+            _that.loginEmail,
+            _that.designationId,
+            _that.locationId,
+            _that.designationIntegrationValue,
+            _that.base64String,
+            _that.password,
+            _that.modifiedBy,
+            _that.createdBy,
+            _that.isInactive,
+            _that.isBanned,
+            _that.supervisorId,
+            _that.birthDate,
+            _that.hireDate,
+            _that.terminationDate,
+            _that.lastReview,
+            _that.nextReview,
+            _that.branchIds,
+            _that.companyIds,
+            _that.employeeType,
+            _that.employeeTypeId,
+            _that.feminine,
+            _that.fax,
+            _that.dateCreated,
+            _that.currencyId,
+            _that.officePhone,
+            _that.tenantId,
+            _that.userId,
+            _that.homePhone,
+            _that.departmentId,
+            _that.subsidiaryId,
+            _that.imageId,
+            _that.account,
+            _that.releaseDate,
+            _that.socialSecurity,
+            _that.timeApprover,
+            _that.notes,
+            _that.expensesLimit,
+            _that.isSalesRep,
+            _that.expensesApprover,
+            _that.isSupportRep,
+            _that.isProjectRep,
+            _that.expensesApprovalLimit,
+            _that.defaultRoleId,
+            _that.jobTitle,
+            _that.purchaseLimit,
+            _that.workCalendar,
+            _that.purchaseApprover,
+            _that.laborCost,
+            _that.jobDescription,
+            _that.purchaseApprovalLimit,
+            _that.isProcurementPerson,
+            _that.isActiveAccess,
+            _that.isNotificationEmail,
+            _that.isChangePassword,
+            _that.confirmPassword,
+            _that.status,
+            _that.jobTypeStatus,
+            _that.maritalStatus,
+            _that.religion,
+            _that.gender,
+            _that.approvalDelegate,
+            _that.userAccountDto,
+            _that.contactDetails,
+            _that.educationDetails,
+            _that.corporateCardDetails,
+            _that.primaryId,
+            _that.integrationValue,
+            _that.isSynced);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "employee_id") int? employeeId,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "organisation_ids") dynamic organisationIds,
+            @JsonKey(name: "company_id") dynamic companyId,
+            @JsonKey(name: "code") dynamic code,
+            @JsonKey(name: "first_name") String? firstName,
+            @JsonKey(name: "last_name") String? lastName,
+            @JsonKey(name: "full_name") dynamic fullName,
+            @JsonKey(name: "personal_email") String? personalEmail,
+            @JsonKey(name: "permanent_address") dynamic permanentAddress,
+            @JsonKey(name: "secondary_address") dynamic secondaryAddress,
+            @JsonKey(name: "primary_contact") String? primaryContact,
+            @JsonKey(name: "secondary_contact") dynamic secondaryContact,
+            @JsonKey(name: "is_active") bool? isActive,
+            @JsonKey(name: "login_email") dynamic loginEmail,
+            @JsonKey(name: "designation_id") dynamic designationId,
+            @JsonKey(name: "location_id") dynamic locationId,
+            @JsonKey(name: "designation_integration_value")
+            dynamic designationIntegrationValue,
+            @JsonKey(name: "base64_string") dynamic base64String,
+            @JsonKey(name: "password") dynamic password,
+            @JsonKey(name: "modified_by") int? modifiedBy,
+            @JsonKey(name: "created_by") int? createdBy,
+            @JsonKey(name: "is_inactive") bool? isInactive,
+            @JsonKey(name: "is_banned") bool? isBanned,
+            @JsonKey(name: "supervisor_id") dynamic supervisorId,
+            @JsonKey(name: "birth_date") dynamic birthDate,
+            @JsonKey(name: "hire_date") dynamic hireDate,
+            @JsonKey(name: "termination_date") dynamic terminationDate,
+            @JsonKey(name: "last_review") dynamic lastReview,
+            @JsonKey(name: "next_review") dynamic nextReview,
+            @JsonKey(name: "branch_ids") List<dynamic>? branchIds,
+            @JsonKey(name: "company_ids") List<dynamic>? companyIds,
+            @JsonKey(name: "employee_type") int? employeeType,
+            @JsonKey(name: "employee_type_id") int? employeeTypeId,
+            @JsonKey(name: "feminine") dynamic feminine,
+            @JsonKey(name: "fax") dynamic fax,
+            @JsonKey(name: "date_created") dynamic dateCreated,
+            @JsonKey(name: "currency_id") dynamic currencyId,
+            @JsonKey(name: "office_phone") dynamic officePhone,
+            @JsonKey(name: "tenant_id") dynamic tenantId,
+            @JsonKey(name: "user_Id") int? userId,
+            @JsonKey(name: "home_phone") dynamic homePhone,
+            @JsonKey(name: "department_id") dynamic departmentId,
+            @JsonKey(name: "subsidiary_id") dynamic subsidiaryId,
+            @JsonKey(name: "image_id") dynamic imageId,
+            @JsonKey(name: "account") dynamic account,
+            @JsonKey(name: "release_date") dynamic releaseDate,
+            @JsonKey(name: "social_security") dynamic socialSecurity,
+            @JsonKey(name: "time_approver") dynamic timeApprover,
+            @JsonKey(name: "notes") dynamic notes,
+            @JsonKey(name: "expenses_limit") dynamic expensesLimit,
+            @JsonKey(name: "is_sales_rep") bool? isSalesRep,
+            @JsonKey(name: "expenses_approver") dynamic expensesApprover,
+            @JsonKey(name: "is_support_rep") bool? isSupportRep,
+            @JsonKey(name: "is_project_rep") bool? isProjectRep,
+            @JsonKey(name: "expenses_approval_limit")
+            dynamic expensesApprovalLimit,
+            @JsonKey(name: "default_role_id") dynamic defaultRoleId,
+            @JsonKey(name: "job_title") dynamic jobTitle,
+            @JsonKey(name: "purchase_limit") dynamic purchaseLimit,
+            @JsonKey(name: "work_calendar") dynamic workCalendar,
+            @JsonKey(name: "purchase_approver") dynamic purchaseApprover,
+            @JsonKey(name: "labor_cost") dynamic laborCost,
+            @JsonKey(name: "job_description") dynamic jobDescription,
+            @JsonKey(name: "purchase_approval_limit")
+            dynamic purchaseApprovalLimit,
+            @JsonKey(name: "is_procurement_person") bool? isProcurementPerson,
+            @JsonKey(name: "is_active_access") bool? isActiveAccess,
+            @JsonKey(name: "is_notification_email") bool? isNotificationEmail,
+            @JsonKey(name: "is_change_password") bool? isChangePassword,
+            @JsonKey(name: "confirm_password") dynamic confirmPassword,
+            @JsonKey(name: "status") int? status,
+            @JsonKey(name: "jobTypeStatus") int? jobTypeStatus,
+            @JsonKey(name: "maritalStatus") dynamic maritalStatus,
+            @JsonKey(name: "religion") dynamic religion,
+            @JsonKey(name: "gender") dynamic gender,
+            @JsonKey(name: "approval_delegate") dynamic approvalDelegate,
+            @JsonKey(name: "user_account_dto") UserAccountDto? userAccountDto,
+            @JsonKey(name: "contact_details") List<dynamic>? contactDetails,
+            @JsonKey(name: "education_details") List<dynamic>? educationDetails,
+            @JsonKey(name: "corporate_card_details")
+            List<dynamic>? corporateCardDetails,
+            @JsonKey(name: "primary_id") int? primaryId,
+            @JsonKey(name: "integration_value") dynamic integrationValue,
+            @JsonKey(name: "is_synced") bool? isSynced)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _EmployeeByIdResponse() when $default != null:
+        return $default(
+            _that.employeeId,
+            _that.organisationId,
+            _that.organisationIds,
+            _that.companyId,
+            _that.code,
+            _that.firstName,
+            _that.lastName,
+            _that.fullName,
+            _that.personalEmail,
+            _that.permanentAddress,
+            _that.secondaryAddress,
+            _that.primaryContact,
+            _that.secondaryContact,
+            _that.isActive,
+            _that.loginEmail,
+            _that.designationId,
+            _that.locationId,
+            _that.designationIntegrationValue,
+            _that.base64String,
+            _that.password,
+            _that.modifiedBy,
+            _that.createdBy,
+            _that.isInactive,
+            _that.isBanned,
+            _that.supervisorId,
+            _that.birthDate,
+            _that.hireDate,
+            _that.terminationDate,
+            _that.lastReview,
+            _that.nextReview,
+            _that.branchIds,
+            _that.companyIds,
+            _that.employeeType,
+            _that.employeeTypeId,
+            _that.feminine,
+            _that.fax,
+            _that.dateCreated,
+            _that.currencyId,
+            _that.officePhone,
+            _that.tenantId,
+            _that.userId,
+            _that.homePhone,
+            _that.departmentId,
+            _that.subsidiaryId,
+            _that.imageId,
+            _that.account,
+            _that.releaseDate,
+            _that.socialSecurity,
+            _that.timeApprover,
+            _that.notes,
+            _that.expensesLimit,
+            _that.isSalesRep,
+            _that.expensesApprover,
+            _that.isSupportRep,
+            _that.isProjectRep,
+            _that.expensesApprovalLimit,
+            _that.defaultRoleId,
+            _that.jobTitle,
+            _that.purchaseLimit,
+            _that.workCalendar,
+            _that.purchaseApprover,
+            _that.laborCost,
+            _that.jobDescription,
+            _that.purchaseApprovalLimit,
+            _that.isProcurementPerson,
+            _that.isActiveAccess,
+            _that.isNotificationEmail,
+            _that.isChangePassword,
+            _that.confirmPassword,
+            _that.status,
+            _that.jobTypeStatus,
+            _that.maritalStatus,
+            _that.religion,
+            _that.gender,
+            _that.approvalDelegate,
+            _that.userAccountDto,
+            _that.contactDetails,
+            _that.educationDetails,
+            _that.corporateCardDetails,
+            _that.primaryId,
+            _that.integrationValue,
+            _that.isSynced);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -2349,6 +3012,262 @@ class _$UserAccountDtoCopyWithImpl<$Res>
           : roleIds // ignore: cast_nullable_to_non_nullable
               as dynamic,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [UserAccountDto].
+extension UserAccountDtoPatterns on UserAccountDto {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_UserAccountDto value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _UserAccountDto() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_UserAccountDto value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _UserAccountDto():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_UserAccountDto value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _UserAccountDto() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "email") dynamic email,
+            @JsonKey(name: "user_name") dynamic userName,
+            @JsonKey(name: "password") dynamic password,
+            @JsonKey(name: "created_by") int? createdBy,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "company_id") dynamic companyId,
+            @JsonKey(name: "branch_id") dynamic branchId,
+            @JsonKey(name: "modified_by") dynamic modifiedBy,
+            @JsonKey(name: "user_id") dynamic userId,
+            @JsonKey(name: "employee_id") dynamic employeeId,
+            @JsonKey(name: "is_email_confirm") bool? isEmailConfirm,
+            @JsonKey(name: "two_factor_enabled") bool? twoFactorEnabled,
+            @JsonKey(name: "is_reset_password") bool? isResetPassword,
+            @JsonKey(name: "is_security_question") bool? isSecurityQuestion,
+            @JsonKey(name: "is_send_email") bool? isSendEmail,
+            @JsonKey(name: "role_ids") dynamic roleIds)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _UserAccountDto() when $default != null:
+        return $default(
+            _that.email,
+            _that.userName,
+            _that.password,
+            _that.createdBy,
+            _that.organisationId,
+            _that.companyId,
+            _that.branchId,
+            _that.modifiedBy,
+            _that.userId,
+            _that.employeeId,
+            _that.isEmailConfirm,
+            _that.twoFactorEnabled,
+            _that.isResetPassword,
+            _that.isSecurityQuestion,
+            _that.isSendEmail,
+            _that.roleIds);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "email") dynamic email,
+            @JsonKey(name: "user_name") dynamic userName,
+            @JsonKey(name: "password") dynamic password,
+            @JsonKey(name: "created_by") int? createdBy,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "company_id") dynamic companyId,
+            @JsonKey(name: "branch_id") dynamic branchId,
+            @JsonKey(name: "modified_by") dynamic modifiedBy,
+            @JsonKey(name: "user_id") dynamic userId,
+            @JsonKey(name: "employee_id") dynamic employeeId,
+            @JsonKey(name: "is_email_confirm") bool? isEmailConfirm,
+            @JsonKey(name: "two_factor_enabled") bool? twoFactorEnabled,
+            @JsonKey(name: "is_reset_password") bool? isResetPassword,
+            @JsonKey(name: "is_security_question") bool? isSecurityQuestion,
+            @JsonKey(name: "is_send_email") bool? isSendEmail,
+            @JsonKey(name: "role_ids") dynamic roleIds)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _UserAccountDto():
+        return $default(
+            _that.email,
+            _that.userName,
+            _that.password,
+            _that.createdBy,
+            _that.organisationId,
+            _that.companyId,
+            _that.branchId,
+            _that.modifiedBy,
+            _that.userId,
+            _that.employeeId,
+            _that.isEmailConfirm,
+            _that.twoFactorEnabled,
+            _that.isResetPassword,
+            _that.isSecurityQuestion,
+            _that.isSendEmail,
+            _that.roleIds);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "email") dynamic email,
+            @JsonKey(name: "user_name") dynamic userName,
+            @JsonKey(name: "password") dynamic password,
+            @JsonKey(name: "created_by") int? createdBy,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "company_id") dynamic companyId,
+            @JsonKey(name: "branch_id") dynamic branchId,
+            @JsonKey(name: "modified_by") dynamic modifiedBy,
+            @JsonKey(name: "user_id") dynamic userId,
+            @JsonKey(name: "employee_id") dynamic employeeId,
+            @JsonKey(name: "is_email_confirm") bool? isEmailConfirm,
+            @JsonKey(name: "two_factor_enabled") bool? twoFactorEnabled,
+            @JsonKey(name: "is_reset_password") bool? isResetPassword,
+            @JsonKey(name: "is_security_question") bool? isSecurityQuestion,
+            @JsonKey(name: "is_send_email") bool? isSendEmail,
+            @JsonKey(name: "role_ids") dynamic roleIds)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _UserAccountDto() when $default != null:
+        return $default(
+            _that.email,
+            _that.userName,
+            _that.password,
+            _that.createdBy,
+            _that.organisationId,
+            _that.companyId,
+            _that.branchId,
+            _that.modifiedBy,
+            _that.userId,
+            _that.employeeId,
+            _that.isEmailConfirm,
+            _that.twoFactorEnabled,
+            _that.isResetPassword,
+            _that.isSecurityQuestion,
+            _that.isSendEmail,
+            _that.roleIds);
+      case _:
+        return null;
+    }
   }
 }
 

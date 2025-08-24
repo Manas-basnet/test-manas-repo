@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -271,6 +270,286 @@ class _$TaxEntityCopyWithImpl<$Res> implements $TaxEntityCopyWith<$Res> {
           : isInactive // ignore: cast_nullable_to_non_nullable
               as bool?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [TaxEntity].
+extension TaxEntityPatterns on TaxEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_TaxEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _TaxEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_TaxEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _TaxEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_TaxEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _TaxEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "id") int? id,
+            @JsonKey(name: "name") String? name,
+            @JsonKey(name: "description") String? description,
+            @JsonKey(name: "rate") double? rate,
+            @JsonKey(name: "effective_from") DateTime? effectiveFrom,
+            @JsonKey(name: "valid_till") DateTime? validTill,
+            @JsonKey(name: "subsidiary_id") dynamic subsidiaryId,
+            @JsonKey(name: "is_include_children") bool? isIncludeChildren,
+            @JsonKey(name: "tax_type_id") dynamic taxTypeId,
+            @JsonKey(name: "agency_id") dynamic agencyId,
+            @JsonKey(name: "reverse_charge") bool? reverseCharge,
+            @JsonKey(name: "applies_to_service_items")
+            bool? appliesToServiceItems,
+            @JsonKey(name: "export") bool? datumExport,
+            @JsonKey(name: "exempt") bool? exempt,
+            @JsonKey(name: "is_default") bool? isDefault,
+            @JsonKey(name: "exclude_from_vat_reports")
+            bool? excludeFromVatReports,
+            @JsonKey(name: "assets_account_id") int? assetsAccountId,
+            @JsonKey(name: "liability_account_id") int? liabilityAccountId,
+            @JsonKey(name: "is_inactive") bool? isInactive)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _TaxEntity() when $default != null:
+        return $default(
+            _that.id,
+            _that.name,
+            _that.description,
+            _that.rate,
+            _that.effectiveFrom,
+            _that.validTill,
+            _that.subsidiaryId,
+            _that.isIncludeChildren,
+            _that.taxTypeId,
+            _that.agencyId,
+            _that.reverseCharge,
+            _that.appliesToServiceItems,
+            _that.datumExport,
+            _that.exempt,
+            _that.isDefault,
+            _that.excludeFromVatReports,
+            _that.assetsAccountId,
+            _that.liabilityAccountId,
+            _that.isInactive);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "id") int? id,
+            @JsonKey(name: "name") String? name,
+            @JsonKey(name: "description") String? description,
+            @JsonKey(name: "rate") double? rate,
+            @JsonKey(name: "effective_from") DateTime? effectiveFrom,
+            @JsonKey(name: "valid_till") DateTime? validTill,
+            @JsonKey(name: "subsidiary_id") dynamic subsidiaryId,
+            @JsonKey(name: "is_include_children") bool? isIncludeChildren,
+            @JsonKey(name: "tax_type_id") dynamic taxTypeId,
+            @JsonKey(name: "agency_id") dynamic agencyId,
+            @JsonKey(name: "reverse_charge") bool? reverseCharge,
+            @JsonKey(name: "applies_to_service_items")
+            bool? appliesToServiceItems,
+            @JsonKey(name: "export") bool? datumExport,
+            @JsonKey(name: "exempt") bool? exempt,
+            @JsonKey(name: "is_default") bool? isDefault,
+            @JsonKey(name: "exclude_from_vat_reports")
+            bool? excludeFromVatReports,
+            @JsonKey(name: "assets_account_id") int? assetsAccountId,
+            @JsonKey(name: "liability_account_id") int? liabilityAccountId,
+            @JsonKey(name: "is_inactive") bool? isInactive)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _TaxEntity():
+        return $default(
+            _that.id,
+            _that.name,
+            _that.description,
+            _that.rate,
+            _that.effectiveFrom,
+            _that.validTill,
+            _that.subsidiaryId,
+            _that.isIncludeChildren,
+            _that.taxTypeId,
+            _that.agencyId,
+            _that.reverseCharge,
+            _that.appliesToServiceItems,
+            _that.datumExport,
+            _that.exempt,
+            _that.isDefault,
+            _that.excludeFromVatReports,
+            _that.assetsAccountId,
+            _that.liabilityAccountId,
+            _that.isInactive);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "id") int? id,
+            @JsonKey(name: "name") String? name,
+            @JsonKey(name: "description") String? description,
+            @JsonKey(name: "rate") double? rate,
+            @JsonKey(name: "effective_from") DateTime? effectiveFrom,
+            @JsonKey(name: "valid_till") DateTime? validTill,
+            @JsonKey(name: "subsidiary_id") dynamic subsidiaryId,
+            @JsonKey(name: "is_include_children") bool? isIncludeChildren,
+            @JsonKey(name: "tax_type_id") dynamic taxTypeId,
+            @JsonKey(name: "agency_id") dynamic agencyId,
+            @JsonKey(name: "reverse_charge") bool? reverseCharge,
+            @JsonKey(name: "applies_to_service_items")
+            bool? appliesToServiceItems,
+            @JsonKey(name: "export") bool? datumExport,
+            @JsonKey(name: "exempt") bool? exempt,
+            @JsonKey(name: "is_default") bool? isDefault,
+            @JsonKey(name: "exclude_from_vat_reports")
+            bool? excludeFromVatReports,
+            @JsonKey(name: "assets_account_id") int? assetsAccountId,
+            @JsonKey(name: "liability_account_id") int? liabilityAccountId,
+            @JsonKey(name: "is_inactive") bool? isInactive)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _TaxEntity() when $default != null:
+        return $default(
+            _that.id,
+            _that.name,
+            _that.description,
+            _that.rate,
+            _that.effectiveFrom,
+            _that.validTill,
+            _that.subsidiaryId,
+            _that.isIncludeChildren,
+            _that.taxTypeId,
+            _that.agencyId,
+            _that.reverseCharge,
+            _that.appliesToServiceItems,
+            _that.datumExport,
+            _that.exempt,
+            _that.isDefault,
+            _that.excludeFromVatReports,
+            _that.assetsAccountId,
+            _that.liabilityAccountId,
+            _that.isInactive);
+      case _:
+        return null;
+    }
   }
 }
 

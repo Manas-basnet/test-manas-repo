@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -368,6 +367,352 @@ class _$CreditMemoDetailCopyWithImpl<$Res>
           : locationName // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [CreditMemoDetail].
+extension CreditMemoDetailPatterns on CreditMemoDetail {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_CreditMemoDetail value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDetail() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_CreditMemoDetail value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDetail():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_CreditMemoDetail value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDetail() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            int? creditMemoId,
+            int? detailId,
+            int? itemId,
+            String? hsCode,
+            int? refDetailId,
+            String? itemName,
+            String? description,
+            int? unitId,
+            String? unitName,
+            int? rate,
+            int? quantity,
+            int? discount,
+            double? discountPercent,
+            int? grossAmount,
+            String? tscCode,
+            String? tscCodeName,
+            int? tscRate,
+            int? tscAmount,
+            dynamic priceLevelId,
+            dynamic priceLevelName,
+            int? taxId,
+            String? taxCodeName,
+            int? taxRate,
+            double? taxAmount,
+            double? amount,
+            bool? isApplyWhTax,
+            int? whTaxAmount,
+            int? departmentId,
+            String? departmentName,
+            int? locationId,
+            String? locationName)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDetail() when $default != null:
+        return $default(
+            _that.creditMemoId,
+            _that.detailId,
+            _that.itemId,
+            _that.hsCode,
+            _that.refDetailId,
+            _that.itemName,
+            _that.description,
+            _that.unitId,
+            _that.unitName,
+            _that.rate,
+            _that.quantity,
+            _that.discount,
+            _that.discountPercent,
+            _that.grossAmount,
+            _that.tscCode,
+            _that.tscCodeName,
+            _that.tscRate,
+            _that.tscAmount,
+            _that.priceLevelId,
+            _that.priceLevelName,
+            _that.taxId,
+            _that.taxCodeName,
+            _that.taxRate,
+            _that.taxAmount,
+            _that.amount,
+            _that.isApplyWhTax,
+            _that.whTaxAmount,
+            _that.departmentId,
+            _that.departmentName,
+            _that.locationId,
+            _that.locationName);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            int? creditMemoId,
+            int? detailId,
+            int? itemId,
+            String? hsCode,
+            int? refDetailId,
+            String? itemName,
+            String? description,
+            int? unitId,
+            String? unitName,
+            int? rate,
+            int? quantity,
+            int? discount,
+            double? discountPercent,
+            int? grossAmount,
+            String? tscCode,
+            String? tscCodeName,
+            int? tscRate,
+            int? tscAmount,
+            dynamic priceLevelId,
+            dynamic priceLevelName,
+            int? taxId,
+            String? taxCodeName,
+            int? taxRate,
+            double? taxAmount,
+            double? amount,
+            bool? isApplyWhTax,
+            int? whTaxAmount,
+            int? departmentId,
+            String? departmentName,
+            int? locationId,
+            String? locationName)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDetail():
+        return $default(
+            _that.creditMemoId,
+            _that.detailId,
+            _that.itemId,
+            _that.hsCode,
+            _that.refDetailId,
+            _that.itemName,
+            _that.description,
+            _that.unitId,
+            _that.unitName,
+            _that.rate,
+            _that.quantity,
+            _that.discount,
+            _that.discountPercent,
+            _that.grossAmount,
+            _that.tscCode,
+            _that.tscCodeName,
+            _that.tscRate,
+            _that.tscAmount,
+            _that.priceLevelId,
+            _that.priceLevelName,
+            _that.taxId,
+            _that.taxCodeName,
+            _that.taxRate,
+            _that.taxAmount,
+            _that.amount,
+            _that.isApplyWhTax,
+            _that.whTaxAmount,
+            _that.departmentId,
+            _that.departmentName,
+            _that.locationId,
+            _that.locationName);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            int? creditMemoId,
+            int? detailId,
+            int? itemId,
+            String? hsCode,
+            int? refDetailId,
+            String? itemName,
+            String? description,
+            int? unitId,
+            String? unitName,
+            int? rate,
+            int? quantity,
+            int? discount,
+            double? discountPercent,
+            int? grossAmount,
+            String? tscCode,
+            String? tscCodeName,
+            int? tscRate,
+            int? tscAmount,
+            dynamic priceLevelId,
+            dynamic priceLevelName,
+            int? taxId,
+            String? taxCodeName,
+            int? taxRate,
+            double? taxAmount,
+            double? amount,
+            bool? isApplyWhTax,
+            int? whTaxAmount,
+            int? departmentId,
+            String? departmentName,
+            int? locationId,
+            String? locationName)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemoDetail() when $default != null:
+        return $default(
+            _that.creditMemoId,
+            _that.detailId,
+            _that.itemId,
+            _that.hsCode,
+            _that.refDetailId,
+            _that.itemName,
+            _that.description,
+            _that.unitId,
+            _that.unitName,
+            _that.rate,
+            _that.quantity,
+            _that.discount,
+            _that.discountPercent,
+            _that.grossAmount,
+            _that.tscCode,
+            _that.tscCodeName,
+            _that.tscRate,
+            _that.tscAmount,
+            _that.priceLevelId,
+            _that.priceLevelName,
+            _that.taxId,
+            _that.taxCodeName,
+            _that.taxRate,
+            _that.taxAmount,
+            _that.amount,
+            _that.isApplyWhTax,
+            _that.whTaxAmount,
+            _that.departmentId,
+            _that.departmentName,
+            _that.locationId,
+            _that.locationName);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -1248,6 +1593,412 @@ class _$CreditMemoCopyWithImpl<$Res> implements $CreditMemoCopyWith<$Res> {
           : details // ignore: cast_nullable_to_non_nullable
               as List<CreditMemoDetail>,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [CreditMemo].
+extension CreditMemoPatterns on CreditMemo {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_CreditMemo value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemo() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_CreditMemo value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemo():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_CreditMemo value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemo() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            int? id,
+            int? customerId,
+            String? docNo,
+            String? creditMemoNo,
+            String? customer,
+            DateTime? creditMemoDate,
+            String? nepCreditMemoDate,
+            String? currencyName,
+            String? departmentName,
+            String? nextApproverName,
+            int? refType,
+            String? memo,
+            String? locationName,
+            int? status,
+            int? approvalStatus,
+            String? statusName,
+            int? partyId,
+            int? currencyId,
+            int? exchangeRate,
+            String? panNo,
+            int? creditMemoId,
+            String? invoiceReferenceNo,
+            int? refInvoiceId,
+            int? locationId,
+            bool? isCancelled,
+            int? salesRepId,
+            int? ledgerId,
+            dynamic credit,
+            String? purpose,
+            num? discount,
+            num? discountAmount,
+            num? grossAmount,
+            num? taxableAmount,
+            num? taxAmount,
+            int? netTotal,
+            num? netAmount,
+            String? itemName,
+            String? partyName,
+            num? itemRate,
+            bool? autoApply,
+            List<CreditMemoDetail> details)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemo() when $default != null:
+        return $default(
+            _that.id,
+            _that.customerId,
+            _that.docNo,
+            _that.creditMemoNo,
+            _that.customer,
+            _that.creditMemoDate,
+            _that.nepCreditMemoDate,
+            _that.currencyName,
+            _that.departmentName,
+            _that.nextApproverName,
+            _that.refType,
+            _that.memo,
+            _that.locationName,
+            _that.status,
+            _that.approvalStatus,
+            _that.statusName,
+            _that.partyId,
+            _that.currencyId,
+            _that.exchangeRate,
+            _that.panNo,
+            _that.creditMemoId,
+            _that.invoiceReferenceNo,
+            _that.refInvoiceId,
+            _that.locationId,
+            _that.isCancelled,
+            _that.salesRepId,
+            _that.ledgerId,
+            _that.credit,
+            _that.purpose,
+            _that.discount,
+            _that.discountAmount,
+            _that.grossAmount,
+            _that.taxableAmount,
+            _that.taxAmount,
+            _that.netTotal,
+            _that.netAmount,
+            _that.itemName,
+            _that.partyName,
+            _that.itemRate,
+            _that.autoApply,
+            _that.details);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            int? id,
+            int? customerId,
+            String? docNo,
+            String? creditMemoNo,
+            String? customer,
+            DateTime? creditMemoDate,
+            String? nepCreditMemoDate,
+            String? currencyName,
+            String? departmentName,
+            String? nextApproverName,
+            int? refType,
+            String? memo,
+            String? locationName,
+            int? status,
+            int? approvalStatus,
+            String? statusName,
+            int? partyId,
+            int? currencyId,
+            int? exchangeRate,
+            String? panNo,
+            int? creditMemoId,
+            String? invoiceReferenceNo,
+            int? refInvoiceId,
+            int? locationId,
+            bool? isCancelled,
+            int? salesRepId,
+            int? ledgerId,
+            dynamic credit,
+            String? purpose,
+            num? discount,
+            num? discountAmount,
+            num? grossAmount,
+            num? taxableAmount,
+            num? taxAmount,
+            int? netTotal,
+            num? netAmount,
+            String? itemName,
+            String? partyName,
+            num? itemRate,
+            bool? autoApply,
+            List<CreditMemoDetail> details)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemo():
+        return $default(
+            _that.id,
+            _that.customerId,
+            _that.docNo,
+            _that.creditMemoNo,
+            _that.customer,
+            _that.creditMemoDate,
+            _that.nepCreditMemoDate,
+            _that.currencyName,
+            _that.departmentName,
+            _that.nextApproverName,
+            _that.refType,
+            _that.memo,
+            _that.locationName,
+            _that.status,
+            _that.approvalStatus,
+            _that.statusName,
+            _that.partyId,
+            _that.currencyId,
+            _that.exchangeRate,
+            _that.panNo,
+            _that.creditMemoId,
+            _that.invoiceReferenceNo,
+            _that.refInvoiceId,
+            _that.locationId,
+            _that.isCancelled,
+            _that.salesRepId,
+            _that.ledgerId,
+            _that.credit,
+            _that.purpose,
+            _that.discount,
+            _that.discountAmount,
+            _that.grossAmount,
+            _that.taxableAmount,
+            _that.taxAmount,
+            _that.netTotal,
+            _that.netAmount,
+            _that.itemName,
+            _that.partyName,
+            _that.itemRate,
+            _that.autoApply,
+            _that.details);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            int? id,
+            int? customerId,
+            String? docNo,
+            String? creditMemoNo,
+            String? customer,
+            DateTime? creditMemoDate,
+            String? nepCreditMemoDate,
+            String? currencyName,
+            String? departmentName,
+            String? nextApproverName,
+            int? refType,
+            String? memo,
+            String? locationName,
+            int? status,
+            int? approvalStatus,
+            String? statusName,
+            int? partyId,
+            int? currencyId,
+            int? exchangeRate,
+            String? panNo,
+            int? creditMemoId,
+            String? invoiceReferenceNo,
+            int? refInvoiceId,
+            int? locationId,
+            bool? isCancelled,
+            int? salesRepId,
+            int? ledgerId,
+            dynamic credit,
+            String? purpose,
+            num? discount,
+            num? discountAmount,
+            num? grossAmount,
+            num? taxableAmount,
+            num? taxAmount,
+            int? netTotal,
+            num? netAmount,
+            String? itemName,
+            String? partyName,
+            num? itemRate,
+            bool? autoApply,
+            List<CreditMemoDetail> details)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreditMemo() when $default != null:
+        return $default(
+            _that.id,
+            _that.customerId,
+            _that.docNo,
+            _that.creditMemoNo,
+            _that.customer,
+            _that.creditMemoDate,
+            _that.nepCreditMemoDate,
+            _that.currencyName,
+            _that.departmentName,
+            _that.nextApproverName,
+            _that.refType,
+            _that.memo,
+            _that.locationName,
+            _that.status,
+            _that.approvalStatus,
+            _that.statusName,
+            _that.partyId,
+            _that.currencyId,
+            _that.exchangeRate,
+            _that.panNo,
+            _that.creditMemoId,
+            _that.invoiceReferenceNo,
+            _that.refInvoiceId,
+            _that.locationId,
+            _that.isCancelled,
+            _that.salesRepId,
+            _that.ledgerId,
+            _that.credit,
+            _that.purpose,
+            _that.discount,
+            _that.discountAmount,
+            _that.grossAmount,
+            _that.taxableAmount,
+            _that.taxAmount,
+            _that.netTotal,
+            _that.netAmount,
+            _that.itemName,
+            _that.partyName,
+            _that.itemRate,
+            _that.autoApply,
+            _that.details);
+      case _:
+        return null;
+    }
   }
 }
 

@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -109,6 +108,181 @@ class _$CustomerLedgerDtoCopyWithImpl<$Res>
           : closingBalance // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [CustomerLedgerDto].
+extension CustomerLedgerDtoPatterns on CustomerLedgerDto {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_CustomerLedgerDto value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerDto() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_CustomerLedgerDto value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerDto():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_CustomerLedgerDto value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerDto() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "debitSum") int? debitSum,
+            @JsonKey(name: "creditSum") int? creditSum,
+            @JsonKey(name: "details") List<CustomerLedgerDtoDetail>? details,
+            @JsonKey(name: "closingBalance") String? closingBalance)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerDto() when $default != null:
+        return $default(_that.debitSum, _that.creditSum, _that.details,
+            _that.closingBalance);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "debitSum") int? debitSum,
+            @JsonKey(name: "creditSum") int? creditSum,
+            @JsonKey(name: "details") List<CustomerLedgerDtoDetail>? details,
+            @JsonKey(name: "closingBalance") String? closingBalance)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerDto():
+        return $default(_that.debitSum, _that.creditSum, _that.details,
+            _that.closingBalance);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "debitSum") int? debitSum,
+            @JsonKey(name: "creditSum") int? creditSum,
+            @JsonKey(name: "details") List<CustomerLedgerDtoDetail>? details,
+            @JsonKey(name: "closingBalance") String? closingBalance)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerDto() when $default != null:
+        return $default(_that.debitSum, _that.creditSum, _that.details,
+            _that.closingBalance);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -384,6 +558,220 @@ class _$CustomerLedgerDtoDetailCopyWithImpl<$Res>
   }
 }
 
+/// Adds pattern-matching-related methods to [CustomerLedgerDtoDetail].
+extension CustomerLedgerDtoDetailPatterns on CustomerLedgerDtoDetail {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_CustomerLedgerDtoDetail value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerDtoDetail() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_CustomerLedgerDtoDetail value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerDtoDetail():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_CustomerLedgerDtoDetail value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerDtoDetail() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "DATE") String? date,
+            @JsonKey(name: "MITI") String? miti,
+            @JsonKey(name: "PARTICULARS") String? particulars,
+            @JsonKey(name: "ENTITY_TYPE") String? entityType,
+            @JsonKey(name: "ENTITY_NO") String? entityNo,
+            @JsonKey(name: "CHEQUE_NO") String? chequeNo,
+            @JsonKey(name: "DEBIT") String? debit,
+            @JsonKey(name: "CREDIT") String? credit,
+            @JsonKey(name: "BALANCE") int? balance)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerDtoDetail() when $default != null:
+        return $default(
+            _that.date,
+            _that.miti,
+            _that.particulars,
+            _that.entityType,
+            _that.entityNo,
+            _that.chequeNo,
+            _that.debit,
+            _that.credit,
+            _that.balance);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "DATE") String? date,
+            @JsonKey(name: "MITI") String? miti,
+            @JsonKey(name: "PARTICULARS") String? particulars,
+            @JsonKey(name: "ENTITY_TYPE") String? entityType,
+            @JsonKey(name: "ENTITY_NO") String? entityNo,
+            @JsonKey(name: "CHEQUE_NO") String? chequeNo,
+            @JsonKey(name: "DEBIT") String? debit,
+            @JsonKey(name: "CREDIT") String? credit,
+            @JsonKey(name: "BALANCE") int? balance)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerDtoDetail():
+        return $default(
+            _that.date,
+            _that.miti,
+            _that.particulars,
+            _that.entityType,
+            _that.entityNo,
+            _that.chequeNo,
+            _that.debit,
+            _that.credit,
+            _that.balance);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "DATE") String? date,
+            @JsonKey(name: "MITI") String? miti,
+            @JsonKey(name: "PARTICULARS") String? particulars,
+            @JsonKey(name: "ENTITY_TYPE") String? entityType,
+            @JsonKey(name: "ENTITY_NO") String? entityNo,
+            @JsonKey(name: "CHEQUE_NO") String? chequeNo,
+            @JsonKey(name: "DEBIT") String? debit,
+            @JsonKey(name: "CREDIT") String? credit,
+            @JsonKey(name: "BALANCE") int? balance)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerDtoDetail() when $default != null:
+        return $default(
+            _that.date,
+            _that.miti,
+            _that.particulars,
+            _that.entityType,
+            _that.entityNo,
+            _that.chequeNo,
+            _that.debit,
+            _that.credit,
+            _that.balance);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 @JsonSerializable()
 class _CustomerLedgerDtoDetail implements CustomerLedgerDtoDetail {
@@ -644,6 +1032,175 @@ class _$CustomerLedgerParamCopyWithImpl<$Res>
           : endDate // ignore: cast_nullable_to_non_nullable
               as String,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [CustomerLedgerParam].
+extension CustomerLedgerParamPatterns on CustomerLedgerParam {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_CustomerLedgerParam value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerParam() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_CustomerLedgerParam value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerParam():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_CustomerLedgerParam value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerParam() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "party_id") String customerId,
+            @JsonKey(name: "start_date") String startDate,
+            @JsonKey(name: "end_date") String endDate)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerParam() when $default != null:
+        return $default(_that.customerId, _that.startDate, _that.endDate);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "party_id") String customerId,
+            @JsonKey(name: "start_date") String startDate,
+            @JsonKey(name: "end_date") String endDate)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerParam():
+        return $default(_that.customerId, _that.startDate, _that.endDate);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "party_id") String customerId,
+            @JsonKey(name: "start_date") String startDate,
+            @JsonKey(name: "end_date") String endDate)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CustomerLedgerParam() when $default != null:
+        return $default(_that.customerId, _that.startDate, _that.endDate);
+      case _:
+        return null;
+    }
   }
 }
 

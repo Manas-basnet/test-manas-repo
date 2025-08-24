@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -38,6 +37,195 @@ mixin _$AuthState implements DiagnosticableTreeMixin {
 /// @nodoc
 class $AuthStateCopyWith<$Res> {
   $AuthStateCopyWith(AuthState _, $Res Function(AuthState) __);
+}
+
+/// Adds pattern-matching-related methods to [AuthState].
+extension AuthStatePatterns on AuthState {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(SignedIn value)? signedIn,
+    TResult Function(OnHold value)? onHold,
+    TResult Function(SignedOut value)? signedOut,
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case SignedIn() when signedIn != null:
+        return signedIn(_that);
+      case OnHold() when onHold != null:
+        return onHold(_that);
+      case SignedOut() when signedOut != null:
+        return signedOut(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(SignedIn value) signedIn,
+    required TResult Function(OnHold value) onHold,
+    required TResult Function(SignedOut value) signedOut,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case SignedIn():
+        return signedIn(_that);
+      case OnHold():
+        return onHold(_that);
+      case SignedOut():
+        return signedOut(_that);
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(SignedIn value)? signedIn,
+    TResult? Function(OnHold value)? onHold,
+    TResult? Function(SignedOut value)? signedOut,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case SignedIn() when signedIn != null:
+        return signedIn(_that);
+      case OnHold() when onHold != null:
+        return onHold(_that);
+      case SignedOut() when signedOut != null:
+        return signedOut(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(LoginEntity loginEntity)? signedIn,
+    TResult Function(LoginEntity loginEntity)? onHold,
+    TResult Function()? signedOut,
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case SignedIn() when signedIn != null:
+        return signedIn(_that.loginEntity);
+      case OnHold() when onHold != null:
+        return onHold(_that.loginEntity);
+      case SignedOut() when signedOut != null:
+        return signedOut();
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(LoginEntity loginEntity) signedIn,
+    required TResult Function(LoginEntity loginEntity) onHold,
+    required TResult Function() signedOut,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case SignedIn():
+        return signedIn(_that.loginEntity);
+      case OnHold():
+        return onHold(_that.loginEntity);
+      case SignedOut():
+        return signedOut();
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(LoginEntity loginEntity)? signedIn,
+    TResult? Function(LoginEntity loginEntity)? onHold,
+    TResult? Function()? signedOut,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case SignedIn() when signedIn != null:
+        return signedIn(_that.loginEntity);
+      case OnHold() when onHold != null:
+        return onHold(_that.loginEntity);
+      case SignedOut() when signedOut != null:
+        return signedOut();
+      case _:
+        return null;
+    }
+  }
 }
 
 /// @nodoc
@@ -334,6 +522,172 @@ class _$RoleStateCopyWithImpl<$Res> implements $RoleStateCopyWith<$Res> {
         (value) {
       return _then(_self.copyWith(selectedOrganization: value));
     });
+  }
+}
+
+/// Adds pattern-matching-related methods to [RoleState].
+extension RoleStatePatterns on RoleState {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_RoleState value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _RoleState() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_RoleState value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _RoleState():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_RoleState value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _RoleState() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(List<OrganizationEntity> organizations,
+            OrganizationEntity? selectedOrganization, String? roleName)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _RoleState() when $default != null:
+        return $default(
+            _that.organizations, _that.selectedOrganization, _that.roleName);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(List<OrganizationEntity> organizations,
+            OrganizationEntity? selectedOrganization, String? roleName)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _RoleState():
+        return $default(
+            _that.organizations, _that.selectedOrganization, _that.roleName);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(List<OrganizationEntity> organizations,
+            OrganizationEntity? selectedOrganization, String? roleName)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _RoleState() when $default != null:
+        return $default(
+            _that.organizations, _that.selectedOrganization, _that.roleName);
+      case _:
+        return null;
+    }
   }
 }
 

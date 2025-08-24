@@ -1,6 +1,5 @@
-// dart format width=80
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -134,6 +133,208 @@ class _$EodCopyWithImpl<$Res> implements $EodCopyWith<$Res> {
           : branchId // ignore: cast_nullable_to_non_nullable
               as int?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [Eod].
+extension EodPatterns on Eod {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_Eod value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _Eod() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_Eod value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _Eod():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_Eod value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _Eod() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "eod_date") DateTime? eodDate,
+            @JsonKey(name: "remarks") String? remarks,
+            @JsonKey(name: "created_by") int? createdBy,
+            @JsonKey(name: "employee_id") int? employeeId,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "company_id") int? companyId,
+            @JsonKey(name: "branch_id") int? branchId)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _Eod() when $default != null:
+        return $default(
+            _that.eodDate,
+            _that.remarks,
+            _that.createdBy,
+            _that.employeeId,
+            _that.organisationId,
+            _that.companyId,
+            _that.branchId);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "eod_date") DateTime? eodDate,
+            @JsonKey(name: "remarks") String? remarks,
+            @JsonKey(name: "created_by") int? createdBy,
+            @JsonKey(name: "employee_id") int? employeeId,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "company_id") int? companyId,
+            @JsonKey(name: "branch_id") int? branchId)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _Eod():
+        return $default(
+            _that.eodDate,
+            _that.remarks,
+            _that.createdBy,
+            _that.employeeId,
+            _that.organisationId,
+            _that.companyId,
+            _that.branchId);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "eod_date") DateTime? eodDate,
+            @JsonKey(name: "remarks") String? remarks,
+            @JsonKey(name: "created_by") int? createdBy,
+            @JsonKey(name: "employee_id") int? employeeId,
+            @JsonKey(name: "organisation_id") int? organisationId,
+            @JsonKey(name: "company_id") int? companyId,
+            @JsonKey(name: "branch_id") int? branchId)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _Eod() when $default != null:
+        return $default(
+            _that.eodDate,
+            _that.remarks,
+            _that.createdBy,
+            _that.employeeId,
+            _that.organisationId,
+            _that.companyId,
+            _that.branchId);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -464,6 +665,247 @@ class _$EodEntityCopyWithImpl<$Res> implements $EodEntityCopyWith<$Res> {
           : createdBy // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [EodEntity].
+extension EodEntityPatterns on EodEntity {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_EodEntity value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _EodEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_EodEntity value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _EodEntity():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_EodEntity value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _EodEntity() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "REMARKS") String? remarks,
+            @JsonKey(name: "EMPLOYEE_NAME") String? employeeName,
+            @JsonKey(name: "EOD_DATE") String? eodDate,
+            @JsonKey(name: "TOTAL_PURCHASE_ORDERS_COUNT")
+            int? totalPurchaseOrdersCount,
+            @JsonKey(name: "GROSS_PURCHASE_ORDERS_AMOUNT")
+            int? grossPurchaseOrdersAmount,
+            @JsonKey(name: "NET_PURCHASE_ORDERS_AMOUNT")
+            int? netPurchaseOrdersAmount,
+            @JsonKey(name: "TOTAL_COLLECTED_AMOUNT") int? totalCollectedAmount,
+            @JsonKey(name: "TOTAL_ADVANCE_COLLECTION")
+            int? totalAdvanceCollection,
+            @JsonKey(name: "ALLOCATED_PARTIES_COUNT")
+            int? allocatedPartiesCount,
+            @JsonKey(name: "VISITED_PARTIES_COUNT") int? visitedPartiesCount,
+            @JsonKey(name: "CREATED_BY") String? createdBy)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _EodEntity() when $default != null:
+        return $default(
+            _that.remarks,
+            _that.employeeName,
+            _that.eodDate,
+            _that.totalPurchaseOrdersCount,
+            _that.grossPurchaseOrdersAmount,
+            _that.netPurchaseOrdersAmount,
+            _that.totalCollectedAmount,
+            _that.totalAdvanceCollection,
+            _that.allocatedPartiesCount,
+            _that.visitedPartiesCount,
+            _that.createdBy);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "REMARKS") String? remarks,
+            @JsonKey(name: "EMPLOYEE_NAME") String? employeeName,
+            @JsonKey(name: "EOD_DATE") String? eodDate,
+            @JsonKey(name: "TOTAL_PURCHASE_ORDERS_COUNT")
+            int? totalPurchaseOrdersCount,
+            @JsonKey(name: "GROSS_PURCHASE_ORDERS_AMOUNT")
+            int? grossPurchaseOrdersAmount,
+            @JsonKey(name: "NET_PURCHASE_ORDERS_AMOUNT")
+            int? netPurchaseOrdersAmount,
+            @JsonKey(name: "TOTAL_COLLECTED_AMOUNT") int? totalCollectedAmount,
+            @JsonKey(name: "TOTAL_ADVANCE_COLLECTION")
+            int? totalAdvanceCollection,
+            @JsonKey(name: "ALLOCATED_PARTIES_COUNT")
+            int? allocatedPartiesCount,
+            @JsonKey(name: "VISITED_PARTIES_COUNT") int? visitedPartiesCount,
+            @JsonKey(name: "CREATED_BY") String? createdBy)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _EodEntity():
+        return $default(
+            _that.remarks,
+            _that.employeeName,
+            _that.eodDate,
+            _that.totalPurchaseOrdersCount,
+            _that.grossPurchaseOrdersAmount,
+            _that.netPurchaseOrdersAmount,
+            _that.totalCollectedAmount,
+            _that.totalAdvanceCollection,
+            _that.allocatedPartiesCount,
+            _that.visitedPartiesCount,
+            _that.createdBy);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "REMARKS") String? remarks,
+            @JsonKey(name: "EMPLOYEE_NAME") String? employeeName,
+            @JsonKey(name: "EOD_DATE") String? eodDate,
+            @JsonKey(name: "TOTAL_PURCHASE_ORDERS_COUNT")
+            int? totalPurchaseOrdersCount,
+            @JsonKey(name: "GROSS_PURCHASE_ORDERS_AMOUNT")
+            int? grossPurchaseOrdersAmount,
+            @JsonKey(name: "NET_PURCHASE_ORDERS_AMOUNT")
+            int? netPurchaseOrdersAmount,
+            @JsonKey(name: "TOTAL_COLLECTED_AMOUNT") int? totalCollectedAmount,
+            @JsonKey(name: "TOTAL_ADVANCE_COLLECTION")
+            int? totalAdvanceCollection,
+            @JsonKey(name: "ALLOCATED_PARTIES_COUNT")
+            int? allocatedPartiesCount,
+            @JsonKey(name: "VISITED_PARTIES_COUNT") int? visitedPartiesCount,
+            @JsonKey(name: "CREATED_BY") String? createdBy)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _EodEntity() when $default != null:
+        return $default(
+            _that.remarks,
+            _that.employeeName,
+            _that.eodDate,
+            _that.totalPurchaseOrdersCount,
+            _that.grossPurchaseOrdersAmount,
+            _that.netPurchaseOrdersAmount,
+            _that.totalCollectedAmount,
+            _that.totalAdvanceCollection,
+            _that.allocatedPartiesCount,
+            _that.visitedPartiesCount,
+            _that.createdBy);
+      case _:
+        return null;
+    }
   }
 }
 
@@ -799,6 +1241,187 @@ class _$EodGetParamCopyWithImpl<$Res> implements $EodGetParamCopyWith<$Res> {
           : noOfRows // ignore: cast_nullable_to_non_nullable
               as int?,
     ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [EodGetParam].
+extension EodGetParamPatterns on EodGetParam {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_EodGetParam value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _EodGetParam() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_EodGetParam value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _EodGetParam():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_EodGetParam value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _EodGetParam() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "employee_id") int employeeId,
+            @JsonKey(name: "employee_name") int? employeeName,
+            @JsonKey(name: "start_date") DateTime? startDate,
+            @JsonKey(name: "end_date") DateTime? endDate,
+            @JsonKey(name: "page_number") int? pageNumber,
+            @JsonKey(name: "no_of_rows") int? noOfRows)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _EodGetParam() when $default != null:
+        return $default(_that.employeeId, _that.employeeName, _that.startDate,
+            _that.endDate, _that.pageNumber, _that.noOfRows);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            @JsonKey(name: "employee_id") int employeeId,
+            @JsonKey(name: "employee_name") int? employeeName,
+            @JsonKey(name: "start_date") DateTime? startDate,
+            @JsonKey(name: "end_date") DateTime? endDate,
+            @JsonKey(name: "page_number") int? pageNumber,
+            @JsonKey(name: "no_of_rows") int? noOfRows)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _EodGetParam():
+        return $default(_that.employeeId, _that.employeeName, _that.startDate,
+            _that.endDate, _that.pageNumber, _that.noOfRows);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            @JsonKey(name: "employee_id") int employeeId,
+            @JsonKey(name: "employee_name") int? employeeName,
+            @JsonKey(name: "start_date") DateTime? startDate,
+            @JsonKey(name: "end_date") DateTime? endDate,
+            @JsonKey(name: "page_number") int? pageNumber,
+            @JsonKey(name: "no_of_rows") int? noOfRows)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _EodGetParam() when $default != null:
+        return $default(_that.employeeId, _that.employeeName, _that.startDate,
+            _that.endDate, _that.pageNumber, _that.noOfRows);
+      case _:
+        return null;
+    }
   }
 }
 

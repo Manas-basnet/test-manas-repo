@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:sfm/core/core.dart';
-import 'package:sfm/core/widgets/navigation_items.dart';
-import 'package:sfm/core/widgets/widgets.dart';
 import 'package:sfm/features/features.dart';
 
-class HomePage extends HookConsumerWidget with CustomNavigationItem {
+class HomePage extends HookConsumerWidget{
   const HomePage({super.key});
 
   @override
